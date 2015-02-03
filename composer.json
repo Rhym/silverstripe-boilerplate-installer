@@ -4,6 +4,6 @@
     "silverstripe/cms": "3.1.9",
     "silverstripe/googlesitemaps": "1.2.*",
     "undefinedoffset/sortablegridfield": "*",
-    "ryanpotter/silverstripe-boilerplate": "*"
+    "ryanpotter/silverstripe-boilerplate": "dev-master"
   }
 }
