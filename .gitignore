@@ -1,0 +1,13 @@
+## ignorance is bliss
+
+_resampled
+.DS_Store
+*.sublime-*
+*.map
+/.sass-cache/
+/cms/
+/framework/
+/googlesitemaps/
+/node_modules/
+/vendor/
+/.idea/

@@ -1,0 +1,16 @@
+{
+  "name": "boilerplate intaller",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rhym/silverstripe-boilerplate-installer"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-combine-media-queries": "*",
+    "grunt-autoprefixer": "*"
+  }
+}
