@@ -6,11 +6,6 @@ module.exports = function(grunt) {
                 files: {
                     'boilerplate/css/main.css': 'boilerplate/sass/main.scss'
                 }
-            },
-            cms: {
-                files: {
-                    'boilerplate/css/cms/css/cms.min.css': 'boilerplate/css/cms/sass/cms.scss'
-                }
             }
         },
         autoprefixer: {
@@ -20,11 +15,6 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'boilerplate/css/main.css': 'boilerplate/css/main.css'
-                }
-            },
-            cms: {
-                files: {
-                    'boilerplate/css/cms/css/cms.min.css': 'boilerplate/css/cms/css/cms.min.css'
                 }
             }
         },
@@ -54,18 +44,8 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false
                 }
-            },
-            cms: {
-                files: ['boilerplate/css/cms/sass/**/*.scss'],
-                tasks: ['sass:cms', 'autoprefixer:cms'],
-                options: {
-                    spawn: false
-                }
             }
         }
-        //---------------------------------------
-        // CMS
-        //---------------------------------------
     });
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
