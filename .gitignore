@@ -1,5 +1,7 @@
 ## ignorance is bliss
 
+/assets/
+_ss_environment.php
 _resampled
 .DS_Store
 ._.gitignore
