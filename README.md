@@ -1,5 +1,7 @@
 ##Clone
 
+Clone the repo, and install the composer biz set in composer.json.
+
 ```
 git clone https://github.com/Rhym/silverstripe-boilerplate-installer.git "myNewProject"
 cd myNewProject/
@@ -7,9 +9,14 @@ composer update
 ```
 
 ##Enviroment
+
+Create the following file in the root directory.
+
 ```
 _ss_environment.php
 ```
+
+Copy paste this biz, and change the values.
 
 ```
 <?php
@@ -40,6 +47,8 @@ if (defined('SS_ENVIRONMENT_TYPE') && SS_ENVIRONMENT_TYPE != 'live') {
 
 ## NPM
 
+Run the following in your command line.
+
 ```
 npm install
 ```
@@ -47,3 +56,5 @@ npm install
 ```
 npm install -g grunt-cli
 ```
+
+You're good to go, son!
