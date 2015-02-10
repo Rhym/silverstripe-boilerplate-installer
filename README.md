@@ -37,3 +37,13 @@ if (defined('SS_ENVIRONMENT_TYPE') && SS_ENVIRONMENT_TYPE != 'live') {
     ini_set('display_errors', 1);
 }
 ```
+
+## NPM
+
+```
+npm install
+```
+
+```
+npm install -g grunt-cli
+```
