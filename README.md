@@ -4,7 +4,11 @@ Clone the repo, and install the composer biz set in composer.json.
 
 ```
 git clone https://github.com/Rhym/silverstripe-boilerplate-installer.git "myNewProject"
+```
+```
 cd myNewProject/
+```
+```
 composer update
 ```
 
