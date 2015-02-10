@@ -1,6 +1,6 @@
 ## ignorance is bliss
 
-/assets/
+/assets/*
 _ss_environment.php
 _resampled
 .DS_Store
