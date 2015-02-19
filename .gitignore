@@ -10,6 +10,7 @@ _resampled
 /.sass-cache/
 /cms/
 /framework/
+/components/
 /googlesitemaps/
 /node_modules/
 /vendor/

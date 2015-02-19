@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'boilerplate/css/main.css': 'boilerplate/sass/main.scss'
+                    'boilerplate/css/main.css': 'boilerplate/scss/main.scss'
                 }
             }
         },
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         },
         watch: {
             dist: {
-                files: ['boilerplate/sass/**/*.scss'],
+                files: ['boilerplate/scss/**/*.scss'],
                 tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin'],
                 options: {
                     spawn: false

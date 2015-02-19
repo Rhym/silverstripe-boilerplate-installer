@@ -8,6 +8,9 @@ git clone https://github.com/Rhym/silverstripe-boilerplate-installer.git "myNewP
 ```
 cd myNewProject/
 ```
+
+##Command Line Time
+
 ```
 composer update
 ```
