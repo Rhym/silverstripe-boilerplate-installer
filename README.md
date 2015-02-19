@@ -12,6 +12,18 @@ cd myNewProject/
 composer update
 ```
 
+```
+npm install
+```
+
+```
+npm install -g grunt-cli
+```
+
+```
+bower install --save-dev
+```
+
 ##Enviroment
 
 Create the following file in the root directory.
@@ -47,18 +59,6 @@ if (defined('SS_ENVIRONMENT_TYPE') && SS_ENVIRONMENT_TYPE != 'live') {
     // NOTE: no need for setting error_reporting, this is done by SilverStripe
     ini_set('display_errors', 1);
 }
-```
-
-## NPM
-
-Run the following in your command line.
-
-```
-npm install
-```
-
-```
-npm install -g grunt-cli
 ```
 
 You're good to go, son!
