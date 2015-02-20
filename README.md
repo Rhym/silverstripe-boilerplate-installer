@@ -24,7 +24,7 @@ npm install -g grunt-cli
 ```
 
 ```
-bower install --save-dev
+bower install
 ```
 
 ##Enviroment
