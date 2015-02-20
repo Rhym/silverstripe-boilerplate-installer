@@ -4,6 +4,11 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
+                    'mysite/css/main.css': 'mysite/scss/main.scss'
+                }
+            },
+            boilerplate: {
+                files: {
                     'boilerplate/css/main.css': 'boilerplate/scss/main.scss'
                 }
             }
@@ -13,6 +18,11 @@ module.exports = function(grunt) {
                 browsers: ['last 3 versions']
             },
             dist: {
+                files: {
+                    'mysite/css/main.css': 'mysite/css/main.css'
+                }
+            },
+            boilerplate: {
                 files: {
                     'boilerplate/css/main.css': 'boilerplate/css/main.css'
                 }
@@ -24,12 +34,24 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
+                    'mysite/css/': ['mysite/css/main.css']
+                }
+            },
+            boilerplate: {
+                files: {
                     'boilerplate/css/': ['boilerplate/css/main.css']
                 }
             }
         },
         cssmin: {
-            minify: {
+            dist: {
+                expand: true,
+                cwd: 'mysite/css/',
+                src: ['main.css'],
+                dest: 'mysite/css/',
+                ext: '.min.css'
+            },
+            boilerplate: {
                 expand: true,
                 cwd: 'boilerplate/css/',
                 src: ['main.css'],
@@ -39,8 +61,15 @@ module.exports = function(grunt) {
         },
         watch: {
             dist: {
+                files: ['mysite/scss/**/*.scss'],
+                tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
+                options: {
+                    spawn: false
+                }
+            },
+            boilerplate: {
                 files: ['boilerplate/scss/**/*.scss'],
-                tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin'],
+                tasks: ['sass:boilerplate', 'autoprefixer:boilerplate', 'cmq:boilerplate', 'cssmin:boilerplate'],
                 options: {
                     spawn: false
                 }
