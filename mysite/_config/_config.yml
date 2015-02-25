@@ -11,13 +11,21 @@ SSViewer:
   # if you want to set a theme, change the 2 lines below
   theme_enabled: false
   # theme: 'simple'
+
 MySQLDatabase:
   connection_charset: 'utf8'
+
 GDBackend:
   default_quality: 100
+
 SiteTree:
   nested_urls: true
   # Disable creating of default pages (like home) on /dev/build
   # create_default_pages: false
+
 Email:
   admin_email: 'myEmail@mysite.com'
+
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
