@@ -81,6 +81,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-combine-media-queries');
-    grunt.registerTask('default',['watch:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin', 'watch']);
+    grunt.registerTask('default',['watch:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist', 'watch:dist']);
+    grunt.registerTask('boilerplate',['watch:boilerplate', 'autoprefixer:boilerplate', 'cmq:boilerplate', 'cssmin:boilerplate', 'watch:boilerplate']);
     grunt.registerTask('cms',['watch:cms', 'autoprefixer:cms', 'watch:cms']);
 }
