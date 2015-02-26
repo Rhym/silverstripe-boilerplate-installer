@@ -26,6 +26,10 @@ SiteTree:
 Email:
   admin_email: 'myEmail@mysite.com'
 
+LeftAndMain:
+  extensions:
+    - CMSBrandingLeftAndMainExtension
+
 SiteConfig:
   extensions:
     - SiteConfigExtension
