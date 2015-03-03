@@ -1,10 +1,20 @@
+@import '../../boilerplate/scss/functions';
 @import 'functions';
 @import 'vars';
+@import '../../boilerplate/scss/bootstrap';
+@import '../../boilerplate/scss/mixins';
 @import 'mixins';
+@import '../../components/public/components-font-awesome/scss/variables';
+@import '../../boilerplate/scss/typography';
+@import '../../boilerplate/scss/components';
 @import 'components';
+@import '../../boilerplate/scss/layout';
 @import 'layout';
+@import '../../boilerplate/scss/pages';
 @import 'pages';
+@import '../../boilerplate/scss/modules';
 @import 'modules';
+@import '../../boilerplate/scss/shame';
 @import 'shame';
 
 // Grunt task "cmq" will move all media queries to the bottom of the CSS file.

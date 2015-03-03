@@ -24,7 +24,7 @@ SiteTree:
   # create_default_pages: false
 
 Email:
-  admin_email: 'myEmail@mysite.com'
+  admin_email: 'email@mysite.com'
 
 LeftAndMain:
   extensions:
