@@ -4,7 +4,6 @@
   "type": "silverstripe-module",
   "keywords": ["silverstripe", "theme"],
   "license": "BSD-3-Clause",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Ryan Potter",
@@ -21,4 +20,5 @@
     "unclecheese/betterbuttons": "1.2.*",
     "ryanpotter/silverstripe-boilerplate": "dev-master"
   }
+  "minimum-stability": "dev"
 }
