@@ -4,6 +4,7 @@
   "type": "silverstripe-module",
   "keywords": ["silverstripe", "theme"],
   "license": "BSD-3-Clause",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Ryan Potter",
