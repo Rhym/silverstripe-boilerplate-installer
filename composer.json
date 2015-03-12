@@ -19,6 +19,6 @@
     "undefinedoffset/sortablegridfield": "*",
     "unclecheese/betterbuttons": "1.2.*",
     "ryanpotter/silverstripe-boilerplate": "dev-master"
-  }
+  },
   "minimum-stability": "dev"
 }
