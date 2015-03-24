@@ -5,7 +5,7 @@
  */
 class HomePage extends Page {
 
-    //private static $icon = '';
+    private static $icon = 'mysite/images/icons/home.png';
 
     private static $db = array();
 

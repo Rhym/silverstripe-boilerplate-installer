@@ -18,6 +18,7 @@
     "silverstripe/googlesitemaps": "1.2.*",
     "undefinedoffset/sortablegridfield": "*",
     "unclecheese/betterbuttons": "1.2.*",
-    "ryanpotter/silverstripe-boilerplate": "dev-master"
+    "ryanpotter/silverstripe-boilerplate": "dev-master",
+    "google/recaptcha": "~1.1"
   }
 }
