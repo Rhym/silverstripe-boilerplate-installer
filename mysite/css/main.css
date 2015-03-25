@@ -83,15 +83,55 @@
 \*======================================================================*/
 
 /*======================================================================*\
-    Events
-\*======================================================================*/
-
-/*======================================================================*\
     Popout Menu
 \*======================================================================*/
 
 /*======================================================================*\
     Variables
+\*======================================================================*/
+
+/*======================================================================*\
+    Site Size
+\*======================================================================*/
+
+/*======================================================================*\
+    Colors
+\*======================================================================*/
+
+/*======================================================================*\
+    Fonts
+\*======================================================================*/
+
+/*======================================================================*\
+    Navigation
+\*======================================================================*/
+
+/*======================================================================*\
+    Sidebar
+\*======================================================================*/
+
+/*======================================================================*\
+    Colors - Buttons
+\*======================================================================*/
+
+/*======================================================================*\
+    Colors - Panels
+\*======================================================================*/
+
+/*======================================================================*\
+    Gaps
+\*======================================================================*/
+
+/*======================================================================*\
+    Border Radii
+\*======================================================================*/
+
+/*======================================================================*\
+    Animation
+\*======================================================================*/
+
+/*======================================================================*\
+    Popout Menu
 \*======================================================================*/
 
 /*!
@@ -334,10 +374,10 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.42857;
-	color: #757575;
+	color: #333333;
 	background-color: #fff;
 }
 
@@ -351,13 +391,13 @@ textarea {
 }
 
 a {
-	color: #2196F3;
+	color: #337ab7;
 	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: #0a6ebd;
+	color: #23527c;
 	text-decoration: underline;
 }
 
@@ -390,7 +430,7 @@ img {
 	line-height: 1.42857;
 	background-color: #fff;
 	border: 1px solid #ddd;
-	border-radius: 0px;
+	border-radius: 4px;
 	transition: all 0.2s ease-in-out;
 	display: inline-block;
 	max-width: 100%;
@@ -405,7 +445,7 @@ hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 0;
-	border-top: 1px solid #f9f9f9;
+	border-top: 1px solid #eeeeee;
 }
 
 .sr-only {
@@ -758,7 +798,7 @@ table {
 caption {
 	padding-top: 8px;
 	padding-bottom: 8px;
-	color: #E0E0E0;
+	color: #777777;
 	text-align: left;
 }
 
@@ -991,7 +1031,7 @@ table th[class*="col-"] {
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.42857;
-	border-radius: 0px;
+	border-radius: 4px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -1030,7 +1070,7 @@ table th[class*="col-"] {
 .btn.focus,
 #MemberLoginForm_LoginForm .focus.action,
 #MemberLoginForm_LostPasswordForm .focus.action {
-	color: #BDBDBD;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -1064,9 +1104,9 @@ fieldset[disabled] #MemberLoginForm_LostPasswordForm .action,
 }
 
 .btn-default {
-	color: #BDBDBD;
+	color: #333;
 	background-color: #fff;
-	border-color: #f2f2f2;
+	border-color: #ccc;
 }
 
 .btn-default:hover,
@@ -1075,9 +1115,9 @@ fieldset[disabled] #MemberLoginForm_LostPasswordForm .action,
 .btn-default:active,
 .btn-default.active,
 .open > .btn-default.dropdown-toggle {
-	color: #BDBDBD;
+	color: #333;
 	background-color: #e6e6e6;
-	border-color: lightgray;
+	border-color: #adadad;
 }
 
 .btn-default:active,
@@ -1105,20 +1145,20 @@ fieldset[disabled] .btn-default.focus,
 fieldset[disabled] .btn-default:active,
 fieldset[disabled] .btn-default.active {
 	background-color: #fff;
-	border-color: #f2f2f2;
+	border-color: #ccc;
 }
 
 .btn-default .badge {
 	color: #fff;
-	background-color: #BDBDBD;
+	background-color: #333;
 }
 
 .btn-primary,
 #MemberLoginForm_LoginForm .action,
 #MemberLoginForm_LostPasswordForm .action {
 	color: #fff;
-	background-color: #2196F3;
-	border-color: #1f8ee6;
+	background-color: #337ab7;
+	border-color: #2e6da4;
 }
 
 .btn-primary:hover,
@@ -1140,8 +1180,8 @@ fieldset[disabled] .btn-default.active {
 #MemberLoginForm_LoginForm .open > .dropdown-toggle.action,
 #MemberLoginForm_LostPasswordForm .open > .dropdown-toggle.action {
 	color: #fff;
-	background-color: #0c7cd5;
-	border-color: #146db4;
+	background-color: #286090;
+	border-color: #204d74;
 }
 
 .btn-primary:active,
@@ -1222,14 +1262,14 @@ fieldset[disabled] #MemberLoginForm_LoginForm .active.action,
 #MemberLoginForm_LoginForm fieldset[disabled] .active.action,
 fieldset[disabled] #MemberLoginForm_LostPasswordForm .active.action,
 #MemberLoginForm_LostPasswordForm fieldset[disabled] .active.action {
-	background-color: #2196F3;
-	border-color: #1f8ee6;
+	background-color: #337ab7;
+	border-color: #2e6da4;
 }
 
 .btn-primary .badge,
 #MemberLoginForm_LoginForm .action .badge,
 #MemberLoginForm_LostPasswordForm .action .badge {
-	color: #2196F3;
+	color: #337ab7;
 	background-color: #fff;
 }
 
@@ -1434,7 +1474,7 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .btn-link {
-	color: #2196F3;
+	color: #337ab7;
 	font-weight: normal;
 	border-radius: 0;
 }
@@ -1457,7 +1497,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-	color: #0a6ebd;
+	color: #23527c;
 	text-decoration: underline;
 	background-color: transparent;
 }
@@ -1466,13 +1506,11 @@ fieldset[disabled] .btn-link {
 .btn-link[disabled]:focus,
 fieldset[disabled] .btn-link:hover,
 fieldset[disabled] .btn-link:focus {
-	color: #E0E0E0;
+	color: #777777;
 	text-decoration: none;
 }
 
-.btn-lg,
-#MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LostPasswordForm .action {
+.btn-lg {
 	padding: 10px 16px;
 	font-size: 18px;
 	line-height: 1.33333;
@@ -1548,7 +1586,7 @@ tbody.collapse.in {
 	display: inline-block;
 	padding-left: 0;
 	margin: 20px 0;
-	border-radius: 0px;
+	border-radius: 4px;
 }
 
 .pagination > li {
@@ -1562,7 +1600,7 @@ tbody.collapse.in {
 	padding: 6px 12px;
 	line-height: 1.42857;
 	text-decoration: none;
-	color: #2196F3;
+	color: #337ab7;
 	background-color: #fff;
 	border: 1px solid #ddd;
 	margin-left: -1px;
@@ -1571,22 +1609,22 @@ tbody.collapse.in {
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
 	margin-left: 0;
-	border-bottom-left-radius: 0px;
-	border-top-left-radius: 0px;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
 }
 
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-	border-bottom-right-radius: 0px;
-	border-top-right-radius: 0px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 .pagination > li > a:hover,
 .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
-	color: #0a6ebd;
-	background-color: #f9f9f9;
+	color: #23527c;
+	background-color: #eeeeee;
 	border-color: #ddd;
 }
 
@@ -1598,8 +1636,8 @@ tbody.collapse.in {
 .pagination > .active > span:focus {
 	z-index: 2;
 	color: #fff;
-	background-color: #2196F3;
-	border-color: #2196F3;
+	background-color: #337ab7;
+	border-color: #337ab7;
 	cursor: default;
 }
 
@@ -1609,7 +1647,7 @@ tbody.collapse.in {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-	color: #E0E0E0;
+	color: #777777;
 	background-color: #fff;
 	border-color: #ddd;
 	cursor: not-allowed;
@@ -2135,9 +2173,9 @@ button.close {
 \*======================================================================*/
 
 section.section,
-#disqusComments,
-#Form_ContactForm,
-.component {
+.form,
+.recaptcha,
+#disqusComments {
 	margin: 16px 0;
 }
 
@@ -2183,9 +2221,9 @@ section.section {
 \*======================================================================*/
 
 section.section,
-#disqusComments,
-#Form_ContactForm,
-.component {
+.form,
+.recaptcha,
+#disqusComments {
 	margin: 16px 0;
 }
 
@@ -2239,7 +2277,7 @@ a:focus {
 \*---------------------------------------------*/
 
 body {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*---------------------------------------------*\
@@ -2247,7 +2285,7 @@ body {
 \*---------------------------------------------*/
 
 strong {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*---------------------------------------------*\
@@ -2333,7 +2371,7 @@ h6 a:active,
 }
 
 .typography .text-primary {
-	color: #2196F3;
+	color: #337ab7;
 }
 
 .typography .text-secondary {
@@ -2361,12 +2399,12 @@ h3,
 
 h4,
 .h4 {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 h5,
 .h5 {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 /*---------------------------------------------*\
@@ -2542,7 +2580,13 @@ ul.deletelist li:before {
     Alerts
 \*---------------------------------------------*/
 
-.alert {
+/**
+ * Alerts have many &.classes due to supporting SS default messages.
+ */
+
+.alert,
+.message {
+	display: block;
 	padding: 16px;
 	border-radius: 2px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -2553,26 +2597,44 @@ ul.deletelist li:before {
 .alert > h3,
 .alert > h4,
 .alert > h5,
-.alert > h6 {
+.alert > h6,
+.message > h1,
+.message > h2,
+.message > h3,
+.message > h4,
+.message > h5,
+.message > h6 {
 	margin-top: 0;
 }
 
-.alert a {
+.alert a,
+.message a {
 	text-decoration: underline;
 }
 
-.alert p:last-child {
+.alert p:last-child,
+.message p:last-child {
 	margin-bottom: 0;
 }
 
-.alert.alert-success {
+.alert.alert-success,
+.alert.success,
+.alert.good,
+.alert-success.message,
+.success.message,
+.good.message {
 	margin: 0 0 16px 0;
 	background-color: #dff0d8;
 	border: 1px solid #b5c6a8;
 	color: #3c763d;
 }
 
-.alert.alert-success hr {
+.alert.alert-success hr,
+.alert.success hr,
+.alert.good hr,
+.alert-success.message hr,
+.success.message hr,
+.good.message hr {
 	border-top-color: #abbc9f;
 }
 
@@ -2581,64 +2643,80 @@ ul.deletelist li:before {
 .alert.alert-success h3,
 .alert.alert-success h4,
 .alert.alert-success h5,
-.alert.alert-success h6 {
+.alert.alert-success h6,
+.alert.success h1,
+.alert.success h2,
+.alert.success h3,
+.alert.success h4,
+.alert.success h5,
+.alert.success h6,
+.alert.good h1,
+.alert.good h2,
+.alert.good h3,
+.alert.good h4,
+.alert.good h5,
+.alert.good h6,
+.alert-success.message h1,
+.alert-success.message h2,
+.alert-success.message h3,
+.alert-success.message h4,
+.alert-success.message h5,
+.alert-success.message h6,
+.success.message h1,
+.success.message h2,
+.success.message h3,
+.success.message h4,
+.success.message h5,
+.success.message h6,
+.good.message h1,
+.good.message h2,
+.good.message h3,
+.good.message h4,
+.good.message h5,
+.good.message h6 {
 	color: #3c763d;
 }
 
-.alert.alert-success .alert-link {
+.alert.alert-success .alert-link,
+.alert.success .alert-link,
+.alert.good .alert-link,
+.alert-success.message .alert-link,
+.success.message .alert-link,
+.good.message .alert-link {
 	color: #366a36;
 }
 
-.alert.alert-success a {
+.alert.alert-success a,
+.alert.success a,
+.alert.good a,
+.alert-success.message a,
+.success.message a,
+.good.message a {
 	color: #3c763d;
 }
 
 .alert.alert-info,
-.alert.message {
-	margin: 0 0 16px 0;
-	background-color: #d9edf7;
-	border: 1px solid #9fc5cc;
-	color: #31708f;
+.alert.notice,
+.alert-info.message,
+.notice.message { /**
+     * Use an extension so that the .message class can be set as info by default.
+     */
 }
 
-.alert.alert-info hr,
-.alert.message hr {
-	border-top-color: #97bbc1;
-}
-
-.alert.alert-info h1,
-.alert.message h1,
-.alert.alert-info h2,
-.alert.message h2,
-.alert.alert-info h3,
-.alert.message h3,
-.alert.alert-info h4,
-.alert.message h4,
-.alert.alert-info h5,
-.alert.message h5,
-.alert.alert-info h6,
-.alert.message h6 {
-	color: #31708f;
-}
-
-.alert.alert-info .alert-link,
-.alert.message .alert-link {
-	color: #2c6480;
-}
-
-.alert.alert-info a,
-.alert.message a {
-	color: #31708f;
-}
-
-.alert.alert-warning {
+.alert.alert-warning,
+.alert.warning,
+.alert-warning.message,
+.warning.message {
 	margin: 0 0 16px 0;
 	background-color: #fcf8e3;
 	border: 1px solid #d4c7ad;
 	color: #8a6d3b;
 }
 
-.alert.alert-warning hr {
+.alert.alert-warning hr,
+.alert.warning hr,
+.alert-warning.message hr,
+.warning.message hr {
 	border-top-color: #c9bda4;
 }
 
@@ -2647,21 +2725,52 @@ ul.deletelist li:before {
 .alert.alert-warning h3,
 .alert.alert-warning h4,
 .alert.alert-warning h5,
-.alert.alert-warning h6 {
+.alert.alert-warning h6,
+.alert.warning h1,
+.alert.warning h2,
+.alert.warning h3,
+.alert.warning h4,
+.alert.warning h5,
+.alert.warning h6,
+.alert-warning.message h1,
+.alert-warning.message h2,
+.alert-warning.message h3,
+.alert-warning.message h4,
+.alert-warning.message h5,
+.alert-warning.message h6,
+.warning.message h1,
+.warning.message h2,
+.warning.message h3,
+.warning.message h4,
+.warning.message h5,
+.warning.message h6 {
 	color: #8a6d3b;
 }
 
-.alert.alert-warning .alert-link {
+.alert.alert-warning .alert-link,
+.alert.warning .alert-link,
+.alert-warning.message .alert-link,
+.warning.message .alert-link {
 	color: #7c6235;
 }
 
-.alert.alert-warning a {
+.alert.alert-warning a,
+.alert.warning a,
+.alert-warning.message a,
+.warning.message a {
 	color: #8a6d3b;
 }
 
 .alert.alert-danger,
-.alert.message.required,
-.alert.message.validation {
+.alert.required,
+.alert.validation,
+.alert.bad,
+.alert.error,
+.alert-danger.message,
+.required.message,
+.validation.message,
+.bad.message,
+.error.message {
 	margin: 0 0 16px 0;
 	background-color: #f2dede;
 	border: 1px solid #c7adb1;
@@ -2669,42 +2778,183 @@ ul.deletelist li:before {
 }
 
 .alert.alert-danger hr,
-.alert.message.required hr,
-.alert.message.validation hr {
+.alert.required hr,
+.alert.validation hr,
+.alert.bad hr,
+.alert.error hr,
+.alert-danger.message hr,
+.required.message hr,
+.validation.message hr,
+.bad.message hr,
+.error.message hr {
 	border-top-color: #bda4a8;
 }
 
 .alert.alert-danger h1,
-.alert.message.required h1,
-.alert.message.validation h1,
 .alert.alert-danger h2,
-.alert.message.required h2,
-.alert.message.validation h2,
 .alert.alert-danger h3,
-.alert.message.required h3,
-.alert.message.validation h3,
 .alert.alert-danger h4,
-.alert.message.required h4,
-.alert.message.validation h4,
 .alert.alert-danger h5,
-.alert.message.required h5,
-.alert.message.validation h5,
 .alert.alert-danger h6,
-.alert.message.required h6,
-.alert.message.validation h6 {
+.alert.required h1,
+.alert.required h2,
+.alert.required h3,
+.alert.required h4,
+.alert.required h5,
+.alert.required h6,
+.alert.validation h1,
+.alert.validation h2,
+.alert.validation h3,
+.alert.validation h4,
+.alert.validation h5,
+.alert.validation h6,
+.alert.bad h1,
+.alert.bad h2,
+.alert.bad h3,
+.alert.bad h4,
+.alert.bad h5,
+.alert.bad h6,
+.alert.error h1,
+.alert.error h2,
+.alert.error h3,
+.alert.error h4,
+.alert.error h5,
+.alert.error h6,
+.alert-danger.message h1,
+.alert-danger.message h2,
+.alert-danger.message h3,
+.alert-danger.message h4,
+.alert-danger.message h5,
+.alert-danger.message h6,
+.required.message h1,
+.required.message h2,
+.required.message h3,
+.required.message h4,
+.required.message h5,
+.required.message h6,
+.validation.message h1,
+.validation.message h2,
+.validation.message h3,
+.validation.message h4,
+.validation.message h5,
+.validation.message h6,
+.bad.message h1,
+.bad.message h2,
+.bad.message h3,
+.bad.message h4,
+.bad.message h5,
+.bad.message h6,
+.error.message h1,
+.error.message h2,
+.error.message h3,
+.error.message h4,
+.error.message h5,
+.error.message h6 {
 	color: #a94442;
 }
 
 .alert.alert-danger .alert-link,
-.alert.message.required .alert-link,
-.alert.message.validation .alert-link {
+.alert.required .alert-link,
+.alert.validation .alert-link,
+.alert.bad .alert-link,
+.alert.error .alert-link,
+.alert-danger.message .alert-link,
+.required.message .alert-link,
+.validation.message .alert-link,
+.bad.message .alert-link,
+.error.message .alert-link {
 	color: #983d3b;
 }
 
 .alert.alert-danger a,
-.alert.message.required a,
-.alert.message.validation a {
+.alert.required a,
+.alert.validation a,
+.alert.bad a,
+.alert.error a,
+.alert-danger.message a,
+.required.message a,
+.validation.message a,
+.bad.message a,
+.error.message a {
 	color: #a94442;
+}
+
+.alert .error-list,
+.message .error-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.alert .error-list li,
+.message .error-list li {
+	margin: 0;
+}
+
+.alert.alert-info,
+.alert.notice,
+.alert-info.message,
+.notice.message,
+.message {
+	margin: 0 0 16px 0;
+	background-color: #d9edf7;
+	border: 1px solid #9fc5cc;
+	color: #31708f;
+}
+
+.alert.alert-info hr,
+.alert.notice hr,
+.alert-info.message hr,
+.notice.message hr,
+.message hr {
+	border-top-color: #97bbc1;
+}
+
+.alert.alert-info h1,
+.alert.notice h1,
+.alert-info.message h1,
+.notice.message h1,
+.message h1,
+.alert.alert-info h2,
+.alert.notice h2,
+.alert-info.message h2,
+.notice.message h2,
+.message h2,
+.alert.alert-info h3,
+.alert.notice h3,
+.alert-info.message h3,
+.notice.message h3,
+.message h3,
+.alert.alert-info h4,
+.alert.notice h4,
+.alert-info.message h4,
+.notice.message h4,
+.message h4,
+.alert.alert-info h5,
+.alert.notice h5,
+.alert-info.message h5,
+.notice.message h5,
+.message h5,
+.alert.alert-info h6,
+.alert.notice h6,
+.alert-info.message h6,
+.notice.message h6,
+.message h6 {
+	color: #31708f;
+}
+
+.alert.alert-info .alert-link,
+.alert.notice .alert-link,
+.message .alert-link {
+	color: #2c6480;
+}
+
+.alert.alert-info a,
+.alert.notice a,
+.alert-info.message a,
+.notice.message a,
+.message a {
+	color: #31708f;
 }
 
 /*---------------------------------------------*\
@@ -2758,16 +3008,16 @@ ul.deletelist li:before {
 }
 
 .btn-default {
-	color: #212121;
+	color: #222222;
 }
 
 .btn-default:hover {
-	color: #212121;
+	color: #222222;
 	background: #f2f2f2;
 }
 
 .btn-default:active {
-	color: #212121;
+	color: #222222;
 	background: #e5e5e5;
 }
 
@@ -2889,23 +3139,23 @@ fieldset[disabled] .btn-inverse.active {
 .btn-link:active,
 .btn-link:focus {
 	text-decoration: none;
-	background: #f9f9f9;
+	background: #eeeeee;
 }
 
 .btn-link.btn-default {
-	color: #212121;
+	color: #222222;
 }
 
 .btn-link.btn-default:hover,
 .btn-link.btn-default:active,
 .btn-link.btn-default:focus {
-	color: #1d1d1d;
+	color: #1e1e1e;
 }
 
 .btn-link.btn-primary,
 #MemberLoginForm_LoginForm .btn-link.action,
 #MemberLoginForm_LostPasswordForm .btn-link.action {
-	color: #2196F3;
+	color: #337ab7;
 }
 
 .btn-link.btn-primary:hover,
@@ -2917,7 +3167,7 @@ fieldset[disabled] .btn-inverse.active {
 .btn-link.btn-primary:focus,
 #MemberLoginForm_LoginForm .btn-link.action:focus,
 #MemberLoginForm_LostPasswordForm .btn-link.action:focus {
-	color: #1d87da;
+	color: #2d6da4;
 }
 
 .btn-link.btn-secondary {
@@ -2998,22 +3248,22 @@ fieldset[disabled] .btn-inverse.active {
 }
 
 .btn-bordered.btn-default {
-	border-color: #212121;
-	color: #212121;
+	border-color: #222222;
+	color: #222222;
 }
 
 .btn-bordered.btn-default:hover,
 .btn-bordered.btn-default:active,
 .btn-bordered.btn-default:focus {
-	color: #212121;
-	border-color: #212121;
+	color: #222222;
+	border-color: #222222;
 }
 
 .btn-bordered.btn-primary,
 #MemberLoginForm_LoginForm .btn-bordered.action,
 #MemberLoginForm_LostPasswordForm .btn-bordered.action {
-	border-color: #2196F3;
-	color: #2196F3;
+	border-color: #337ab7;
+	color: #337ab7;
 }
 
 .btn-bordered.btn-primary:hover,
@@ -3025,8 +3275,8 @@ fieldset[disabled] .btn-inverse.active {
 .btn-bordered.btn-primary:focus,
 #MemberLoginForm_LoginForm .btn-bordered.action:focus,
 #MemberLoginForm_LostPasswordForm .btn-bordered.action:focus {
-	color: #2196F3;
-	border-color: #2196F3;
+	color: #337ab7;
+	border-color: #337ab7;
 }
 
 .btn-bordered.btn-secondary {
@@ -3120,7 +3370,7 @@ fieldset[disabled] .btn-inverse.active {
 }
 
 .image-navigation .image {
-	background: #2196F3;
+	background: #337ab7;
 }
 
 .image-navigation .heading {
@@ -3161,8 +3411,8 @@ fieldset[disabled] .btn-inverse.active {
 }
 
 .carousel-indicators .active {
-	background: #2196F3;
-	border-color: #2196F3;
+	background: #337ab7;
+	border-color: #337ab7;
 }
 
 .carousel-control {
@@ -3174,7 +3424,7 @@ fieldset[disabled] .btn-inverse.active {
 
 .carousel-control:hover .fa-angle-left,
 .carousel-control:hover .fa-angle-right {
-	background: #2196F3;
+	background: #337ab7;
 }
 
 .carousel-control.right,
@@ -3198,10 +3448,10 @@ fieldset[disabled] .btn-inverse.active {
 	font-size: 20px;
 	margin-top: -16px;
 	margin-left: -16px;
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
 	transition: .1s linear background;
 }
 
@@ -3279,10 +3529,10 @@ form .field.phonenumber input,
 	padding: 16px;
 	height: auto;
 	box-shadow: none;
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
 }
 
 form .field.form-control .form-control.text:focus,
@@ -3294,7 +3544,7 @@ form .field.phonenumber input:focus,
 #MemberLoginForm_LostPasswordForm .text input:focus,
 .menu-wrap .search input[type="text"]:focus {
 	outline: 0;
-	border-color: #2196F3;
+	border-color: #337ab7;
 	box-shadow: none;
 }
 
@@ -3396,24 +3646,6 @@ label {
     Messages
 \*---------------------------------------------*/
 
-.message {
-	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-	margin: 4px 0;
-	display: block;
-	padding: 16px;
-	border-width: 1px;
-	border-style: solid;
-}
-
-.message > p {
-	margin-bottom: 0;
-}
-
-.message > p + p {
-	margin-top: 4px;
-}
-
 /*---------------------------------------------*\
     Search
 \*---------------------------------------------*/
@@ -3460,7 +3692,7 @@ label {
 }
 
 #header #logo .tagline {
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0;
 }
 
@@ -3505,6 +3737,7 @@ label {
 }
 
 #header ul > li > a {
+	font-size: 14px;
 	padding: 0.75em 1.5em;
 	display: block;
 	margin-bottom: 4px;
@@ -3534,7 +3767,7 @@ label {
 	margin: 0;
 	padding: 0.75em 1.5em;
 	background: #fff;
-	color: #212121;
+	color: #222222;
 }
 
 #header .hamburger-menu {
@@ -3553,10 +3786,6 @@ label {
 	font-size: 14px;
 	margin: 0 8px 0 0;
 	display: inline-block;
-}
-
-#header .hamburger-menu .menu-icon i {
-	float: right;
 }
 
 #header .hamburger-menu .menu-icon.search {
@@ -3611,33 +3840,33 @@ label {
 	font-size: 14px;
 }
 
-.sidebar .widget ul {
+.sidebar .navigation ul {
 	margin: 0;
 	padding: 0;
 }
 
-.sidebar .widget ul li {
+.sidebar .navigation ul li {
 	list-style: none;
 }
 
-.sidebar .widget ul li .heading {
+.sidebar .navigation ul li .heading {
 	margin-top: 0;
 }
 
-.sidebar .widget ul li a {
-	color: #2196F3;
+.sidebar .navigation ul li a {
+	color: #337ab7;
 	display: block;
 	padding: 4px 0;
 }
 
-.sidebar .widget ul li a:hover {
-	color: #0a6ebd;
+.sidebar .navigation ul li a:hover {
+	color: #23527c;
 	text-decoration: none;
 }
 
-.sidebar .widget ul li .current,
-.sidebar .widget ul li .current:hover {
-	color: #757575;
+.sidebar .navigation ul li .current,
+.sidebar .navigation ul li .current:hover {
+	color: #333333;
 }
 
 /*---------------------------------------------*\
@@ -3787,7 +4016,7 @@ section.section .backgrounds .right {
 }
 
 .loop .item .meta {
-	color: #BDBDBD;
+	color: #555555;
 }
 
 .loop.no-margin {
@@ -3816,7 +4045,7 @@ section.section .backgrounds .right {
 }
 
 .page .meta {
-	color: #BDBDBD;
+	color: #555555;
 }
 
 /*-------------------------------------------------------*\
@@ -4009,65 +4238,6 @@ section.section .backgrounds .right {
 }
 
 /*---------------------------------------------*\
-    Page Builder
-\*---------------------------------------------*/
-
-.page-item.loop .item {
-	background: no-repeat center center;
-	background-size: cover; /*---------------------------------------------*\
-      Images
-  \*---------------------------------------------*/ /*---------------------------------------------*\
-          Slider
-  \*---------------------------------------------*/
-}
-
-.page-item.loop .item.fixed {
-	background-attachment: fixed;
-}
-
-.page-item.loop .item.last {
-	margin-bottom: 0;
-}
-
-.page-item.loop .item.image {
-	position: relative;
-}
-
-.page-item.loop .item.image img {
-	width: 100%;
-}
-
-.page-item.loop .item.image .hover {
-	display: none;
-}
-
-.page-item.loop .item.slider .item {
-	padding: 0;
-}
-
-.page-item.loop .item.slider .item.next,
-.page-item.loop .item.slider .item.prev {
-	position: absolute;
-}
-
-.page-item.loop .item.slider .carousel-indicators {
-	bottom: 16px;
-}
-
-/*---------------------------------------------*\
-            Components
-\*---------------------------------------------*/
-
-.component.no-margin .row {
-	margin: 0;
-}
-
-.component.no-margin .column {
-	padding: 0;
-	margin: 0;
-}
-
-/*---------------------------------------------*\
     Popout Menu
 \*---------------------------------------------*/
 
@@ -4100,10 +4270,10 @@ section.section .backgrounds .right {
 	width: 40px;
 	text-align: center;
 	line-height: 40px;
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
 	background: #212121;
 	color: #fff;
 }
@@ -4144,7 +4314,7 @@ section.section .backgrounds .right {
 
 .menu-wrap ul li a {
 	text-decoration: none;
-	color: #212121;
+	color: #222222;
 }
 
 .menu-wrap .parent {
@@ -4170,7 +4340,7 @@ section.section .backgrounds .right {
 	line-height: 40px;
 	text-align: center;
 	font-size: 1.3em;
-	color: #212121;
+	color: #222222;
 }
 
 .menu-wrap .parent .open-children i {
@@ -4209,12 +4379,12 @@ section.section .backgrounds .right {
 }
 
 .menu-wrap .search input[type="text"] {
-	border-color: #212121;
+	border-color: #222222;
 	box-shadow: none;
 }
 
 .menu-wrap .search input[type="text"]:focus {
-	border-color: #212121;
+	border-color: #222222;
 }
 
 .menu-wrap .search input[type="submit"] {
@@ -4275,7 +4445,7 @@ section.section .backgrounds .right {
 }
 
 .pricing-table .list {
-	background: #f9f9f9;
+	background: #eeeeee;
 }
 
 .pricing-table .list ul {
@@ -4287,7 +4457,7 @@ section.section .backgrounds .right {
 	list-style: none;
 	margin: 0;
 	padding: 16px 0;
-	border-top: 1px solid #e0e0e0;
+	border-top: 1px solid #d6d6d6;
 }
 
 .pricing-table .list ul li:first-child {
@@ -4646,9 +4816,9 @@ section.section .backgrounds .right {
 }
 
 section.section,
-#disqusComments,
-#Form_ContactForm,
-.component {
+.form,
+.recaptcha,
+#disqusComments {
 	margin: 32px 0;
 }
 
@@ -4662,9 +4832,9 @@ section.section {
 }
 
 section.section,
-#disqusComments,
-#Form_ContactForm,
-.component {
+.form,
+.recaptcha,
+#disqusComments {
 	margin: 32px 0;
 }
 
@@ -4689,22 +4859,40 @@ ul li {
 	margin-bottom: 8px;
 }
 
-.alert.alert-success {
+.alert.alert-success,
+.alert.success,
+.alert.good,
+.alert-success.message,
+.success.message,
+.good.message {
 	margin: 0 0 32px 0;
 }
 
-.alert.alert-info,
-.alert.message {
-	margin: 0 0 32px 0;
-}
-
-.alert.alert-warning {
+.alert.alert-warning,
+.alert.warning,
+.alert-warning.message,
+.warning.message {
 	margin: 0 0 32px 0;
 }
 
 .alert.alert-danger,
-.alert.message.required,
-.alert.message.validation {
+.alert.required,
+.alert.validation,
+.alert.bad,
+.alert.error,
+.alert-danger.message,
+.required.message,
+.validation.message,
+.bad.message,
+.error.message {
+	margin: 0 0 32px 0;
+}
+
+.alert.alert-info,
+.alert.notice,
+.alert-info.message,
+.notice.message,
+.message {
 	margin: 0 0 32px 0;
 }
 
@@ -4747,15 +4935,6 @@ ul li {
 
 #footer {
 	padding: 32px 0;
-}
-
-.message {
-	margin: 8px 0;
-}
-
-#MemberLoginForm_LoginForm,
-#MemberLoginForm_LostPasswordForm {
-	max-width: 50%;
 }
 
 #header {
@@ -4854,18 +5033,6 @@ section.section .backgrounds .right {
 
 .gallery.modal .modal-dialog .nav .next .modal-navigation {
 	padding: 0 32px 0 0;
-}
-
-.page-item.loop .item.image.has-hover .inner:hover .hover {
-	display: block;
-}
-
-.page-item.loop .item.image.has-hover .inner:hover .main {
-	display: none;
-}
-
-.component .container-fluid {
-	padding: 0;
 }
 
 .menu-wrap {
