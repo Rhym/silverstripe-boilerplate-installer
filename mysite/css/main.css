@@ -4067,6 +4067,33 @@ section.section .backgrounds .right {
 */
 
 /*======================================================================*\
+    Security
+\*======================================================================*/
+
+#Security {
+	background: #eeeeee;
+}
+
+#Security .form-container {
+	background: #fff;
+	padding: 32px;
+	margin: 32px 0 0 0;
+}
+
+#Security .form-container .logo {
+	text-align: center;
+	margin: 0 0 32px 0;
+}
+
+#Security .form-container .logo .heading {
+	margin: 0;
+}
+
+#Security .form-container #ForgotPassword {
+	margin-bottom: 0;
+}
+
+/*======================================================================*\
     HomePage
 \*======================================================================*/
 
@@ -5020,6 +5047,15 @@ section.section .backgrounds .right {
 
 .breadcrumbs {
 	margin: 32px 0;
+}
+
+#Security .form-container {
+	padding: 64px;
+	margin: 64px 0 0 0;
+}
+
+#Security .form-container .logo {
+	margin: 0 0 64px 0;
 }
 
 .gallery.modal .modal-dialog {
