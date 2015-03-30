@@ -6,6 +6,11 @@ module.exports = function(grunt) {
                 files: {
                     'mysite/css/main.css': 'mysite/scss/main.scss'
                 }
+            },
+            cms: {
+                files: {
+                    'cms-branding/css/main.css': 'cms-branding/scss/main.scss'
+                }
             }
         },
         autoprefixer: {
@@ -15,6 +20,11 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'mysite/css/main.css': 'mysite/css/main.css'
+                }
+            },
+            cms: {
+                files: {
+                    'cms-branding/css/main.css': 'cms-branding/css/main.css'
                 }
             }
         },
@@ -26,6 +36,11 @@ module.exports = function(grunt) {
                 files: {
                     'mysite/css/': ['mysite/css/main.css']
                 }
+            },
+            cms: {
+                files: {
+                    'cms-branding/css/': ['cms-branding/css/main.css']
+                }
             }
         },
         cssmin: {
@@ -35,12 +50,26 @@ module.exports = function(grunt) {
                 src: ['main.css'],
                 dest: 'mysite/css/',
                 ext: '.min.css'
+            },
+            cms: {
+                expand: true,
+                cwd: 'cms-branding/css/',
+                src: ['main.css'],
+                dest: 'cms-branding/css/',
+                ext: '.min.css'
             }
         },
         watch: {
             dist: {
                 files: ['mysite/scss/**/*.scss'],
                 tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
+                options: {
+                    spawn: false
+                }
+            },
+            cms: {
+                files: ['cms-branding/scss/**/*.scss'],
+                tasks: ['sass:cms', 'autoprefixer:cms', 'cmq:cms', 'cssmin:cms'],
                 options: {
                     spawn: false
                 }
@@ -53,5 +82,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.registerTask('default',['watch:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist', 'watch:dist']);
-    grunt.registerTask('cms',['watch:cms', 'autoprefixer:cms', 'watch:cms']);
+    grunt.registerTask('cms',['watch:cms', 'autoprefixer:cms', 'cmq:cms', 'cssmin:cms', 'watch:cms']);
 }
