@@ -3995,11 +3995,7 @@ section.section .backgrounds .right {
 
 .loop .item {
 	position: relative;
-	margin-bottom: 16px;
-}
-
-.loop .item.last {
-	margin-bottom: 0;
+	margin: 0 0 16px 0;
 }
 
 .loop .item a {
@@ -4077,7 +4073,7 @@ section.section .backgrounds .right {
 #Security .form-container {
 	background: #fff;
 	padding: 32px;
-	margin: 32px 0 0 0;
+	margin: 15px 0;
 }
 
 #Security .form-container .logo {
@@ -5034,11 +5030,7 @@ section.section .backgrounds .right {
 }
 
 .loop .item {
-	margin-bottom: 32px;
-}
-
-.loop .item.last {
-	margin-bottom: 32px;
+	margin: 0 0 32px 0;
 }
 
 .page .image {
@@ -5051,7 +5043,7 @@ section.section .backgrounds .right {
 
 #Security .form-container {
 	padding: 64px;
-	margin: 64px 0 0 0;
+	margin: 64px 0;
 }
 
 #Security .form-container .logo {

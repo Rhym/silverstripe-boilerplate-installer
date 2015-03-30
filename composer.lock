@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3e15feb2b800fa5a237d590425af10e2",
+    "hash": "0eb9b699c058421ebba60d3027808f74",
     "packages": [
         {
             "name": "composer/installers",
@@ -152,12 +152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "419c36969dcb645a1db0e317bf57dbd886e844c9"
+                "reference": "a48a9e1ea3fe0fae886ea86f7c1fbcd682b81641"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/419c36969dcb645a1db0e317bf57dbd886e844c9",
-                "reference": "419c36969dcb645a1db0e317bf57dbd886e844c9",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/a48a9e1ea3fe0fae886ea86f7c1fbcd682b81641",
+                "reference": "a48a9e1ea3fe0fae886ea86f7c1fbcd682b81641",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,47 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-03-26 22:35:21"
+            "time": "2015-03-30 03:12:52"
+        },
+        {
+            "name": "ryanpotter/silverstripe-cms-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
+                "reference": "4ec6b7a1d4aee57716932d05fdbe77f38aea48e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/4ec6b7a1d4aee57716932d05fdbe77f38aea48e9",
+                "reference": "4ec6b7a1d4aee57716932d05fdbe77f38aea48e9",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.0.1,<3.2"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "cms-branding"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Potter",
+                    "homepage": "http://ryanpotter.co.nz/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CMS Theme",
+            "keywords": [
+                "silverstripe",
+                "theme"
+            ],
+            "time": "2015-03-30 03:18:03"
         },
         {
             "name": "silverstripe/cms",
@@ -403,7 +443,8 @@
     "stability-flags": {
         "silverstripe/cms": 0,
         "silverstripe/framework": 0,
-        "ryanpotter/silverstripe-boilerplate": 20
+        "ryanpotter/silverstripe-boilerplate": 20,
+        "ryanpotter/silverstripe-cms-theme": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
