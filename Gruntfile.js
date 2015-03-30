@@ -44,6 +44,9 @@ module.exports = function(grunt) {
             }
         },
         cssmin: {
+            options: {
+                rebase: false
+            },
             dist: {
                 expand: true,
                 cwd: 'mysite/css/',
