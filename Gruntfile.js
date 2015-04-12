@@ -11,6 +11,11 @@ module.exports = function(grunt) {
                 files: {
                     'cms-branding/css/main.css': 'cms-branding/scss/main.scss'
                 }
+            },
+            editor: {
+                files: {
+                    'mysite/css/editor.css': 'mysite/scss/editor.scss'
+                }
             }
         },
         autoprefixer: {
@@ -25,6 +30,11 @@ module.exports = function(grunt) {
             cms: {
                 files: {
                     'cms-branding/css/main.css': 'cms-branding/css/main.css'
+                }
+            },
+            editor: {
+                files: {
+                    'mysite/css/editor.css': 'mysite/css/editor.css'
                 }
             }
         },
@@ -76,6 +86,13 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false
                 }
+            },
+            editor: {
+                files: ['mysite/scss/editor.scss'],
+                tasks: ['sass:editor', 'autoprefixer:editor'],
+                options: {
+                    spawn: false
+                }
             }
         }
     });
@@ -86,4 +103,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.registerTask('default',['watch:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist', 'watch:dist']);
     grunt.registerTask('cms',['watch:cms', 'autoprefixer:cms', 'cmq:cms', 'cssmin:cms', 'watch:cms']);
+    grunt.registerTask('editor',['watch:editor', 'autoprefixer:editor', 'cmq:cms', 'watch:editor']);
 }

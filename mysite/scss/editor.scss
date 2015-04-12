@@ -1,0 +1,81 @@
+@import '../../boilerplate/scss/functions';
+@import 'functions';
+@import 'vars';
+
+/*!
+======================================================================
+    Editors
+======================================================================
+*/
+
+/*-------------------------------------------------------*\
+    Heading
+\*-------------------------------------------------------*/
+
+.h1 {
+    font-size: 2em;
+}
+.h2 {
+    font-size: 1.5em;
+}
+.h3 {
+    font-size: 1.17em;
+}
+
+/*-------------------------------------------------------*\
+    Text
+\*-------------------------------------------------------*/
+
+.text-primary {
+    color: $brand-primary;
+}
+.text-secondary {
+    color: $brand-secondary;
+}
+
+/*-------------------------------------------------------*\
+    Button
+\*-------------------------------------------------------*/
+
+.mceContentBody {
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.75em 1em;
+        border-radius: 2px;
+        &.btn-default {
+            background: $brand-default;
+            color: $brand-default-color;
+            border-color: $brand-default;
+            &.btn-bordered {
+                color: $brand-default;
+            }
+        }
+        &.btn-primary {
+            background: $brand-primary;
+            color: $brand-primary-color;
+            border-color: $brand-primary;
+            &.btn-bordered {
+                color: $brand-primary;
+            }
+        }
+        &.btn-secondary {
+            background: $brand-secondary;
+            color: $brand-secondary-color;
+            border-color: $brand-secondary;
+            &.btn-bordered {
+                color: $brand-secondary;
+            }
+        }
+        &.btn-bordered {
+            background: transparent none;
+            border: 1px solid;
+        }
+        &.btn-lg {
+            font-size: 1.4em;
+        }
+        &.btn-sm {
+            font-size: 0.9em;
+        }
+    }
+}
