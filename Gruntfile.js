@@ -3,6 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         directories: {
             project: 'mysite',
+            boilerplate: 'boilerplate',
             cmsBranding: 'cms-branding'
         },
         pkg: grunt.file.readJSON('package.json'),
@@ -138,6 +139,13 @@ module.exports = function(grunt) {
         watch: {
             dist: {
                 files: ['<%= directories.project %>/scss/**/*.scss'],
+                tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
+                options: {
+                    spawn: false
+                }
+            },
+            boilerplate: {
+                files: ['<%= directories.boilerplate %>/scss/**/*.scss'],
                 tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
                 options: {
                     spawn: false
