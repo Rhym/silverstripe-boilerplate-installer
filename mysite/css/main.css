@@ -4182,6 +4182,11 @@ section.section .backgrounds .right {
     Gallery
 \*---------------------------------------------*/
 
+.gallery.loop { /**
+   * Prev / Next
+   */
+}
+
 .gallery.loop .item {
 	display: block;
 }
@@ -4194,6 +4199,41 @@ section.section .backgrounds .right {
 .gallery.loop .item:active {
 	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
+}
+
+.gallery.loop .owl-controls {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+}
+
+.gallery.loop .owl-controls .owl-prev,
+.gallery.loop .owl-controls .owl-next {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	background: transparent none;
+	font-size: 50px;
+	line-height: 1em;
+	margin: -0.5em 0 0 0.5em;
+}
+
+.gallery.loop .owl-controls .owl-prev:hover,
+.gallery.loop .owl-controls .owl-prev:active,
+.gallery.loop .owl-controls .owl-next:hover,
+.gallery.loop .owl-controls .owl-next:active {
+	background: transparent none;
+}
+
+.gallery.loop .owl-controls .owl-next {
+	right: 0;
+	left: auto;
+	margin: -0.5em 0.5em 0 0;
 }
 
 /*---------------------------------------------*\
@@ -4984,6 +5024,10 @@ section.section .backgrounds .right {
 
 #Security .form-container .logo {
 	margin: 0 0 64px 0;
+}
+
+.gallery.loop .owl-controls {
+	display: block;
 }
 
 .menu-wrap {
