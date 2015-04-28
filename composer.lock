@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "13c743722b571d0c4a607aa245c75e3e",
+    "hash": "0eb9b699c058421ebba60d3027808f74",
     "packages": [
         {
             "name": "composer/installers",
@@ -152,12 +152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "230aeb8a3527bd4069471031ce9f389fb01bc430"
+                "reference": "37d5e85c4b72501c6d088ffb19375ec9cc28507a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/230aeb8a3527bd4069471031ce9f389fb01bc430",
-                "reference": "230aeb8a3527bd4069471031ce9f389fb01bc430",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/37d5e85c4b72501c6d088ffb19375ec9cc28507a",
+                "reference": "37d5e85c4b72501c6d088ffb19375ec9cc28507a",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-04-20 02:56:45"
+            "time": "2015-04-28 22:00:39"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -192,12 +192,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "8f68b1adc02d47beef2c0ed2b10f23a7f97fe616"
+                "reference": "e0ccaa8a724cd48d63d8e79d4e83a459c5e852f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/8f68b1adc02d47beef2c0ed2b10f23a7f97fe616",
-                "reference": "8f68b1adc02d47beef2c0ed2b10f23a7f97fe616",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/e0ccaa8a724cd48d63d8e79d4e83a459c5e852f2",
+                "reference": "e0ccaa8a724cd48d63d8e79d4e83a459c5e852f2",
                 "shasum": ""
             },
             "require": {
@@ -224,7 +224,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-04-02 02:08:13"
+            "time": "2015-04-21 23:32:43"
         },
         {
             "name": "silverstripe/cms",
