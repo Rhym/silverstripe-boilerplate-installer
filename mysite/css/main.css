@@ -2571,49 +2571,38 @@ ul.deletelist li:before {
  * Alerts have many &.classes due to supporting SS default messages.
  */
 
-.alert,
-.message {
-	display: block;
-	padding: 16px;
-	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-.alert > h1,
-.alert > h2,
-.alert > h3,
-.alert > h4,
-.alert > h5,
-.alert > h6,
-.message > h1,
-.message > h2,
-.message > h3,
-.message > h4,
-.message > h5,
-.message > h6 {
-	margin-top: 0;
-}
-
-.alert a,
-.message a {
-	text-decoration: underline;
-}
-
-.alert p:last-child,
-.message p:last-child {
-	margin-bottom: 0;
-}
-
 .alert.alert-success,
 .alert.success,
 .alert.good,
 .alert-success.message,
 .success.message,
 .good.message {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	margin: 0 0 16px 0;
 	background-color: #dff0d8;
 	border: 1px solid #b5c6a8;
 	color: #3c763d;
+}
+
+.alert.alert-success a,
+.alert.success a,
+.alert.good a,
+.alert-success.message a,
+.success.message a,
+.good.message a {
+	text-decoration: underline;
+}
+
+.alert.alert-success p:last-child,
+.alert.success p:last-child,
+.alert.good p:last-child,
+.alert-success.message p:last-child,
+.success.message p:last-child,
+.good.message p:last-child {
+	margin-bottom: 0;
 }
 
 .alert.alert-success hr,
@@ -2661,6 +2650,7 @@ ul.deletelist li:before {
 .good.message h4,
 .good.message h5,
 .good.message h6 {
+	margin-top: 0;
 	color: #3c763d;
 }
 
@@ -2686,18 +2676,36 @@ ul.deletelist li:before {
 .alert.notice,
 .alert-info.message,
 .notice.message { /**
-     * Use an extension so that the .message class can be set as info by default.
-     */
+   * Use an extension so that the .message class can be set as info by default.
+   */
 }
 
 .alert.alert-warning,
 .alert.warning,
 .alert-warning.message,
 .warning.message {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	margin: 0 0 16px 0;
 	background-color: #fcf8e3;
 	border: 1px solid #d4c7ad;
 	color: #8a6d3b;
+}
+
+.alert.alert-warning a,
+.alert.warning a,
+.alert-warning.message a,
+.warning.message a {
+	text-decoration: underline;
+}
+
+.alert.alert-warning p:last-child,
+.alert.warning p:last-child,
+.alert-warning.message p:last-child,
+.warning.message p:last-child {
+	margin-bottom: 0;
 }
 
 .alert.alert-warning hr,
@@ -2731,6 +2739,7 @@ ul.deletelist li:before {
 .warning.message h4,
 .warning.message h5,
 .warning.message h6 {
+	margin-top: 0;
 	color: #8a6d3b;
 }
 
@@ -2758,10 +2767,40 @@ ul.deletelist li:before {
 .validation.message,
 .bad.message,
 .error.message {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	margin: 0 0 16px 0;
 	background-color: #f2dede;
 	border: 1px solid #c7adb1;
 	color: #a94442;
+}
+
+.alert.alert-danger a,
+.alert.required a,
+.alert.validation a,
+.alert.bad a,
+.alert.error a,
+.alert-danger.message a,
+.required.message a,
+.validation.message a,
+.bad.message a,
+.error.message a {
+	text-decoration: underline;
+}
+
+.alert.alert-danger p:last-child,
+.alert.required p:last-child,
+.alert.validation p:last-child,
+.alert.bad p:last-child,
+.alert.error p:last-child,
+.alert-danger.message p:last-child,
+.required.message p:last-child,
+.validation.message p:last-child,
+.bad.message p:last-child,
+.error.message p:last-child {
+	margin-bottom: 0;
 }
 
 .alert.alert-danger hr,
@@ -2837,6 +2876,7 @@ ul.deletelist li:before {
 .error.message h4,
 .error.message h5,
 .error.message h6 {
+	margin-top: 0;
 	color: #a94442;
 }
 
@@ -2883,10 +2923,28 @@ ul.deletelist li:before {
 .alert-info.message,
 .notice.message,
 .message {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	margin: 0 0 16px 0;
 	background-color: #d9edf7;
 	border: 1px solid #9fc5cc;
 	color: #31708f;
+}
+
+.alert.alert-info a,
+.alert.notice a,
+.alert-info.message a,
+.notice.message a,
+.message a {
+	text-decoration: underline;
+}
+
+.alert.alert-info p:last-child,
+.alert.notice p:last-child,
+.message p:last-child {
+	margin-bottom: 0;
 }
 
 .alert.alert-info hr,
@@ -2927,6 +2985,7 @@ ul.deletelist li:before {
 .alert-info.message h6,
 .notice.message h6,
 .message h6 {
+	margin-top: 0;
 	color: #31708f;
 }
 
@@ -3502,7 +3561,9 @@ form .field.phonenumber input,
 	padding: 16px;
 	height: auto;
 	box-shadow: none;
-	border-radius: 4px;
+	border-radius: 4px; /**
+   * Javascript validation
+   */
 }
 
 form .field.form-control .form-control.text:focus,
@@ -3516,6 +3577,61 @@ form .field.phonenumber input:focus,
 	outline: 0;
 	border-color: #337ab7;
 	box-shadow: none;
+}
+
+form .field.form-control .parsley-error.form-control.text,
+form .field.form-control .parsley-error.form-control.textarea,
+form .field.confirmedpassword input.parsley-error.password,
+form .field.creditcard input.parsley-error,
+form .field.phonenumber input.parsley-error,
+#MemberLoginForm_LoginForm .text input.parsley-error,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error,
+.menu-wrap .search input.parsley-error[type="text"] {
+	border-color: #d9534f;
+}
+
+form .field.form-control .parsley-error.form-control.text::-webkit-input-placeholder,
+form .field.form-control .parsley-error.form-control.textarea::-webkit-input-placeholder,
+form .field.confirmedpassword input.parsley-error.password::-webkit-input-placeholder,
+form .field.creditcard input.parsley-error::-webkit-input-placeholder,
+form .field.phonenumber input.parsley-error::-webkit-input-placeholder,
+#MemberLoginForm_LoginForm .text input.parsley-error::-webkit-input-placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error::-webkit-input-placeholder,
+.menu-wrap .search input.parsley-error[type="text"]::-webkit-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.form-control .parsley-error.form-control.text::-moz-placeholder,
+form .field.form-control .parsley-error.form-control.textarea::-moz-placeholder,
+form .field.confirmedpassword input.parsley-error.password::-moz-placeholder,
+form .field.creditcard input.parsley-error::-moz-placeholder,
+form .field.phonenumber input.parsley-error::-moz-placeholder,
+#MemberLoginForm_LoginForm .text input.parsley-error::-moz-placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error::-moz-placeholder,
+.menu-wrap .search input.parsley-error[type="text"]::-moz-placeholder {
+	color: #d9534f;
+}
+
+form .field.form-control .parsley-error.form-control.text:-ms-input-placeholder,
+form .field.form-control .parsley-error.form-control.textarea:-ms-input-placeholder,
+form .field.confirmedpassword input.parsley-error.password:-ms-input-placeholder,
+form .field.creditcard input.parsley-error:-ms-input-placeholder,
+form .field.phonenumber input.parsley-error:-ms-input-placeholder,
+#MemberLoginForm_LoginForm .text input.parsley-error:-ms-input-placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error:-ms-input-placeholder,
+.menu-wrap .search input.parsley-error[type="text"]:-ms-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.form-control .parsley-error.form-control.text::placeholder,
+form .field.form-control .parsley-error.form-control.textarea::placeholder,
+form .field.confirmedpassword input.parsley-error.password::placeholder,
+form .field.creditcard input.parsley-error::placeholder,
+form .field.phonenumber input.parsley-error::placeholder,
+#MemberLoginForm_LoginForm .text input.parsley-error::placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error::placeholder,
+.menu-wrap .search input.parsley-error[type="text"]::placeholder {
+	color: #d9534f;
 }
 
 textarea {
@@ -3625,6 +3741,56 @@ label {
 #MemberLoginForm_LoginForm .text input,
 #MemberLoginForm_LostPasswordForm .text input {
 	margin-bottom: 16px;
+}
+
+/*---------------------------------------------*\
+    ParsleyJS - Validation
+\*---------------------------------------------*/
+
+.parsley-errors-list {
+	padding: 0;
+	margin: 0;
+}
+
+.parsley-errors-list li {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 16px 0;
+	background-color: #f2dede;
+	border: 1px solid #c7adb1;
+	color: #a94442;
+}
+
+.parsley-errors-list li a {
+	text-decoration: underline;
+}
+
+.parsley-errors-list li p:last-child {
+	margin-bottom: 0;
+}
+
+.parsley-errors-list li hr {
+	border-top-color: #bda4a8;
+}
+
+.parsley-errors-list li h1,
+.parsley-errors-list li h2,
+.parsley-errors-list li h3,
+.parsley-errors-list li h4,
+.parsley-errors-list li h5,
+.parsley-errors-list li h6 {
+	margin-top: 0;
+	color: #a94442;
+}
+
+.parsley-errors-list li .alert-link {
+	color: #983d3b;
+}
+
+.parsley-errors-list li a {
+	color: #a94442;
 }
 
 /*---------------------------------------------*\
@@ -4894,6 +5060,10 @@ ul li {
 
 .recaptcha {
 	margin: 32px 0;
+}
+
+.parsley-errors-list li {
+	margin: 0 0 32px 0;
 }
 
 #header {
