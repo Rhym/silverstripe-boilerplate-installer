@@ -20,6 +20,7 @@
     "unclecheese/betterbuttons": "1.2.*",
     "ryanpotter/silverstripe-boilerplate": "dev-master",
     "ryanpotter/silverstripe-cms-theme": "dev-master",
-    "google/recaptcha": "~1.1"
+    "google/recaptcha": "~1.1",
+    "drewm/mailchimp-api": "~1.0"
   }
 }
