@@ -1,9 +1,7 @@
-##Clone
-
-Clone the repo, and install the composer biz set in composer.json.
+##Install
 
 ```
-git clone https://github.com/Rhym/silverstripe-boilerplate-installer.git "myNewProject"
+composer create-project ryanpotter/silverstripe-boilerplate-installer myNewProject
 ```
 ```
 cd myNewProject/
