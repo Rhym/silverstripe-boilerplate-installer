@@ -1,6 +1,6 @@
 {
   "name": "ryanpotter/silverstripe-boilerplate-installer",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Boilerplate Installer",
   "type": "silverstripe-module",
   "keywords": ["silverstripe", "theme"],
