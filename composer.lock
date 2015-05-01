@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "688c0c632777448e3ba6a1bc30809d32",
+    "hash": "7a613743e4a7f1eaeb6516f6ce55340d",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "3ba24e603d46acc3fb72d3f7767fa476ee776d26"
+                "reference": "e94f9626d9a5d9251d5bdfc03c358ffac46e27c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/3ba24e603d46acc3fb72d3f7767fa476ee776d26",
-                "reference": "3ba24e603d46acc3fb72d3f7767fa476ee776d26",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/e94f9626d9a5d9251d5bdfc03c358ffac46e27c8",
+                "reference": "e94f9626d9a5d9251d5bdfc03c358ffac46e27c8",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-04-28 23:02:32"
+            "time": "2015-04-30 04:18:27"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",

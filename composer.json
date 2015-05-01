@@ -23,9 +23,5 @@
     "ryanpotter/silverstripe-cms-theme": "dev-master",
     "google/recaptcha": "~1.1",
     "drewm/mailchimp-api": "~1.0"
-  },
-  "config": {
-    "preferred-install": "dist"
-  },
-  "minimum-stability": "dev"
+  }
 }
