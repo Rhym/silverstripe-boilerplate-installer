@@ -6,17 +6,17 @@
 class SiteConfigExtension extends DataExtension {
 
     private static $db = array(
-        'ShowAssetAdmin' => 'Boolean',
+        'ShowAssetAdmin'    => 'Boolean',
         'ShowSecurityAdmin' => 'Boolean',
-        'ShowReportAdmin' => 'Boolean',
-        'ShowHelpLink' => 'Boolean'
+        'ShowReportAdmin'   => 'Boolean',
+        'ShowHelpLink'      => 'Boolean'
     );
 
     private static $defaults = array(
-        'ShowAssetAdmin' => true,
+        'ShowAssetAdmin'    => true,
         'ShowSecurityAdmin' => true,
-        'ShowReportAdmin' => false,
-        'ShowHelpLink' => false
+        'ShowReportAdmin'   => false,
+        'ShowHelpLink'      => false
     );
 
     /**
@@ -24,26 +24,26 @@ class SiteConfigExtension extends DataExtension {
      */
     public function updateCMSFields(FieldList $fields) {
 
-        /* =========================================
+        /** =========================================
          * Settings
-         =========================================*/
+        ===========================================*/
 
         if (!$fields->fieldByName('Root.Settings')){
-            $fields->addFieldToTab('Root', new TabSet('Settings'));
+            $fields->addFieldToTab('Root', TabSet::create('Settings'));
         }
 
-        /* =========================================
+        /** -----------------------------------------
          * CMS
-         =========================================*/
+        -------------------------------------------*/
 
         $fields->findOrMakeTab('Root.Settings.CMS', 'CMS');
         $fields->addFieldsToTab('Root.Settings.CMS',
             array(
-                new HeaderField('', 'CMS Menu'),
-                new CheckboxField('ShowAssetAdmin'),
-                new CheckboxField('ShowSecurityAdmin'),
-                new CheckboxField('ShowReportAdmin'),
-                new CheckboxField('ShowHelpLink')
+                HeaderField::create('', 'CMS Menu'),
+                CheckboxField::create('ShowAssetAdmin'),
+                CheckboxField::create('ShowSecurityAdmin'),
+                CheckboxField::create('ShowReportAdmin'),
+                CheckboxField::create('ShowHelpLink')
             )
         );
 

@@ -1018,9 +1018,7 @@ table th[class*="col-"] {
 	min-height: 0.01%;
 }
 
-.btn,
-#MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LostPasswordForm .action {
+.btn {
 	display: inline-block;
 	margin-bottom: 0;
 	font-weight: normal;
@@ -1043,63 +1041,33 @@ table th[class*="col-"] {
 }
 
 .btn:focus,
-#MemberLoginForm_LoginForm .action:focus,
-#MemberLoginForm_LostPasswordForm .action:focus,
 .btn.focus,
-#MemberLoginForm_LoginForm .focus.action,
-#MemberLoginForm_LostPasswordForm .focus.action,
 .btn:active:focus,
-#MemberLoginForm_LoginForm .action:active:focus,
-#MemberLoginForm_LostPasswordForm .action:active:focus,
 .btn:active.focus,
-#MemberLoginForm_LoginForm .action:active.focus,
-#MemberLoginForm_LostPasswordForm .action:active.focus,
 .btn.active:focus,
-#MemberLoginForm_LoginForm .active.action:focus,
-#MemberLoginForm_LostPasswordForm .active.action:focus,
-.btn.active.focus,
-#MemberLoginForm_LoginForm .active.focus.action,
-#MemberLoginForm_LostPasswordForm .active.focus.action {
+.btn.active.focus {
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
 	outline-offset: -2px;
 }
 
 .btn:hover,
-#MemberLoginForm_LoginForm .action:hover,
-#MemberLoginForm_LostPasswordForm .action:hover,
 .btn:focus,
-#MemberLoginForm_LoginForm .action:focus,
-#MemberLoginForm_LostPasswordForm .action:focus,
-.btn.focus,
-#MemberLoginForm_LoginForm .focus.action,
-#MemberLoginForm_LostPasswordForm .focus.action {
+.btn.focus {
 	color: #333;
 	text-decoration: none;
 }
 
 .btn:active,
-#MemberLoginForm_LoginForm .action:active,
-#MemberLoginForm_LostPasswordForm .action:active,
-.btn.active,
-#MemberLoginForm_LoginForm .active.action,
-#MemberLoginForm_LostPasswordForm .active.action {
+.btn.active {
 	outline: 0;
 	background-image: none;
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .btn.disabled,
-#MemberLoginForm_LoginForm .disabled.action,
-#MemberLoginForm_LostPasswordForm .disabled.action,
 .btn[disabled],
-#MemberLoginForm_LoginForm [disabled].action,
-#MemberLoginForm_LostPasswordForm [disabled].action,
-fieldset[disabled] .btn,
-fieldset[disabled] #MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LoginForm fieldset[disabled] .action,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .action,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .action {
+fieldset[disabled] .btn {
 	cursor: not-allowed;
 	pointer-events: none;
 	opacity: 0.65;
@@ -1157,122 +1125,52 @@ fieldset[disabled] .btn-default.active {
 	background-color: #333;
 }
 
-.btn-primary,
-#MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LostPasswordForm .action {
+.btn-primary {
 	color: #fff;
 	background-color: #337ab7;
 	border-color: #2e6da4;
 }
 
 .btn-primary:hover,
-#MemberLoginForm_LoginForm .action:hover,
-#MemberLoginForm_LostPasswordForm .action:hover,
 .btn-primary:focus,
-#MemberLoginForm_LoginForm .action:focus,
-#MemberLoginForm_LostPasswordForm .action:focus,
 .btn-primary.focus,
-#MemberLoginForm_LoginForm .focus.action,
-#MemberLoginForm_LostPasswordForm .focus.action,
 .btn-primary:active,
-#MemberLoginForm_LoginForm .action:active,
-#MemberLoginForm_LostPasswordForm .action:active,
 .btn-primary.active,
-#MemberLoginForm_LoginForm .active.action,
-#MemberLoginForm_LostPasswordForm .active.action,
-.open > .btn-primary.dropdown-toggle,
-#MemberLoginForm_LoginForm .open > .dropdown-toggle.action,
-#MemberLoginForm_LostPasswordForm .open > .dropdown-toggle.action {
+.open > .btn-primary.dropdown-toggle {
 	color: #fff;
 	background-color: #286090;
 	border-color: #204d74;
 }
 
 .btn-primary:active,
-#MemberLoginForm_LoginForm .action:active,
-#MemberLoginForm_LostPasswordForm .action:active,
 .btn-primary.active,
-#MemberLoginForm_LoginForm .active.action,
-#MemberLoginForm_LostPasswordForm .active.action,
-.open > .btn-primary.dropdown-toggle,
-#MemberLoginForm_LoginForm .open > .dropdown-toggle.action,
-#MemberLoginForm_LostPasswordForm .open > .dropdown-toggle.action {
+.open > .btn-primary.dropdown-toggle {
 	background-image: none;
 }
 
 .btn-primary.disabled,
-#MemberLoginForm_LoginForm .disabled.action,
-#MemberLoginForm_LostPasswordForm .disabled.action,
 .btn-primary.disabled:hover,
-#MemberLoginForm_LoginForm .disabled.action:hover,
-#MemberLoginForm_LostPasswordForm .disabled.action:hover,
 .btn-primary.disabled:focus,
-#MemberLoginForm_LoginForm .disabled.action:focus,
-#MemberLoginForm_LostPasswordForm .disabled.action:focus,
 .btn-primary.disabled.focus,
-#MemberLoginForm_LoginForm .disabled.focus.action,
-#MemberLoginForm_LostPasswordForm .disabled.focus.action,
 .btn-primary.disabled:active,
-#MemberLoginForm_LoginForm .disabled.action:active,
-#MemberLoginForm_LostPasswordForm .disabled.action:active,
 .btn-primary.disabled.active,
-#MemberLoginForm_LoginForm .disabled.active.action,
-#MemberLoginForm_LostPasswordForm .disabled.active.action,
 .btn-primary[disabled],
-#MemberLoginForm_LoginForm [disabled].action,
-#MemberLoginForm_LostPasswordForm [disabled].action,
 .btn-primary[disabled]:hover,
-#MemberLoginForm_LoginForm [disabled].action:hover,
-#MemberLoginForm_LostPasswordForm [disabled].action:hover,
 .btn-primary[disabled]:focus,
-#MemberLoginForm_LoginForm [disabled].action:focus,
-#MemberLoginForm_LostPasswordForm [disabled].action:focus,
 .btn-primary[disabled].focus,
-#MemberLoginForm_LoginForm [disabled].focus.action,
-#MemberLoginForm_LostPasswordForm [disabled].focus.action,
 .btn-primary[disabled]:active,
-#MemberLoginForm_LoginForm [disabled].action:active,
-#MemberLoginForm_LostPasswordForm [disabled].action:active,
 .btn-primary[disabled].active,
-#MemberLoginForm_LoginForm [disabled].active.action,
-#MemberLoginForm_LostPasswordForm [disabled].active.action,
 fieldset[disabled] .btn-primary,
-fieldset[disabled] #MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LoginForm fieldset[disabled] .action,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .action,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .action,
 fieldset[disabled] .btn-primary:hover,
-fieldset[disabled] #MemberLoginForm_LoginForm .action:hover,
-#MemberLoginForm_LoginForm fieldset[disabled] .action:hover,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .action:hover,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .action:hover,
 fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] #MemberLoginForm_LoginForm .action:focus,
-#MemberLoginForm_LoginForm fieldset[disabled] .action:focus,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .action:focus,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .action:focus,
 fieldset[disabled] .btn-primary.focus,
-fieldset[disabled] #MemberLoginForm_LoginForm .focus.action,
-#MemberLoginForm_LoginForm fieldset[disabled] .focus.action,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .focus.action,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .focus.action,
 fieldset[disabled] .btn-primary:active,
-fieldset[disabled] #MemberLoginForm_LoginForm .action:active,
-#MemberLoginForm_LoginForm fieldset[disabled] .action:active,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .action:active,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .action:active,
-fieldset[disabled] .btn-primary.active,
-fieldset[disabled] #MemberLoginForm_LoginForm .active.action,
-#MemberLoginForm_LoginForm fieldset[disabled] .active.action,
-fieldset[disabled] #MemberLoginForm_LostPasswordForm .active.action,
-#MemberLoginForm_LostPasswordForm fieldset[disabled] .active.action {
+fieldset[disabled] .btn-primary.active {
 	background-color: #337ab7;
 	border-color: #2e6da4;
 }
 
-.btn-primary .badge,
-#MemberLoginForm_LoginForm .action .badge,
-#MemberLoginForm_LostPasswordForm .action .badge {
+.btn-primary .badge {
 	color: #337ab7;
 	background-color: #fff;
 }
@@ -1828,36 +1726,12 @@ button.close {
 	clear: both;
 }
 
-.modal-footer .btn + .btn,
-.modal-footer #MemberLoginForm_LoginForm .action + .btn,
-#MemberLoginForm_LoginForm .modal-footer .action + .btn,
-.modal-footer #MemberLoginForm_LostPasswordForm .action + .btn,
-#MemberLoginForm_LostPasswordForm .modal-footer .action + .btn,
-.modal-footer #MemberLoginForm_LoginForm .btn + .action,
-#MemberLoginForm_LoginForm .modal-footer .btn + .action,
-.modal-footer #MemberLoginForm_LoginForm .action + .action,
-#MemberLoginForm_LoginForm .modal-footer .action + .action,
-.modal-footer #MemberLoginForm_LostPasswordForm .btn + .action,
-#MemberLoginForm_LostPasswordForm .modal-footer .btn + .action,
-.modal-footer #MemberLoginForm_LostPasswordForm .action + .action,
-#MemberLoginForm_LostPasswordForm .modal-footer .action + .action {
+.modal-footer .btn + .btn {
 	margin-left: 5px;
 	margin-bottom: 0;
 }
 
-.modal-footer .btn-group .btn + .btn,
-.modal-footer .btn-group #MemberLoginForm_LoginForm .action + .btn,
-#MemberLoginForm_LoginForm .modal-footer .btn-group .action + .btn,
-.modal-footer .btn-group #MemberLoginForm_LostPasswordForm .action + .btn,
-#MemberLoginForm_LostPasswordForm .modal-footer .btn-group .action + .btn,
-.modal-footer .btn-group #MemberLoginForm_LoginForm .btn + .action,
-#MemberLoginForm_LoginForm .modal-footer .btn-group .btn + .action,
-.modal-footer .btn-group #MemberLoginForm_LoginForm .action + .action,
-#MemberLoginForm_LoginForm .modal-footer .btn-group .action + .action,
-.modal-footer .btn-group #MemberLoginForm_LostPasswordForm .btn + .action,
-#MemberLoginForm_LostPasswordForm .modal-footer .btn-group .btn + .action,
-.modal-footer .btn-group #MemberLoginForm_LostPasswordForm .action + .action,
-#MemberLoginForm_LostPasswordForm .modal-footer .btn-group .action + .action {
+.modal-footer .btn-group .btn + .btn {
 	margin-left: -1px;
 }
 
@@ -2056,11 +1930,7 @@ button.close {
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.carousel-caption .btn,
-.carousel-caption #MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LoginForm .carousel-caption .action,
-.carousel-caption #MemberLoginForm_LostPasswordForm .action,
-#MemberLoginForm_LostPasswordForm .carousel-caption .action {
+.carousel-caption .btn {
 	text-shadow: none;
 }
 
@@ -2171,18 +2041,6 @@ button.close {
     Mixins
 \*======================================================================*/
 
-/*======================================================================*\
-    Sizing
-\*======================================================================*/
-
-/*-------------------------------------------------------*\
-    Margin
-\*-------------------------------------------------------*/
-
-/*-------------------------------------------------------*\
-    Padding
-\*-------------------------------------------------------*/
-
 /*---------------------------------------------*\
     Alerts
 \*---------------------------------------------*/
@@ -2194,6 +2052,18 @@ button.close {
 /*---------------------------------------------*\
     Buttons
 \*---------------------------------------------*/
+
+/*======================================================================*\
+    Sizing
+\*======================================================================*/
+
+/*-------------------------------------------------------*\
+    Margin
+\*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*\
+    Padding
+\*-------------------------------------------------------*/
 
 /*---------------------------------------------*\
     Transformations
@@ -2211,18 +2081,6 @@ button.close {
     Mixins
 \*======================================================================*/
 
-/*======================================================================*\
-    Sizing
-\*======================================================================*/
-
-/*-------------------------------------------------------*\
-    Margin
-\*-------------------------------------------------------*/
-
-/*-------------------------------------------------------*\
-    Padding
-\*-------------------------------------------------------*/
-
 /*---------------------------------------------*\
     Alerts
 \*---------------------------------------------*/
@@ -2234,6 +2092,18 @@ button.close {
 /*---------------------------------------------*\
     Buttons
 \*---------------------------------------------*/
+
+/*======================================================================*\
+    Sizing
+\*======================================================================*/
+
+/*-------------------------------------------------------*\
+    Margin
+\*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*\
+    Padding
+\*-------------------------------------------------------*/
 
 /*---------------------------------------------*\
     Transformations
@@ -2531,18 +2401,33 @@ img.center {
     Lists
 \*---------------------------------------------*/
 
-ul.checklist,
+ul.checklist {
+	padding-left: 0;
+}
+
+ul.checklist li {
+	padding-left: 1.2em;
+	list-style: none;
+}
+
+ul.checklist li:before {
+	content: "";
+	font-family: FontAwesome;
+	color: #5cb85c;
+	display: inline-block;
+	margin-left: -1.2em;
+	width: 1.2em;
+}
+
 ul.deletelist {
 	padding-left: 0;
 }
 
-ul.checklist li,
 ul.deletelist li {
 	padding-left: 1.2em;
 	list-style: none;
 }
 
-ul.checklist li:before,
 ul.deletelist li:before {
 	content: "";
 	font-family: FontAwesome;
@@ -2573,10 +2458,7 @@ ul.deletelist li:before {
 
 .alert.alert-success,
 .alert.success,
-.alert.good,
-.alert-success.message,
-.success.message,
-.good.message {
+.alert.good {
 	display: block;
 	padding: 16px;
 	border-radius: 2px;
@@ -2589,28 +2471,19 @@ ul.deletelist li:before {
 
 .alert.alert-success a,
 .alert.success a,
-.alert.good a,
-.alert-success.message a,
-.success.message a,
-.good.message a {
+.alert.good a {
 	text-decoration: underline;
 }
 
 .alert.alert-success p:last-child,
 .alert.success p:last-child,
-.alert.good p:last-child,
-.alert-success.message p:last-child,
-.success.message p:last-child,
-.good.message p:last-child {
+.alert.good p:last-child {
 	margin-bottom: 0;
 }
 
 .alert.alert-success hr,
 .alert.success hr,
-.alert.good hr,
-.alert-success.message hr,
-.success.message hr,
-.good.message hr {
+.alert.good hr {
 	border-top-color: #abbc9f;
 }
 
@@ -2631,59 +2504,78 @@ ul.deletelist li:before {
 .alert.good h3,
 .alert.good h4,
 .alert.good h5,
-.alert.good h6,
-.alert-success.message h1,
-.alert-success.message h2,
-.alert-success.message h3,
-.alert-success.message h4,
-.alert-success.message h5,
-.alert-success.message h6,
-.success.message h1,
-.success.message h2,
-.success.message h3,
-.success.message h4,
-.success.message h5,
-.success.message h6,
-.good.message h1,
-.good.message h2,
-.good.message h3,
-.good.message h4,
-.good.message h5,
-.good.message h6 {
+.alert.good h6 {
 	margin-top: 0;
 	color: #3c763d;
 }
 
 .alert.alert-success .alert-link,
 .alert.success .alert-link,
-.alert.good .alert-link,
-.alert-success.message .alert-link,
-.success.message .alert-link,
-.good.message .alert-link {
+.alert.good .alert-link {
 	color: #366a36;
 }
 
 .alert.alert-success a,
 .alert.success a,
-.alert.good a,
-.alert-success.message a,
-.success.message a,
-.good.message a {
+.alert.good a {
 	color: #3c763d;
 }
 
 .alert.alert-info,
-.alert.notice,
-.alert-info.message,
-.notice.message { /**
-   * Use an extension so that the .message class can be set as info by default.
-   */
+.alert.notice {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 16px 0;
+	background-color: #d9edf7;
+	border: 1px solid #9fc5cc;
+	color: #31708f;
+}
+
+.alert.alert-info a,
+.alert.notice a {
+	text-decoration: underline;
+}
+
+.alert.alert-info p:last-child,
+.alert.notice p:last-child {
+	margin-bottom: 0;
+}
+
+.alert.alert-info hr,
+.alert.notice hr {
+	border-top-color: #97bbc1;
+}
+
+.alert.alert-info h1,
+.alert.alert-info h2,
+.alert.alert-info h3,
+.alert.alert-info h4,
+.alert.alert-info h5,
+.alert.alert-info h6,
+.alert.notice h1,
+.alert.notice h2,
+.alert.notice h3,
+.alert.notice h4,
+.alert.notice h5,
+.alert.notice h6 {
+	margin-top: 0;
+	color: #31708f;
+}
+
+.alert.alert-info .alert-link,
+.alert.notice .alert-link {
+	color: #2c6480;
+}
+
+.alert.alert-info a,
+.alert.notice a {
+	color: #31708f;
 }
 
 .alert.alert-warning,
-.alert.warning,
-.alert-warning.message,
-.warning.message {
+.alert.warning {
 	display: block;
 	padding: 16px;
 	border-radius: 2px;
@@ -2695,23 +2587,17 @@ ul.deletelist li:before {
 }
 
 .alert.alert-warning a,
-.alert.warning a,
-.alert-warning.message a,
-.warning.message a {
+.alert.warning a {
 	text-decoration: underline;
 }
 
 .alert.alert-warning p:last-child,
-.alert.warning p:last-child,
-.alert-warning.message p:last-child,
-.warning.message p:last-child {
+.alert.warning p:last-child {
 	margin-bottom: 0;
 }
 
 .alert.alert-warning hr,
-.alert.warning hr,
-.alert-warning.message hr,
-.warning.message hr {
+.alert.warning hr {
 	border-top-color: #c9bda4;
 }
 
@@ -2726,34 +2612,18 @@ ul.deletelist li:before {
 .alert.warning h3,
 .alert.warning h4,
 .alert.warning h5,
-.alert.warning h6,
-.alert-warning.message h1,
-.alert-warning.message h2,
-.alert-warning.message h3,
-.alert-warning.message h4,
-.alert-warning.message h5,
-.alert-warning.message h6,
-.warning.message h1,
-.warning.message h2,
-.warning.message h3,
-.warning.message h4,
-.warning.message h5,
-.warning.message h6 {
+.alert.warning h6 {
 	margin-top: 0;
 	color: #8a6d3b;
 }
 
 .alert.alert-warning .alert-link,
-.alert.warning .alert-link,
-.alert-warning.message .alert-link,
-.warning.message .alert-link {
+.alert.warning .alert-link {
 	color: #7c6235;
 }
 
 .alert.alert-warning a,
-.alert.warning a,
-.alert-warning.message a,
-.warning.message a {
+.alert.warning a {
 	color: #8a6d3b;
 }
 
@@ -2761,12 +2631,7 @@ ul.deletelist li:before {
 .alert.required,
 .alert.validation,
 .alert.bad,
-.alert.error,
-.alert-danger.message,
-.required.message,
-.validation.message,
-.bad.message,
-.error.message {
+.alert.error {
 	display: block;
 	padding: 16px;
 	border-radius: 2px;
@@ -2781,12 +2646,7 @@ ul.deletelist li:before {
 .alert.required a,
 .alert.validation a,
 .alert.bad a,
-.alert.error a,
-.alert-danger.message a,
-.required.message a,
-.validation.message a,
-.bad.message a,
-.error.message a {
+.alert.error a {
 	text-decoration: underline;
 }
 
@@ -2794,12 +2654,7 @@ ul.deletelist li:before {
 .alert.required p:last-child,
 .alert.validation p:last-child,
 .alert.bad p:last-child,
-.alert.error p:last-child,
-.alert-danger.message p:last-child,
-.required.message p:last-child,
-.validation.message p:last-child,
-.bad.message p:last-child,
-.error.message p:last-child {
+.alert.error p:last-child {
 	margin-bottom: 0;
 }
 
@@ -2807,12 +2662,7 @@ ul.deletelist li:before {
 .alert.required hr,
 .alert.validation hr,
 .alert.bad hr,
-.alert.error hr,
-.alert-danger.message hr,
-.required.message hr,
-.validation.message hr,
-.bad.message hr,
-.error.message hr {
+.alert.error hr {
 	border-top-color: #bda4a8;
 }
 
@@ -2845,37 +2695,7 @@ ul.deletelist li:before {
 .alert.error h3,
 .alert.error h4,
 .alert.error h5,
-.alert.error h6,
-.alert-danger.message h1,
-.alert-danger.message h2,
-.alert-danger.message h3,
-.alert-danger.message h4,
-.alert-danger.message h5,
-.alert-danger.message h6,
-.required.message h1,
-.required.message h2,
-.required.message h3,
-.required.message h4,
-.required.message h5,
-.required.message h6,
-.validation.message h1,
-.validation.message h2,
-.validation.message h3,
-.validation.message h4,
-.validation.message h5,
-.validation.message h6,
-.bad.message h1,
-.bad.message h2,
-.bad.message h3,
-.bad.message h4,
-.bad.message h5,
-.bad.message h6,
-.error.message h1,
-.error.message h2,
-.error.message h3,
-.error.message h4,
-.error.message h5,
-.error.message h6 {
+.alert.error h6 {
 	margin-top: 0;
 	color: #a94442;
 }
@@ -2884,12 +2704,7 @@ ul.deletelist li:before {
 .alert.required .alert-link,
 .alert.validation .alert-link,
 .alert.bad .alert-link,
-.alert.error .alert-link,
-.alert-danger.message .alert-link,
-.required.message .alert-link,
-.validation.message .alert-link,
-.bad.message .alert-link,
-.error.message .alert-link {
+.alert.error .alert-link {
 	color: #983d3b;
 }
 
@@ -2897,110 +2712,18 @@ ul.deletelist li:before {
 .alert.required a,
 .alert.validation a,
 .alert.bad a,
-.alert.error a,
-.alert-danger.message a,
-.required.message a,
-.validation.message a,
-.bad.message a,
-.error.message a {
+.alert.error a {
 	color: #a94442;
 }
 
-.alert .error-list,
-.message .error-list {
+.alert .error-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.alert .error-list li,
-.message .error-list li {
+.alert .error-list li {
 	margin: 0;
-}
-
-.alert.alert-info,
-.alert.notice,
-.alert-info.message,
-.notice.message,
-.message {
-	display: block;
-	padding: 16px;
-	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-	margin: 0 0 16px 0;
-	background-color: #d9edf7;
-	border: 1px solid #9fc5cc;
-	color: #31708f;
-}
-
-.alert.alert-info a,
-.alert.notice a,
-.alert-info.message a,
-.notice.message a,
-.message a {
-	text-decoration: underline;
-}
-
-.alert.alert-info p:last-child,
-.alert.notice p:last-child,
-.message p:last-child {
-	margin-bottom: 0;
-}
-
-.alert.alert-info hr,
-.alert.notice hr,
-.alert-info.message hr,
-.notice.message hr,
-.message hr {
-	border-top-color: #97bbc1;
-}
-
-.alert.alert-info h1,
-.alert.notice h1,
-.alert-info.message h1,
-.notice.message h1,
-.message h1,
-.alert.alert-info h2,
-.alert.notice h2,
-.alert-info.message h2,
-.notice.message h2,
-.message h2,
-.alert.alert-info h3,
-.alert.notice h3,
-.alert-info.message h3,
-.notice.message h3,
-.message h3,
-.alert.alert-info h4,
-.alert.notice h4,
-.alert-info.message h4,
-.notice.message h4,
-.message h4,
-.alert.alert-info h5,
-.alert.notice h5,
-.alert-info.message h5,
-.notice.message h5,
-.message h5,
-.alert.alert-info h6,
-.alert.notice h6,
-.alert-info.message h6,
-.notice.message h6,
-.message h6 {
-	margin-top: 0;
-	color: #31708f;
-}
-
-.alert.alert-info .alert-link,
-.alert.notice .alert-link,
-.message .alert-link {
-	color: #2c6480;
-}
-
-.alert.alert-info a,
-.alert.notice a,
-.alert-info.message a,
-.notice.message a,
-.message a {
-	color: #31708f;
 }
 
 /*---------------------------------------------*\
@@ -3027,9 +2750,7 @@ ul.deletelist li:before {
     Buttons
 \*---------------------------------------------*/
 
-.btn,
-#MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LostPasswordForm .action {
+.btn {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	border-radius: 2px;
@@ -3039,32 +2760,59 @@ ul.deletelist li:before {
 }
 
 .btn:focus,
-#MemberLoginForm_LoginForm .action:focus,
-#MemberLoginForm_LostPasswordForm .action:focus {
+.btn:active {
 	outline: 0;
-}
-
-.btn:focus,
-#MemberLoginForm_LoginForm .action:focus,
-#MemberLoginForm_LostPasswordForm .action:focus,
-.btn:active,
-#MemberLoginForm_LoginForm .action:active,
-#MemberLoginForm_LostPasswordForm .action:active {
 	box-shadow: none;
 }
 
 .btn-default {
-	color: #222222;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
 }
 
-.btn-default:hover {
-	color: #222222;
-	background: #f2f2f2;
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .btn-default.dropdown-toggle {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
 }
 
-.btn-default:active {
-	color: #222222;
-	background: #e5e5e5;
+.btn-default:active,
+.btn-default.active,
+.open > .btn-default.dropdown-toggle {
+	background-image: none;
+}
+
+.btn-default.disabled,
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default.disabled:active,
+.btn-default.disabled.active,
+.btn-default[disabled],
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled].focus,
+.btn-default[disabled]:active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default,
+fieldset[disabled] .btn-default:hover,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default.active {
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.btn-default .badge {
+	color: #fff;
+	background-color: #333;
 }
 
 .btn-secondary {
@@ -3198,21 +2946,13 @@ fieldset[disabled] .btn-inverse.active {
 	color: #1e1e1e;
 }
 
-.btn-link.btn-primary,
-#MemberLoginForm_LoginForm .btn-link.action,
-#MemberLoginForm_LostPasswordForm .btn-link.action {
+.btn-link.btn-primary {
 	color: #337ab7;
 }
 
 .btn-link.btn-primary:hover,
-#MemberLoginForm_LoginForm .btn-link.action:hover,
-#MemberLoginForm_LostPasswordForm .btn-link.action:hover,
 .btn-link.btn-primary:active,
-#MemberLoginForm_LoginForm .btn-link.action:active,
-#MemberLoginForm_LostPasswordForm .btn-link.action:active,
-.btn-link.btn-primary:focus,
-#MemberLoginForm_LoginForm .btn-link.action:focus,
-#MemberLoginForm_LostPasswordForm .btn-link.action:focus {
+.btn-link.btn-primary:focus {
 	color: #2d6da4;
 }
 
@@ -3305,22 +3045,14 @@ fieldset[disabled] .btn-inverse.active {
 	border-color: #222222;
 }
 
-.btn-bordered.btn-primary,
-#MemberLoginForm_LoginForm .btn-bordered.action,
-#MemberLoginForm_LostPasswordForm .btn-bordered.action {
+.btn-bordered.btn-primary {
 	border-color: #337ab7;
 	color: #337ab7;
 }
 
 .btn-bordered.btn-primary:hover,
-#MemberLoginForm_LoginForm .btn-bordered.action:hover,
-#MemberLoginForm_LostPasswordForm .btn-bordered.action:hover,
 .btn-bordered.btn-primary:active,
-#MemberLoginForm_LoginForm .btn-bordered.action:active,
-#MemberLoginForm_LostPasswordForm .btn-bordered.action:active,
-.btn-bordered.btn-primary:focus,
-#MemberLoginForm_LoginForm .btn-bordered.action:focus,
-#MemberLoginForm_LostPasswordForm .btn-bordered.action:focus {
+.btn-bordered.btn-primary:focus {
 	color: #337ab7;
 	border-color: #337ab7;
 }
@@ -3529,10 +3261,11 @@ fieldset[disabled] .btn-inverse.active {
     Inputs
 \*---------------------------------------------*/
 
-form .field.form-control,
-form .field.confirmedpassword,
-#MemberLoginForm_LoginForm .text,
-#MemberLoginForm_LostPasswordForm .text {
+textarea {
+	resize: vertical;
+}
+
+form .field.form-control {
 	color: #555B66;
 	display: block;
 	width: 100%;
@@ -3547,13 +3280,7 @@ form .field.confirmedpassword,
 }
 
 form .field.form-control .form-control.text,
-form .field.form-control .form-control.textarea,
-form .field.confirmedpassword input.password,
-form .field.creditcard input,
-form .field.phonenumber input,
-#MemberLoginForm_LoginForm .text input,
-#MemberLoginForm_LostPasswordForm .text input,
-.menu-wrap .search input[type="text"] {
+form .field.form-control .form-control.textarea {
 	color: #555B66;
 	display: block;
 	width: 100%;
@@ -3562,80 +3289,40 @@ form .field.phonenumber input,
 	height: auto;
 	box-shadow: none;
 	border-radius: 4px; /**
-   * Javascript validation
-   */
+     * Javascript validation
+     */
 }
 
 form .field.form-control .form-control.text:focus,
-form .field.form-control .form-control.textarea:focus,
-form .field.confirmedpassword input.password:focus,
-form .field.creditcard input:focus,
-form .field.phonenumber input:focus,
-#MemberLoginForm_LoginForm .text input:focus,
-#MemberLoginForm_LostPasswordForm .text input:focus,
-.menu-wrap .search input[type="text"]:focus {
+form .field.form-control .form-control.textarea:focus {
 	outline: 0;
 	border-color: #337ab7;
 	box-shadow: none;
 }
 
-form .field.form-control .parsley-error.form-control.text,
-form .field.form-control .parsley-error.form-control.textarea,
-form .field.confirmedpassword input.parsley-error.password,
-form .field.creditcard input.parsley-error,
-form .field.phonenumber input.parsley-error,
-#MemberLoginForm_LoginForm .text input.parsley-error,
-#MemberLoginForm_LostPasswordForm .text input.parsley-error,
-.menu-wrap .search input.parsley-error[type="text"] {
+form .field.form-control .form-control.text.parsley-error,
+form .field.form-control .form-control.textarea.parsley-error {
 	border-color: #d9534f;
 }
 
-form .field.form-control .parsley-error.form-control.text::-webkit-input-placeholder,
-form .field.form-control .parsley-error.form-control.textarea::-webkit-input-placeholder,
-form .field.confirmedpassword input.parsley-error.password::-webkit-input-placeholder,
-form .field.creditcard input.parsley-error::-webkit-input-placeholder,
-form .field.phonenumber input.parsley-error::-webkit-input-placeholder,
-#MemberLoginForm_LoginForm .text input.parsley-error::-webkit-input-placeholder,
-#MemberLoginForm_LostPasswordForm .text input.parsley-error::-webkit-input-placeholder,
-.menu-wrap .search input.parsley-error[type="text"]::-webkit-input-placeholder {
+form .field.form-control .form-control.text.parsley-error::-webkit-input-placeholder,
+form .field.form-control .form-control.textarea.parsley-error::-webkit-input-placeholder {
 	color: #d9534f;
 }
 
-form .field.form-control .parsley-error.form-control.text::-moz-placeholder,
-form .field.form-control .parsley-error.form-control.textarea::-moz-placeholder,
-form .field.confirmedpassword input.parsley-error.password::-moz-placeholder,
-form .field.creditcard input.parsley-error::-moz-placeholder,
-form .field.phonenumber input.parsley-error::-moz-placeholder,
-#MemberLoginForm_LoginForm .text input.parsley-error::-moz-placeholder,
-#MemberLoginForm_LostPasswordForm .text input.parsley-error::-moz-placeholder,
-.menu-wrap .search input.parsley-error[type="text"]::-moz-placeholder {
+form .field.form-control .form-control.text.parsley-error::-moz-placeholder,
+form .field.form-control .form-control.textarea.parsley-error::-moz-placeholder {
 	color: #d9534f;
 }
 
-form .field.form-control .parsley-error.form-control.text:-ms-input-placeholder,
-form .field.form-control .parsley-error.form-control.textarea:-ms-input-placeholder,
-form .field.confirmedpassword input.parsley-error.password:-ms-input-placeholder,
-form .field.creditcard input.parsley-error:-ms-input-placeholder,
-form .field.phonenumber input.parsley-error:-ms-input-placeholder,
-#MemberLoginForm_LoginForm .text input.parsley-error:-ms-input-placeholder,
-#MemberLoginForm_LostPasswordForm .text input.parsley-error:-ms-input-placeholder,
-.menu-wrap .search input.parsley-error[type="text"]:-ms-input-placeholder {
+form .field.form-control .form-control.text.parsley-error:-ms-input-placeholder,
+form .field.form-control .form-control.textarea.parsley-error:-ms-input-placeholder {
 	color: #d9534f;
 }
 
-form .field.form-control .parsley-error.form-control.text::placeholder,
-form .field.form-control .parsley-error.form-control.textarea::placeholder,
-form .field.confirmedpassword input.parsley-error.password::placeholder,
-form .field.creditcard input.parsley-error::placeholder,
-form .field.phonenumber input.parsley-error::placeholder,
-#MemberLoginForm_LoginForm .text input.parsley-error::placeholder,
-#MemberLoginForm_LostPasswordForm .text input.parsley-error::placeholder,
-.menu-wrap .search input.parsley-error[type="text"]::placeholder {
+form .field.form-control .form-control.text.parsley-error::placeholder,
+form .field.form-control .form-control.textarea.parsley-error::placeholder {
 	color: #d9534f;
-}
-
-textarea {
-	resize: vertical;
 }
 
 form .field.form-control .form-control.input-sm {
@@ -3649,16 +3336,138 @@ form .field.form-control .form-control.readonly {
 }
 
 form .field.confirmedpassword {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	line-height: inherit;
+	background: transparent none;
+	border-width: 0;
+	box-shadow: none;
+	border-radius: 0;
+	transition: none;
 	margin-bottom: 0;
 }
 
 form .field.confirmedpassword input.password {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 16px;
+	height: auto;
+	box-shadow: none;
+	border-radius: 4px; /**
+     * Javascript validation
+     */
 	margin-bottom: 16px;
 }
 
+form .field.confirmedpassword input.password:focus {
+	outline: 0;
+	border-color: #337ab7;
+	box-shadow: none;
+}
+
+form .field.confirmedpassword input.password.parsley-error {
+	border-color: #d9534f;
+}
+
+form .field.confirmedpassword input.password.parsley-error::-webkit-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.confirmedpassword input.password.parsley-error::-moz-placeholder {
+	color: #d9534f;
+}
+
+form .field.confirmedpassword input.password.parsley-error:-ms-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.confirmedpassword input.password.parsley-error::placeholder {
+	color: #d9534f;
+}
+
 form .field.creditcard input {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 16px;
+	height: auto;
+	box-shadow: none;
+	border-radius: 4px; /**
+   * Javascript validation
+   */
 	width: auto;
 	display: inline-block;
+}
+
+form .field.creditcard input:focus {
+	outline: 0;
+	border-color: #337ab7;
+	box-shadow: none;
+}
+
+form .field.creditcard input.parsley-error {
+	border-color: #d9534f;
+}
+
+form .field.creditcard input.parsley-error::-webkit-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.creditcard input.parsley-error::-moz-placeholder {
+	color: #d9534f;
+}
+
+form .field.creditcard input.parsley-error:-ms-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.creditcard input.parsley-error::placeholder {
+	color: #d9534f;
+}
+
+form .field.phonenumber input {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 16px;
+	height: auto;
+	box-shadow: none;
+	border-radius: 4px; /**
+   * Javascript validation
+   */
+}
+
+form .field.phonenumber input:focus {
+	outline: 0;
+	border-color: #337ab7;
+	box-shadow: none;
+}
+
+form .field.phonenumber input.parsley-error {
+	border-color: #d9534f;
+}
+
+form .field.phonenumber input.parsley-error::-webkit-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.phonenumber input.parsley-error::-moz-placeholder {
+	color: #d9534f;
+}
+
+form .field.phonenumber input.parsley-error:-ms-input-placeholder {
+	color: #d9534f;
+}
+
+form .field.phonenumber input.parsley-error::placeholder {
+	color: #d9534f;
 }
 
 form .field.file input {
@@ -3714,6 +3523,47 @@ label {
     Messages
 \*---------------------------------------------*/
 
+.message {
+	display: block;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 16px 0;
+	background-color: #d9edf7;
+	border: 1px solid #9fc5cc;
+	color: #31708f;
+}
+
+.message a {
+	text-decoration: underline;
+}
+
+.message p:last-child {
+	margin-bottom: 0;
+}
+
+.message hr {
+	border-top-color: #97bbc1;
+}
+
+.message h1,
+.message h2,
+.message h3,
+.message h4,
+.message h5,
+.message h6 {
+	margin-top: 0;
+	color: #31708f;
+}
+
+.message .alert-link {
+	color: #2c6480;
+}
+
+.message a {
+	color: #31708f;
+}
+
 /*---------------------------------------------*\
     Search
 \*---------------------------------------------*/
@@ -3738,9 +3588,167 @@ label {
     Login / Lost Password
 \*---------------------------------------------*/
 
+#MemberLoginForm_LoginForm .text,
+#MemberLoginForm_LostPasswordForm .text {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	line-height: inherit;
+	background: transparent none;
+	border-width: 0;
+	box-shadow: none;
+	border-radius: 0;
+	transition: none;
+}
+
 #MemberLoginForm_LoginForm .text input,
 #MemberLoginForm_LostPasswordForm .text input {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 16px;
+	height: auto;
+	box-shadow: none;
+	border-radius: 4px; /**
+     * Javascript validation
+     */
 	margin-bottom: 16px;
+}
+
+#MemberLoginForm_LoginForm .text input:focus,
+#MemberLoginForm_LostPasswordForm .text input:focus {
+	outline: 0;
+	border-color: #337ab7;
+	box-shadow: none;
+}
+
+#MemberLoginForm_LoginForm .text input.parsley-error,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error {
+	border-color: #d9534f;
+}
+
+#MemberLoginForm_LoginForm .text input.parsley-error::-webkit-input-placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error::-webkit-input-placeholder {
+	color: #d9534f;
+}
+
+#MemberLoginForm_LoginForm .text input.parsley-error::-moz-placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error::-moz-placeholder {
+	color: #d9534f;
+}
+
+#MemberLoginForm_LoginForm .text input.parsley-error:-ms-input-placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error:-ms-input-placeholder {
+	color: #d9534f;
+}
+
+#MemberLoginForm_LoginForm .text input.parsley-error::placeholder,
+#MemberLoginForm_LostPasswordForm .text input.parsley-error::placeholder {
+	color: #d9534f;
+}
+
+#MemberLoginForm_LoginForm .action,
+#MemberLoginForm_LostPasswordForm .action {
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-radius: 2px;
+	padding: 0.75em 1em;
+	white-space: normal;
+	border-width: 0;
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+#MemberLoginForm_LoginForm .action:focus,
+#MemberLoginForm_LoginForm .action:active,
+#MemberLoginForm_LostPasswordForm .action:focus,
+#MemberLoginForm_LostPasswordForm .action:active {
+	outline: 0;
+	box-shadow: none;
+}
+
+#MemberLoginForm_LoginForm .action:hover,
+#MemberLoginForm_LoginForm .action:focus,
+#MemberLoginForm_LoginForm .action.focus,
+#MemberLoginForm_LoginForm .action:active,
+#MemberLoginForm_LoginForm .action.active,
+.open > #MemberLoginForm_LoginForm .action.dropdown-toggle,
+#MemberLoginForm_LostPasswordForm .action:hover,
+#MemberLoginForm_LostPasswordForm .action:focus,
+#MemberLoginForm_LostPasswordForm .action.focus,
+#MemberLoginForm_LostPasswordForm .action:active,
+#MemberLoginForm_LostPasswordForm .action.active,
+.open >
+  #MemberLoginForm_LostPasswordForm .action.dropdown-toggle {
+	color: #fff;
+	background-color: #286090;
+	border-color: #204d74;
+}
+
+#MemberLoginForm_LoginForm .action:active,
+#MemberLoginForm_LoginForm .action.active,
+.open > #MemberLoginForm_LoginForm .action.dropdown-toggle,
+#MemberLoginForm_LostPasswordForm .action:active,
+#MemberLoginForm_LostPasswordForm .action.active,
+.open >
+  #MemberLoginForm_LostPasswordForm .action.dropdown-toggle {
+	background-image: none;
+}
+
+#MemberLoginForm_LoginForm .action.disabled,
+#MemberLoginForm_LoginForm .action.disabled:hover,
+#MemberLoginForm_LoginForm .action.disabled:focus,
+#MemberLoginForm_LoginForm .action.disabled.focus,
+#MemberLoginForm_LoginForm .action.disabled:active,
+#MemberLoginForm_LoginForm .action.disabled.active,
+#MemberLoginForm_LoginForm .action[disabled],
+#MemberLoginForm_LoginForm .action[disabled]:hover,
+#MemberLoginForm_LoginForm .action[disabled]:focus,
+#MemberLoginForm_LoginForm .action[disabled].focus,
+#MemberLoginForm_LoginForm .action[disabled]:active,
+#MemberLoginForm_LoginForm .action[disabled].active,
+fieldset[disabled] #MemberLoginForm_LoginForm .action,
+fieldset[disabled] #MemberLoginForm_LoginForm .action:hover,
+fieldset[disabled] #MemberLoginForm_LoginForm .action:focus,
+fieldset[disabled] #MemberLoginForm_LoginForm .action.focus,
+fieldset[disabled] #MemberLoginForm_LoginForm .action:active,
+fieldset[disabled] #MemberLoginForm_LoginForm .action.active,
+#MemberLoginForm_LostPasswordForm .action.disabled,
+#MemberLoginForm_LostPasswordForm .action.disabled:hover,
+#MemberLoginForm_LostPasswordForm .action.disabled:focus,
+#MemberLoginForm_LostPasswordForm .action.disabled.focus,
+#MemberLoginForm_LostPasswordForm .action.disabled:active,
+#MemberLoginForm_LostPasswordForm .action.disabled.active,
+#MemberLoginForm_LostPasswordForm .action[disabled],
+#MemberLoginForm_LostPasswordForm .action[disabled]:hover,
+#MemberLoginForm_LostPasswordForm .action[disabled]:focus,
+#MemberLoginForm_LostPasswordForm .action[disabled].focus,
+#MemberLoginForm_LostPasswordForm .action[disabled]:active,
+#MemberLoginForm_LostPasswordForm .action[disabled].active,
+fieldset[disabled]
+  #MemberLoginForm_LostPasswordForm .action,
+fieldset[disabled]
+  #MemberLoginForm_LostPasswordForm .action:hover,
+fieldset[disabled]
+  #MemberLoginForm_LostPasswordForm .action:focus,
+fieldset[disabled]
+  #MemberLoginForm_LostPasswordForm .action.focus,
+fieldset[disabled]
+  #MemberLoginForm_LostPasswordForm .action:active,
+fieldset[disabled]
+  #MemberLoginForm_LostPasswordForm .action.active {
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+#MemberLoginForm_LoginForm .action .badge,
+#MemberLoginForm_LostPasswordForm .action .badge {
+	color: #337ab7;
+	background-color: #fff;
 }
 
 /*---------------------------------------------*\
@@ -4496,8 +4504,44 @@ img {
 }
 
 .menu-wrap .search input[type="text"] {
+	color: #555B66;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 16px;
+	height: auto;
+	box-shadow: none;
+	border-radius: 4px; /**
+       * Javascript validation
+       */
 	border-color: #222222;
 	box-shadow: none;
+}
+
+.menu-wrap .search input[type="text"]:focus {
+	outline: 0;
+	border-color: #337ab7;
+	box-shadow: none;
+}
+
+.menu-wrap .search input[type="text"].parsley-error {
+	border-color: #d9534f;
+}
+
+.menu-wrap .search input[type="text"].parsley-error::-webkit-input-placeholder {
+	color: #d9534f;
+}
+
+.menu-wrap .search input[type="text"].parsley-error::-moz-placeholder {
+	color: #d9534f;
+}
+
+.menu-wrap .search input[type="text"].parsley-error:-ms-input-placeholder {
+	color: #d9534f;
+}
+
+.menu-wrap .search input[type="text"].parsley-error::placeholder {
+	color: #d9534f;
 }
 
 .menu-wrap .search input[type="text"]:focus {
@@ -4529,12 +4573,14 @@ img {
 	padding: 0 0;
 }
 
-.portfolio.section .item {
-	margin-bottom: 16px;
+.portfolio.section .caption-full,
+.portfolio.section .caption-right {
+	margin: 16px 0 0 0;
 }
 
-.portfolio.section .caption-right {
-	margin-top: 16px;
+.portfolio.section .caption-full p:last-child,
+.portfolio.section .caption-right p:last-child {
+	margin: 0;
 }
 
 /*---------------------------------------------*\
@@ -4978,17 +5024,17 @@ ul li {
 
 .alert.alert-success,
 .alert.success,
-.alert.good,
-.alert-success.message,
-.success.message,
-.good.message {
+.alert.good {
+	margin: 0 0 32px 0;
+}
+
+.alert.alert-info,
+.alert.notice {
 	margin: 0 0 32px 0;
 }
 
 .alert.alert-warning,
-.alert.warning,
-.alert-warning.message,
-.warning.message {
+.alert.warning {
 	margin: 0 0 32px 0;
 }
 
@@ -4996,20 +5042,7 @@ ul li {
 .alert.required,
 .alert.validation,
 .alert.bad,
-.alert.error,
-.alert-danger.message,
-.required.message,
-.validation.message,
-.bad.message,
-.error.message {
-	margin: 0 0 32px 0;
-}
-
-.alert.alert-info,
-.alert.notice,
-.alert-info.message,
-.notice.message,
-.message {
+.alert.error {
 	margin: 0 0 32px 0;
 }
 
@@ -5060,6 +5093,10 @@ ul li {
 
 .recaptcha {
 	margin: 32px 0;
+}
+
+.message {
+	margin: 0 0 32px 0;
 }
 
 .parsley-errors-list li {
@@ -5168,16 +5205,13 @@ section.section {
 	padding: 0 0;
 }
 
-.portfolio.section .item {
-	margin-bottom: 30px;
-}
-
-.portfolio.section .item.last {
-	margin-bottom: 0;
-}
-
+.portfolio.section .caption-full,
 .portfolio.section .caption-right {
-	margin-top: 0;
+	margin: 0;
+}
+
+.portfolio.section .caption-full {
+	margin: 16px 0 0 0;
 }
 
 #Form_RegistrationForm {
