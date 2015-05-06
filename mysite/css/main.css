@@ -2730,7 +2730,7 @@ fieldset[disabled]
 
 .parsley-errors-list {
 	padding: 0;
-	margin: 0;
+	margin: 7px 0 0 0;
 }
 
 .parsley-errors-list li {
@@ -2742,6 +2742,7 @@ fieldset[disabled]
 	background-color: #f2dede;
 	border: 1px solid #c7adb1;
 	color: #a94442;
+	margin: 0;
 }
 
 .parsley-errors-list li a {
