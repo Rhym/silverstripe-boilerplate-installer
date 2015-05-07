@@ -2264,8 +2264,9 @@ fieldset[disabled] .btn-inverse.active {
  */
 
 .owl-controls {
+	height: 50px;
 	display: none;
-	margin: 0;
+	margin: -25px 0 0 0;
 	padding: 0;
 	position: absolute;
 	top: 50%;
@@ -2283,8 +2284,8 @@ fieldset[disabled] .btn-inverse.active {
 	padding: 0;
 	background: transparent none;
 	font-size: 50px;
-	line-height: 1em;
-	margin: -0.5em 0 0 0.5em;
+	line-height: 50px;
+	margin: 0 0 0 0.5em;
 }
 
 .owl-controls .owl-prev:hover,
@@ -2297,7 +2298,7 @@ fieldset[disabled] .btn-inverse.active {
 .owl-controls .owl-next {
 	right: 0;
 	left: auto;
-	margin: -0.5em 0.5em 0 0;
+	margin: 0 0.5em 0 0;
 }
 
 /*---------------------------------------------*\
@@ -3566,10 +3567,6 @@ img {
    */
 }
 
-#slider.has-multiple-items .owl-controls {
-	display: block;
-}
-
 #slider .owl-controls {
 	display: none;
 }
@@ -4111,6 +4108,10 @@ section.section {
 
 #slider {
 	margin-bottom: 60px;
+}
+
+#slider.has-multiple-items .owl-controls {
+	display: block;
 }
 
 #slider .container {
