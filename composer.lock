@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "c3ea59d9a69b9af4f9cd088bacc6117068c708f4"
+                "reference": "448945bc01625d5f033a8222488289c021d7a939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/c3ea59d9a69b9af4f9cd088bacc6117068c708f4",
-                "reference": "c3ea59d9a69b9af4f9cd088bacc6117068c708f4",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/448945bc01625d5f033a8222488289c021d7a939",
+                "reference": "448945bc01625d5f033a8222488289c021d7a939",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-05-07 00:46:31"
+            "time": "2015-05-07 01:50:47"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "1dd707ff070d0d5c860e7de52393c041fd583e7d"
+                "reference": "b4ddd9fd43c373bcf13f3b1c55c66bfddbbf091c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/1dd707ff070d0d5c860e7de52393c041fd583e7d",
-                "reference": "1dd707ff070d0d5c860e7de52393c041fd583e7d",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/b4ddd9fd43c373bcf13f3b1c55c66bfddbbf091c",
+                "reference": "b4ddd9fd43c373bcf13f3b1c55c66bfddbbf091c",
                 "shasum": ""
             },
             "require": {
@@ -261,7 +261,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-05-05 02:07:58"
+            "time": "2015-05-07 02:42:26"
         },
         {
             "name": "silverstripe/cms",

@@ -3315,20 +3315,6 @@ img {
    */
 }
 
-.gallery.loop .item {
-	display: block;
-}
-
-.gallery.loop .item:hover {
-	cursor: -webkit-grab;
-	cursor: -moz-grab;
-}
-
-.gallery.loop .item:active {
-	cursor: -webkit-grabbing;
-	cursor: -moz-grabbing;
-}
-
 .gallery.loop .owl-controls {
 	display: none;
 	margin: 0;
