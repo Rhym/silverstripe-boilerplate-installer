@@ -2259,76 +2259,45 @@ fieldset[disabled] .btn-inverse.active {
     Carousel
 \*---------------------------------------------*/
 
-.slider .carousel-inner .item {
+/**
+ * Prev / Next
+ */
+
+.owl-controls {
+	display: none;
 	margin: 0;
-}
-
-.carousel-inner > .item {
-	transition: 0.5s ease left;
-}
-
-.carousel-indicators .active {
-	background: #2196F3;
-	border-color: #2196F3;
-}
-
-.carousel-control {
-	width: 90px;
-	text-shadow: none;
-	opacity: 1;
-}
-
-.carousel-control:hover .fa-angle-left,
-.carousel-control:hover .fa-angle-right {
-	background: #2196F3;
-}
-
-.carousel-control.right,
-.carousel-control.left {
-	background: 0 none;
-	-webkit-filter: none;
-	filter: none;
-}
-
-.carousel-control .fa-angle-left,
-.carousel-control .fa-angle-right {
-	width: 30px;
-	height: 30px;
-	background: #4c5357;
+	padding: 0;
 	position: absolute;
 	top: 50%;
-	z-index: 5;
-	line-height: 30px;
-	left: 50%;
-	display: inline-block;
-	font-size: 20px;
-	margin-top: -15px;
-	margin-left: -15px;
-	transition: .1s linear background;
+	left: 0;
+	right: 0;
 }
 
-.mobile-slider-controls {
-	font-size: 0;
-	background: #4c5357;
-	text-align: right;
-}
-
-.mobile-slider-controls a {
-	line-height: 20px;
-	font-size: 18px;
+.owl-controls .owl-prev,
+.owl-controls .owl-next {
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 	color: #fff;
-	display: inline-block;
-	padding: 7px 15px;
-	width: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	background: transparent none;
+	font-size: 50px;
+	line-height: 1em;
+	margin: -0.5em 0 0 0.5em;
 }
 
-.mobile-slider-controls a:first-child {
-	text-align: left;
+.owl-controls .owl-prev:hover,
+.owl-controls .owl-prev:active,
+.owl-controls .owl-next:hover,
+.owl-controls .owl-next:active {
+	background: transparent none;
 }
 
-.carousel-indicators {
-	bottom: -27px;
-	margin-bottom: 0;
+.owl-controls .owl-next {
+	right: 0;
+	left: auto;
+	margin: -0.5em 0.5em 0 0;
 }
 
 /*---------------------------------------------*\
@@ -3310,46 +3279,6 @@ img {
     Gallery
 \*---------------------------------------------*/
 
-.gallery.loop { /**
-   * Prev / Next
-   */
-}
-
-.gallery.loop .owl-controls {
-	display: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-}
-
-.gallery.loop .owl-controls .owl-prev,
-.gallery.loop .owl-controls .owl-next {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0;
-	background: transparent none;
-	font-size: 50px;
-	line-height: 1em;
-	margin: -0.5em 0 0 0.5em;
-}
-
-.gallery.loop .owl-controls .owl-prev:hover,
-.gallery.loop .owl-controls .owl-prev:active,
-.gallery.loop .owl-controls .owl-next:hover,
-.gallery.loop .owl-controls .owl-next:active {
-	background: transparent none;
-}
-
-.gallery.loop .owl-controls .owl-next {
-	right: 0;
-	left: auto;
-	margin: -0.5em 0.5em 0 0;
-}
-
 /*---------------------------------------------*\
     Popout Menu
 \*---------------------------------------------*/
@@ -3637,8 +3566,12 @@ img {
    */
 }
 
-#slider.has-multiple-items .item:hover {
-	cursor: col-resize;
+#slider.has-multiple-items .owl-controls {
+	display: block;
+}
+
+#slider .owl-controls {
+	display: none;
 }
 
 #slider .container {
@@ -4033,8 +3966,8 @@ ul li {
 	margin: 15px 0;
 }
 
-.carousel-indicators {
-	bottom: 30px;
+.owl-controls {
+	display: block;
 }
 
 #footer {
@@ -4141,10 +4074,6 @@ section.section {
 
 #map-canvas {
 	margin: 30px 0;
-}
-
-.gallery.loop .owl-controls {
-	display: block;
 }
 
 .menu-wrap {
