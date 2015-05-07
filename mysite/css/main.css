@@ -2304,10 +2304,6 @@ fieldset[disabled] .btn-inverse.active {
 	font-size: 20px;
 	margin-top: -15px;
 	margin-left: -15px;
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
 	transition: .1s linear background;
 }
 

@@ -3,23 +3,25 @@
 
         $('.carousel').owlCarousel({
             items: 1,
-            dots: false
+            dots: false,
+            mouseDrag: false
         });
 
-        /*---------------------------------------------*\
+        /** -----------------------------------------
          * Gallery Carousel
-         \*---------------------------------------------*/
+         -------------------------------------------*/
 
         $('.gallery-carousel').owlCarousel({
             items: 1,
             dots: false,
-            //stagePadding: 200,
             nav: true,
-            navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">']
+            navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
+            mouseDrag: false
         });
 
     });
 })(jQuery);
+
 //;(function($) {
 //    $(document).ready(function(){
 //
