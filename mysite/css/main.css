@@ -2945,52 +2945,6 @@ fieldset[disabled]
 	margin-bottom: 0;
 }
 
-/*---------------------------------------------*\
-    Image Navigation
-\*---------------------------------------------*/
-
-.image-navigation {
-	margin: 15px 0;
-}
-
-.image-navigation .container {
-	position: relative;
-	padding: 0;
-}
-
-.image-navigation a {
-	display: block;
-}
-
-.image-navigation .image {
-	background: #2196F3;
-}
-
-.image-navigation .heading {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 15px;
-	right: 15px;
-	margin: 0;
-	color: #fff;
-	text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-	-webkit-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-}
-
-.image-navigation .icon {
-	margin-bottom: 7px;
-	position: absolute;
-	color: #fff;
-	bottom: 0;
-	width: 60px;
-	text-align: center;
-	margin-left: -30px;
-	left: 50%;
-}
-
 /*-------------------------------------------------------*\
     Loops
 \*-------------------------------------------------------*/
@@ -3105,6 +3059,19 @@ section.section {
 	text-align: center;
 	border-radius: 50%;
 	transition: .2s linear background-color, .1s linear color;
+}
+
+/*---------------------------------------------*\
+    Image Navigation
+\*---------------------------------------------*/
+
+.previous-next-page.section {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.previous-next-page.section .item.next {
+	text-align: right;
 }
 
 /*======================================================================*\
@@ -4133,14 +4100,6 @@ ul li {
 	float: none;
 }
 
-.image-navigation {
-	margin: 30px 0;
-}
-
-.image-navigation .container {
-	padding: 0 15px;
-}
-
 .loop .item {
 	margin: 0 0 30px 0;
 }
@@ -4171,6 +4130,14 @@ section.section {
 .social-icons li.google-plus a:hover {
 	background-color: #dd4b39;
 	color: #fff;
+}
+
+.previous-next-page.section {
+	margin: 0 0;
+}
+
+.previous-next-page.section {
+	padding: 0 0;
 }
 
 .content.typography {
