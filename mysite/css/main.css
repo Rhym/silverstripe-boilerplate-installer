@@ -2562,10 +2562,6 @@ fieldset[disabled]
 	color: #31708f;
 }
 
-/*---------------------------------------------*\
-    Search
-\*---------------------------------------------*/
-
 /** =========================================
  * Silverstripe Forms
  ===========================================*/
@@ -2579,16 +2575,18 @@ fieldset[disabled]
 }
 
 /*---------------------------------------------*\
-    Login / Lost Password
+    Login / Lost Password / Change Password
 \*---------------------------------------------*/
 
 #MemberLoginForm_LoginForm .field,
-#MemberLoginForm_LostPasswordForm .field {
+#MemberLoginForm_LostPasswordForm .field,
+#ChangePasswordForm_ChangePasswordForm .field {
 	margin: 0 0 15px 0;
 }
 
 #MemberLoginForm_LoginForm .field .text,
-#MemberLoginForm_LostPasswordForm .field .text {
+#MemberLoginForm_LostPasswordForm .field .text,
+#ChangePasswordForm_ChangePasswordForm .field .text {
 	display: block;
 	width: 100%;
 	height: 44px;
@@ -2609,7 +2607,11 @@ fieldset[disabled] #MemberLoginForm_LoginForm .field .text,
 #MemberLoginForm_LostPasswordForm .field .text[disabled],
 #MemberLoginForm_LostPasswordForm .field .text[readonly],
 fieldset[disabled]
-    #MemberLoginForm_LostPasswordForm .field .text {
+    #MemberLoginForm_LostPasswordForm .field .text,
+#ChangePasswordForm_ChangePasswordForm .field .text[disabled],
+#ChangePasswordForm_ChangePasswordForm .field .text[readonly],
+fieldset[disabled]
+    #ChangePasswordForm_ChangePasswordForm .field .text {
 	background-color: #e5e5e5;
 	opacity: 1;
 }
@@ -2618,12 +2620,16 @@ fieldset[disabled]
 fieldset[disabled] #MemberLoginForm_LoginForm .field .text,
 #MemberLoginForm_LostPasswordForm .field .text[disabled],
 fieldset[disabled]
-    #MemberLoginForm_LostPasswordForm .field .text {
+    #MemberLoginForm_LostPasswordForm .field .text,
+#ChangePasswordForm_ChangePasswordForm .field .text[disabled],
+fieldset[disabled]
+    #ChangePasswordForm_ChangePasswordForm .field .text {
 	cursor: not-allowed;
 }
 
 #MemberLoginForm_LoginForm .action,
-#MemberLoginForm_LostPasswordForm .action {
+#MemberLoginForm_LostPasswordForm .action,
+#ChangePasswordForm_ChangePasswordForm .action {
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -2639,7 +2645,9 @@ fieldset[disabled]
 #MemberLoginForm_LoginForm .action:focus,
 #MemberLoginForm_LoginForm .action:active,
 #MemberLoginForm_LostPasswordForm .action:focus,
-#MemberLoginForm_LostPasswordForm .action:active {
+#MemberLoginForm_LostPasswordForm .action:active,
+#ChangePasswordForm_ChangePasswordForm .action:focus,
+#ChangePasswordForm_ChangePasswordForm .action:active {
 	outline: 0;
 	box-shadow: none;
 }
@@ -2656,7 +2664,14 @@ fieldset[disabled]
 #MemberLoginForm_LostPasswordForm .action:active,
 #MemberLoginForm_LostPasswordForm .action.active,
 .open >
-  #MemberLoginForm_LostPasswordForm .action.dropdown-toggle {
+  #MemberLoginForm_LostPasswordForm .action.dropdown-toggle,
+#ChangePasswordForm_ChangePasswordForm .action:hover,
+#ChangePasswordForm_ChangePasswordForm .action:focus,
+#ChangePasswordForm_ChangePasswordForm .action.focus,
+#ChangePasswordForm_ChangePasswordForm .action:active,
+#ChangePasswordForm_ChangePasswordForm .action.active,
+.open >
+  #ChangePasswordForm_ChangePasswordForm .action.dropdown-toggle {
 	color: #fff;
 	background-color: #0c7cd5;
 	border-color: #146db4;
@@ -2668,7 +2683,11 @@ fieldset[disabled]
 #MemberLoginForm_LostPasswordForm .action:active,
 #MemberLoginForm_LostPasswordForm .action.active,
 .open >
-  #MemberLoginForm_LostPasswordForm .action.dropdown-toggle {
+  #MemberLoginForm_LostPasswordForm .action.dropdown-toggle,
+#ChangePasswordForm_ChangePasswordForm .action:active,
+#ChangePasswordForm_ChangePasswordForm .action.active,
+.open >
+  #ChangePasswordForm_ChangePasswordForm .action.dropdown-toggle {
 	background-image: none;
 }
 
@@ -2713,13 +2732,38 @@ fieldset[disabled]
 fieldset[disabled]
   #MemberLoginForm_LostPasswordForm .action:active,
 fieldset[disabled]
-  #MemberLoginForm_LostPasswordForm .action.active {
+  #MemberLoginForm_LostPasswordForm .action.active,
+#ChangePasswordForm_ChangePasswordForm .action.disabled,
+#ChangePasswordForm_ChangePasswordForm .action.disabled:hover,
+#ChangePasswordForm_ChangePasswordForm .action.disabled:focus,
+#ChangePasswordForm_ChangePasswordForm .action.disabled.focus,
+#ChangePasswordForm_ChangePasswordForm .action.disabled:active,
+#ChangePasswordForm_ChangePasswordForm .action.disabled.active,
+#ChangePasswordForm_ChangePasswordForm .action[disabled],
+#ChangePasswordForm_ChangePasswordForm .action[disabled]:hover,
+#ChangePasswordForm_ChangePasswordForm .action[disabled]:focus,
+#ChangePasswordForm_ChangePasswordForm .action[disabled].focus,
+#ChangePasswordForm_ChangePasswordForm .action[disabled]:active,
+#ChangePasswordForm_ChangePasswordForm .action[disabled].active,
+fieldset[disabled]
+  #ChangePasswordForm_ChangePasswordForm .action,
+fieldset[disabled]
+  #ChangePasswordForm_ChangePasswordForm .action:hover,
+fieldset[disabled]
+  #ChangePasswordForm_ChangePasswordForm .action:focus,
+fieldset[disabled]
+  #ChangePasswordForm_ChangePasswordForm .action.focus,
+fieldset[disabled]
+  #ChangePasswordForm_ChangePasswordForm .action:active,
+fieldset[disabled]
+  #ChangePasswordForm_ChangePasswordForm .action.active {
 	background-color: #2196F3;
 	border-color: #1f8ee6;
 }
 
 #MemberLoginForm_LoginForm .action .badge,
-#MemberLoginForm_LostPasswordForm .action .badge {
+#MemberLoginForm_LostPasswordForm .action .badge,
+#ChangePasswordForm_ChangePasswordForm .action .badge {
 	color: #2196F3;
 	background-color: #fff;
 }
