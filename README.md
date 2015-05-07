@@ -1,7 +1,7 @@
 ##Install
 
 ```
-composer create-project -s dev ryanpotter/silverstripe-boilerplate-installer
+composer create-project -s dev ryanpotter/silverstripe-boilerplate-installer myNewProject
 ```
 
 ##Enviroment
