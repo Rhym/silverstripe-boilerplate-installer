@@ -1,32 +1,7 @@
 ##Install
 
 ```
-composer create-project -s dev ryanpotter/silverstripe-boilerplate-installer myNewProject
-```
-```
-cd myNewProject/
-```
-
-##Command Line Time
-
-```
-composer update
-```
-
-```
-npm install
-```
-
-```
-npm install -g grunt-cli
-```
-
-```
-npm install -g bower
-```
-
-```
-bower install
+composer create-project -s dev ryanpotter/silverstripe-boilerplate-installer
 ```
 
 ##Enviroment
