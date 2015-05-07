@@ -23,5 +23,13 @@
     "ryanpotter/silverstripe-cms-theme": "dev-master",
     "google/recaptcha": "~1.1",
     "drewm/mailchimp-api": "~1.0"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "npm install",
+      "npm install -g grunt-cli",
+      "npm install -g bower",
+      "bower install -allow-root"
+    ]
   }
 }
