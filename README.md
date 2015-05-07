@@ -1,5 +1,9 @@
 ##Install
 
+Make sure you have [Composer](https://getcomposer.org/) and [NPM](https://www.npmjs.com/) installed.
+
+Run the following:
+
 ```
 composer create-project -s dev ryanpotter/silverstripe-boilerplate-installer myNewProject
 ```
