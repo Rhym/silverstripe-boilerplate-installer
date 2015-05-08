@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "253640866cb3be31f634182721decfe3efb7b545"
+                "reference": "e69830a2dbb1019c86dee436ea2be58f45ab8d4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/253640866cb3be31f634182721decfe3efb7b545",
-                "reference": "253640866cb3be31f634182721decfe3efb7b545",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/e69830a2dbb1019c86dee436ea2be58f45ab8d4a",
+                "reference": "e69830a2dbb1019c86dee436ea2be58f45ab8d4a",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-05-07 04:06:03"
+            "time": "2015-05-08 04:22:52"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -435,16 +435,16 @@
         },
         {
             "name": "undefinedoffset/sortablegridfield",
-            "version": "0.4.2",
+            "version": "0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "ff7a30825ec9903ebe22888163b081a4a8af4d3f"
+                "reference": "81e8fae97a47c6338dd5ae946a5e086267e42a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/ff7a30825ec9903ebe22888163b081a4a8af4d3f",
-                "reference": "ff7a30825ec9903ebe22888163b081a4a8af4d3f",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/81e8fae97a47c6338dd5ae946a5e086267e42a48",
+                "reference": "81e8fae97a47c6338dd5ae946a5e086267e42a48",
                 "shasum": ""
             },
             "require": {
@@ -471,7 +471,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-04-07 12:26:53"
+            "time": "2015-05-07 15:44:55"
         }
     ],
     "packages-dev": [],
