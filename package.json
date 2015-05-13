@@ -5,6 +5,14 @@
     "type": "git",
     "url": "https://github.com/Rhym/silverstripe-boilerplate-installer"
   },
+  "browser": {
+    "jquery": "./components/lib/jquery/dist/jquery.js",
+    "owlcarousel": "./components/lib/owl.carousel/dist/owl.carousel.js",
+    "bootstrap-modal": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
+    "bootstrap-collapse": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
+    "module-popout": "./boilerplate/code/Modules/PopoutMenu/javascript/popout-menu.js",
+    "parsley": "./components/lib/parsleyjs/dist/parsley.js"
+  },
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-watch": "*",
@@ -18,6 +26,9 @@
     "grunt-contrib-csslint": "~0.4.0",
     "grunt-contrib-jshint": "~0.11.1",
     "matchdep": "~0.3.0",
-    "time-grunt": "~1.1.0"
+    "time-grunt": "~1.1.0",
+    "grunt-browserify": "~3.8.0",
+    "browserify": "~10.1.3",
+    "grunt-contrib-copy": "~0.8.0"
   }
 }
