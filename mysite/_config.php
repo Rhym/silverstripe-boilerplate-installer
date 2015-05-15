@@ -77,14 +77,14 @@ $formats = array(
     ),
     array(
         'title' => 'Text - Primary',
-        'block' => 'span',
+        'inline' => 'span',
         'classes' => 'text-primary',
         'wrapper' => true,
         'merge_siblings' => false
     ),
     array(
         'title' => 'Text - Secondary',
-        'block' => 'span',
+        'inline' => 'span',
         'classes' => 'text-secondary',
         'wrapper' => true,
         'merge_siblings' => false
