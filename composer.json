@@ -17,12 +17,12 @@
     "silverstripe/cms": "3.x@stable",
     "silverstripe/framework": "3.x@stable",
     "silverstripe/googlesitemaps": "1.2.*",
-    "undefinedoffset/sortablegridfield": "*",
     "unclecheese/betterbuttons": "1.2.*",
     "ryanpotter/silverstripe-boilerplate": "dev-master",
     "ryanpotter/silverstripe-cms-theme": "dev-master",
     "google/recaptcha": "~1.1",
-    "drewm/mailchimp-api": "~1.0"
+    "drewm/mailchimp-api": "~1.0",
+    "silverstripe-australia/gridfieldextensions": "~1.1"
   },
   "scripts": {
     "post-create-project-cmd": [
