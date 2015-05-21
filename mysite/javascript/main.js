@@ -16285,7 +16285,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
         /**
          * Hook into the users history changes
          * if there is a saved history state
-         * run the paginate() function.
+         * run the replaceContent() function.
          *
          * @param e
          */
