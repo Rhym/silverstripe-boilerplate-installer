@@ -1551,6 +1551,18 @@ ul.deletelist li:before {
 */
 
 /** =========================================
+ * Section
+ ===========================================*/
+
+.ajax-content {
+	transition: .1s linear opacity;
+}
+
+.ajax-content.ajax-loading {
+	opacity: 0.4;
+}
+
+/** =========================================
  * Alerts
  ===========================================*/
 
@@ -2998,6 +3010,22 @@ fieldset[disabled]
 
 .loop.no-margin .item.last {
 	margin-bottom: 0;
+}
+
+/** =========================================
+ * Pagination
+ ===========================================*/
+
+.pagination > li > span {
+	color: #555B66;
+	background: #e5e5e5;
+}
+
+.pagination > li > span:hover,
+.pagination > li > span:focus,
+.pagination > li > span:active {
+	color: #555B66;
+	background: #e5e5e5;
 }
 
 /** =========================================

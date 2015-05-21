@@ -23,3 +23,4 @@ require('parsley');
 
 require('./carousel.js');
 require('./waypoints.js');
+require('./ajax-content.js');

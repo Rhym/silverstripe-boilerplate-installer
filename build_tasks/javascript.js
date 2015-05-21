@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
     config.set('watch.javascript', {
         files: ['<%= directories.project %>/javascript/src/*.js', '<%= directories.project %>/javascript/src/**/*.js'],
-        tasks: ['browserify', 'uglify'],
+        tasks: ['browserify'],
         options: {
             interrupt: true,
             spawn: false

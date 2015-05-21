@@ -16245,6 +16245,62 @@ if ('undefined' !== typeof window.ParsleyValidator)
 
 },{}],7:[function(require,module,exports){
 ;(function($) {
+    /**
+     * If .ajax-control exists on the page
+     */
+    if ($('.ajax-control').length) {
+        var $content = $('.ajax-content'),
+            $loadingClass = 'ajax-loading',
+            replaceContent = function (url) {
+                var param = '&ajax=1',
+                    ajaxUrl = (url.indexOf(param) === -1) ? url + param : url,
+                    cleanUrl = url.replace(new RegExp(param+'$'),'');
+                $.ajax({
+                    url: ajaxUrl,
+                    beforeSend: function (xhr) {
+                        $content.addClass($loadingClass);
+                    }
+                })
+                    .done(function (response) {
+                        $content.removeClass($loadingClass).html(response);
+                        window.history.pushState(
+                            {url: cleanUrl},
+                            document.title,
+                            cleanUrl
+                        );
+                    })
+                    .fail(function (xhr) {
+                        console.log('Error: ' + xhr.responseText);
+                    });
+            };
+        /**
+         * On ajax control click
+         */
+        $content.on('click', '.ajax-control a', function (e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            replaceContent(url);
+        });
+
+        /**
+         * Hook into the users history changes
+         * if there is a saved history state
+         * run the paginate() function.
+         *
+         * @param e
+         */
+        window.onpopstate = function (e) {
+            if (e.state.url) {
+                replaceContent(e.state.url);
+            }
+            else {
+                e.preventDefault();
+            }
+        }
+    }
+})(jQuery);
+},{}],8:[function(require,module,exports){
+;(function($) {
     $(document).ready(function(){
 
         $('.carousel').owlCarousel({
@@ -16257,7 +16313,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
 
     });
 })(jQuery);
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 (function (global){
 /** =========================================
  * Init
@@ -16284,8 +16340,9 @@ require('parsley');
 
 require('./carousel.js');
 require('./waypoints.js');
+require('./ajax-content.js');
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./carousel.js":7,"./waypoints.js":9,"bootstrap-collapse":2,"bootstrap-modal":3,"jquery":4,"module-popout":1,"owlcarousel":5,"parsley":6}],9:[function(require,module,exports){
+},{"./ajax-content.js":7,"./carousel.js":8,"./waypoints.js":10,"bootstrap-collapse":2,"bootstrap-modal":3,"jquery":4,"module-popout":1,"owlcarousel":5,"parsley":6}],10:[function(require,module,exports){
 //;(function($) {
 //    $(document).ready(function(){
 //
@@ -16303,4 +16360,4 @@ require('./waypoints.js');
 //
 //    });
 //})(jQuery);
-},{}]},{},[8]);
+},{}]},{},[9]);
