@@ -79,12 +79,24 @@
  ===========================================*/
 
 /** =========================================
+ * Animation
+ ===========================================*/
+
+/** =========================================
  * Screen Sizes
  ===========================================*/
 
 /** =========================================
  * Fonts
  ===========================================*/
+
+/** -----------------------------------------
+ * Headings
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Line Height
+ -------------------------------------------*/
 
 /** =========================================
  * Sizing
@@ -1139,8 +1151,20 @@ button.close {
  * Buttons
  ===========================================*/
 
+/** -----------------------------------------
+ * Links
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Bordered
+ -------------------------------------------*/
+
 /** =========================================
  * Forms
+ ===========================================*/
+
+/** =========================================
+ * Grid
  ===========================================*/
 
 /** =========================================
@@ -1183,8 +1207,20 @@ button.close {
  * Buttons
  ===========================================*/
 
+/** -----------------------------------------
+ * Links
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Bordered
+ -------------------------------------------*/
+
 /** =========================================
  * Forms
+ ===========================================*/
+
+/** =========================================
+ * Grid
  ===========================================*/
 
 /** =========================================
@@ -1555,7 +1591,7 @@ ul.deletelist li:before {
  ===========================================*/
 
 .ajax-content {
-	transition: .1s linear opacity;
+	transition: 0.1s linear opacity;
 }
 
 .ajax-content.ajax-loading {
@@ -1566,13 +1602,7 @@ ul.deletelist li:before {
  * Alerts
  ===========================================*/
 
-/**
- * Alerts have many &.classes due to supporting SS default messages.
- */
-
-.alert.alert-success,
-.alert.success,
-.alert.good {
+.alert.alert-success {
 	display: block;
 	padding: 15px;
 	border-radius: 2px;
@@ -1583,21 +1613,16 @@ ul.deletelist li:before {
 	color: #3c763d;
 }
 
-.alert.alert-success a,
-.alert.success a,
-.alert.good a {
+.alert.alert-success a {
 	text-decoration: underline;
+	color: #3c763d;
 }
 
-.alert.alert-success p:last-child,
-.alert.success p:last-child,
-.alert.good p:last-child {
+.alert.alert-success p:last-child {
 	margin-bottom: 0;
 }
 
-.alert.alert-success hr,
-.alert.success hr,
-.alert.good hr {
+.alert.alert-success hr {
 	border-top-color: #abbc9f;
 }
 
@@ -1606,37 +1631,16 @@ ul.deletelist li:before {
 .alert.alert-success h3,
 .alert.alert-success h4,
 .alert.alert-success h5,
-.alert.alert-success h6,
-.alert.success h1,
-.alert.success h2,
-.alert.success h3,
-.alert.success h4,
-.alert.success h5,
-.alert.success h6,
-.alert.good h1,
-.alert.good h2,
-.alert.good h3,
-.alert.good h4,
-.alert.good h5,
-.alert.good h6 {
+.alert.alert-success h6 {
 	margin-top: 0;
 	color: #3c763d;
 }
 
-.alert.alert-success .alert-link,
-.alert.success .alert-link,
-.alert.good .alert-link {
+.alert.alert-success .alert-link {
 	color: #366a36;
 }
 
-.alert.alert-success a,
-.alert.success a,
-.alert.good a {
-	color: #3c763d;
-}
-
-.alert.alert-info,
-.alert.notice {
+.alert.alert-info {
 	display: block;
 	padding: 15px;
 	border-radius: 2px;
@@ -1647,18 +1651,16 @@ ul.deletelist li:before {
 	color: #31708f;
 }
 
-.alert.alert-info a,
-.alert.notice a {
+.alert.alert-info a {
 	text-decoration: underline;
+	color: #31708f;
 }
 
-.alert.alert-info p:last-child,
-.alert.notice p:last-child {
+.alert.alert-info p:last-child {
 	margin-bottom: 0;
 }
 
-.alert.alert-info hr,
-.alert.notice hr {
+.alert.alert-info hr {
 	border-top-color: #97bbc1;
 }
 
@@ -1667,29 +1669,16 @@ ul.deletelist li:before {
 .alert.alert-info h3,
 .alert.alert-info h4,
 .alert.alert-info h5,
-.alert.alert-info h6,
-.alert.notice h1,
-.alert.notice h2,
-.alert.notice h3,
-.alert.notice h4,
-.alert.notice h5,
-.alert.notice h6 {
+.alert.alert-info h6 {
 	margin-top: 0;
 	color: #31708f;
 }
 
-.alert.alert-info .alert-link,
-.alert.notice .alert-link {
+.alert.alert-info .alert-link {
 	color: #2c6480;
 }
 
-.alert.alert-info a,
-.alert.notice a {
-	color: #31708f;
-}
-
-.alert.alert-warning,
-.alert.warning {
+.alert.alert-warning {
 	display: block;
 	padding: 15px;
 	border-radius: 2px;
@@ -1700,18 +1689,16 @@ ul.deletelist li:before {
 	color: #8a6d3b;
 }
 
-.alert.alert-warning a,
-.alert.warning a {
+.alert.alert-warning a {
 	text-decoration: underline;
+	color: #8a6d3b;
 }
 
-.alert.alert-warning p:last-child,
-.alert.warning p:last-child {
+.alert.alert-warning p:last-child {
 	margin-bottom: 0;
 }
 
-.alert.alert-warning hr,
-.alert.warning hr {
+.alert.alert-warning hr {
 	border-top-color: #c9bda4;
 }
 
@@ -1720,32 +1707,16 @@ ul.deletelist li:before {
 .alert.alert-warning h3,
 .alert.alert-warning h4,
 .alert.alert-warning h5,
-.alert.alert-warning h6,
-.alert.warning h1,
-.alert.warning h2,
-.alert.warning h3,
-.alert.warning h4,
-.alert.warning h5,
-.alert.warning h6 {
+.alert.alert-warning h6 {
 	margin-top: 0;
 	color: #8a6d3b;
 }
 
-.alert.alert-warning .alert-link,
-.alert.warning .alert-link {
+.alert.alert-warning .alert-link {
 	color: #7c6235;
 }
 
-.alert.alert-warning a,
-.alert.warning a {
-	color: #8a6d3b;
-}
-
-.alert.alert-danger,
-.alert.required,
-.alert.validation,
-.alert.bad,
-.alert.error {
+.alert.alert-danger {
 	display: block;
 	padding: 15px;
 	border-radius: 2px;
@@ -1756,27 +1727,16 @@ ul.deletelist li:before {
 	color: #a94442;
 }
 
-.alert.alert-danger a,
-.alert.required a,
-.alert.validation a,
-.alert.bad a,
-.alert.error a {
+.alert.alert-danger a {
 	text-decoration: underline;
+	color: #a94442;
 }
 
-.alert.alert-danger p:last-child,
-.alert.required p:last-child,
-.alert.validation p:last-child,
-.alert.bad p:last-child,
-.alert.error p:last-child {
+.alert.alert-danger p:last-child {
 	margin-bottom: 0;
 }
 
-.alert.alert-danger hr,
-.alert.required hr,
-.alert.validation hr,
-.alert.bad hr,
-.alert.error hr {
+.alert.alert-danger hr {
 	border-top-color: #bda4a8;
 }
 
@@ -1785,59 +1745,13 @@ ul.deletelist li:before {
 .alert.alert-danger h3,
 .alert.alert-danger h4,
 .alert.alert-danger h5,
-.alert.alert-danger h6,
-.alert.required h1,
-.alert.required h2,
-.alert.required h3,
-.alert.required h4,
-.alert.required h5,
-.alert.required h6,
-.alert.validation h1,
-.alert.validation h2,
-.alert.validation h3,
-.alert.validation h4,
-.alert.validation h5,
-.alert.validation h6,
-.alert.bad h1,
-.alert.bad h2,
-.alert.bad h3,
-.alert.bad h4,
-.alert.bad h5,
-.alert.bad h6,
-.alert.error h1,
-.alert.error h2,
-.alert.error h3,
-.alert.error h4,
-.alert.error h5,
-.alert.error h6 {
+.alert.alert-danger h6 {
 	margin-top: 0;
 	color: #a94442;
 }
 
-.alert.alert-danger .alert-link,
-.alert.required .alert-link,
-.alert.validation .alert-link,
-.alert.bad .alert-link,
-.alert.error .alert-link {
+.alert.alert-danger .alert-link {
 	color: #983d3b;
-}
-
-.alert.alert-danger a,
-.alert.required a,
-.alert.validation a,
-.alert.bad a,
-.alert.error a {
-	color: #a94442;
-}
-
-.alert .error-list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.alert .error-list li {
-	margin: 0;
 }
 
 /** =========================================
@@ -2096,7 +2010,7 @@ fieldset[disabled] .btn-inverse.active {
 .btn-link {
 	background: transparent none;
 	text-decoration: none;
-	transition: .1s linear color;
+	transition: 0.1s linear color;
 }
 
 .btn-link:hover {
@@ -2198,7 +2112,7 @@ fieldset[disabled] .btn-inverse.active {
 	background: transparent none;
 	border-width: 2px;
 	border-style: solid;
-	transition: .1s linear color, .1s linear border-color;
+	transition: 0.1s linear color, 0.1s linear border-color;
 }
 
 .btn-bordered:hover,
@@ -2208,15 +2122,15 @@ fieldset[disabled] .btn-inverse.active {
 }
 
 .btn-bordered.btn-default {
-	border-color: #212121;
-	color: #212121;
+	border-color: #fff;
+	color: #fff;
 }
 
 .btn-bordered.btn-default:hover,
 .btn-bordered.btn-default:active,
 .btn-bordered.btn-default:focus {
-	color: #212121;
-	border-color: #212121;
+	color: #fff;
+	border-color: #fff;
 }
 
 .btn-bordered.btn-primary {
@@ -2244,15 +2158,15 @@ fieldset[disabled] .btn-inverse.active {
 }
 
 .btn-bordered.btn-inverse {
-	border-color: #fff;
-	color: #fff;
+	border-color: #212121;
+	color: #212121;
 }
 
 .btn-bordered.btn-inverse:hover,
 .btn-bordered.btn-inverse:active,
 .btn-bordered.btn-inverse:focus {
-	color: #fff;
-	border-color: #fff;
+	color: #212121;
+	border-color: #212121;
 }
 
 .btn-bordered.btn-success {
@@ -2537,51 +2451,6 @@ fieldset[disabled]
 	margin: 15px 0;
 }
 
-/*---------------------------------------------*\
-    Messages
-\*---------------------------------------------*/
-
-.message {
-	display: block;
-	padding: 15px;
-	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-	margin: 0 0 15px 0;
-	background-color: #d9edf7;
-	border: 1px solid #9fc5cc;
-	color: #31708f;
-}
-
-.message a {
-	text-decoration: underline;
-}
-
-.message p:last-child {
-	margin-bottom: 0;
-}
-
-.message hr {
-	border-top-color: #97bbc1;
-}
-
-.message h1,
-.message h2,
-.message h3,
-.message h4,
-.message h5,
-.message h6 {
-	margin-top: 0;
-	color: #31708f;
-}
-
-.message .alert-link {
-	color: #2c6480;
-}
-
-.message a {
-	color: #31708f;
-}
-
 /** =========================================
  * Silverstripe Forms
  ===========================================*/
@@ -2811,6 +2680,7 @@ fieldset[disabled]
 
 .parsley-errors-list li a {
 	text-decoration: underline;
+	color: #a94442;
 }
 
 .parsley-errors-list li p:last-child {
@@ -2835,13 +2705,58 @@ fieldset[disabled]
 	color: #983d3b;
 }
 
-.parsley-errors-list li a {
-	color: #a94442;
-}
-
 /** =========================================
  * Grid
  ===========================================*/
+
+/** -----------------------------------------
+ * Rows
+ -------------------------------------------*/
+
+.row.row-xs {
+	margin: -3px;
+}
+
+.row.row-xs > .item {
+	padding: 0 3px;
+	margin: 0 0 6px 0;
+}
+
+.row.row-sm {
+	margin: -7px;
+}
+
+.row.row-sm > .item {
+	padding: 0 7px;
+	margin: 0 0 14px 0;
+}
+
+.row.row-md {
+	margin: -15px;
+}
+
+.row.row-md > .item {
+	padding: 0 15px;
+	margin: 0 0 30px 0;
+}
+
+.row.row-lg {
+	margin: -30px;
+}
+
+.row.row-lg > .item {
+	padding: 0 30px;
+	margin: 0 0 60px 0;
+}
+
+.row.row-xl {
+	margin: -60px;
+}
+
+.row.row-xl > .item {
+	padding: 0 60px;
+	margin: 0 0 120px 0;
+}
 
 /** -----------------------------------------
  * XL
@@ -2856,20 +2771,28 @@ fieldset[disabled]
 	padding: 15px 0;
 	margin-top: 0;
 	position: relative;
-	z-index: 2;
+	z-index: 2; /**
+   * Remove space between elements.
+   */
+	font-size: 0;
 }
 
-#header #logo .heading {
+#header .left,
+#header .right { /**
+     * Set font size after removing space between inline-block elements.
+     */
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+#header .left .heading {
 	font-size: 24px;
 	margin: 0;
 }
 
-#header #logo .tagline {
-	font-size: 14px;
-	margin: 0;
-}
-
-#header #logo a {
+#header .left a {
 	display: block;
 }
 
@@ -2943,26 +2866,47 @@ fieldset[disabled]
 	color: #212121;
 }
 
+#header .phone,
 #header .hamburger-menu {
 	display: block;
 }
 
+#header .phone .menu-icon,
 #header .hamburger-menu .menu-icon {
+	margin: 0 15px;
 	background: transparent none;
 	padding: 0;
 	border-width: 0;
 	text-align: center;
 }
 
+#header .phone .menu-icon.toggle-menu,
+#header .hamburger-menu .menu-icon.toggle-menu {
+	margin: 0 0 0 7px;
+}
+
+#header .phone .menu-icon .icon,
+#header .hamburger-menu .menu-icon .icon {
+	color: #555B66;
+	font-size: 36px;
+	display: block;
+}
+
+#header .phone .menu-icon .text,
 #header .hamburger-menu .menu-icon .text {
+	color: #555B66;
 	text-transform: uppercase;
-	font-size: 14px;
-	margin: 0 7px 0 0;
+	font-size: 10px;
 	display: inline-block;
 }
 
+#header .phone .menu-icon.search,
 #header .hamburger-menu .menu-icon.search {
 	right: 47px;
+}
+
+#header .phone {
+	display: none;
 }
 
 .has-slider #header {
@@ -3010,6 +2954,230 @@ fieldset[disabled]
 
 .loop.no-margin .item.last {
 	margin-bottom: 0;
+}
+
+/** =========================================
+ * Messages
+ ===========================================*/
+
+.message { /* Remove Margin from the include */
+}
+
+.message.success,
+.message.good {
+	display: block;
+	padding: 15px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 15px 0;
+	background-color: #dff0d8;
+	border: 1px solid #b5c6a8;
+	color: #3c763d;
+}
+
+.message.success a,
+.message.good a {
+	text-decoration: underline;
+	color: #3c763d;
+}
+
+.message.success p:last-child,
+.message.good p:last-child {
+	margin-bottom: 0;
+}
+
+.message.success hr,
+.message.good hr {
+	border-top-color: #abbc9f;
+}
+
+.message.success h1,
+.message.success h2,
+.message.success h3,
+.message.success h4,
+.message.success h5,
+.message.success h6,
+.message.good h1,
+.message.good h2,
+.message.good h3,
+.message.good h4,
+.message.good h5,
+.message.good h6 {
+	margin-top: 0;
+	color: #3c763d;
+}
+
+.message.success .alert-link,
+.message.good .alert-link {
+	color: #366a36;
+}
+
+.message.notice {
+	display: block;
+	padding: 15px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 15px 0;
+	background-color: #d9edf7;
+	border: 1px solid #9fc5cc;
+	color: #31708f;
+}
+
+.message.notice a {
+	text-decoration: underline;
+	color: #31708f;
+}
+
+.message.notice p:last-child {
+	margin-bottom: 0;
+}
+
+.message.notice hr {
+	border-top-color: #97bbc1;
+}
+
+.message.notice h1,
+.message.notice h2,
+.message.notice h3,
+.message.notice h4,
+.message.notice h5,
+.message.notice h6 {
+	margin-top: 0;
+	color: #31708f;
+}
+
+.message.notice .alert-link {
+	color: #2c6480;
+}
+
+.message.warning {
+	display: block;
+	padding: 15px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 15px 0;
+	background-color: #fcf8e3;
+	border: 1px solid #d4c7ad;
+	color: #8a6d3b;
+}
+
+.message.warning a {
+	text-decoration: underline;
+	color: #8a6d3b;
+}
+
+.message.warning p:last-child {
+	margin-bottom: 0;
+}
+
+.message.warning hr {
+	border-top-color: #c9bda4;
+}
+
+.message.warning h1,
+.message.warning h2,
+.message.warning h3,
+.message.warning h4,
+.message.warning h5,
+.message.warning h6 {
+	margin-top: 0;
+	color: #8a6d3b;
+}
+
+.message.warning .alert-link {
+	color: #7c6235;
+}
+
+.message.required,
+.message.validation,
+.message.bad,
+.message.error {
+	display: block;
+	padding: 15px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin: 0 0 15px 0;
+	background-color: #f2dede;
+	border: 1px solid #c7adb1;
+	color: #a94442;
+}
+
+.message.required a,
+.message.validation a,
+.message.bad a,
+.message.error a {
+	text-decoration: underline;
+	color: #a94442;
+}
+
+.message.required p:last-child,
+.message.validation p:last-child,
+.message.bad p:last-child,
+.message.error p:last-child {
+	margin-bottom: 0;
+}
+
+.message.required hr,
+.message.validation hr,
+.message.bad hr,
+.message.error hr {
+	border-top-color: #bda4a8;
+}
+
+.message.required h1,
+.message.required h2,
+.message.required h3,
+.message.required h4,
+.message.required h5,
+.message.required h6,
+.message.validation h1,
+.message.validation h2,
+.message.validation h3,
+.message.validation h4,
+.message.validation h5,
+.message.validation h6,
+.message.bad h1,
+.message.bad h2,
+.message.bad h3,
+.message.bad h4,
+.message.bad h5,
+.message.bad h6,
+.message.error h1,
+.message.error h2,
+.message.error h3,
+.message.error h4,
+.message.error h5,
+.message.error h6 {
+	margin-top: 0;
+	color: #a94442;
+}
+
+.message.required .alert-link,
+.message.validation .alert-link,
+.message.bad .alert-link,
+.message.error .alert-link {
+	color: #983d3b;
+}
+
+.message.success,
+.message.good,
+.message.notice,
+.message.warning,
+.message.required,
+.message.validation,
+.message.bad,
+.message.error {
+	margin: 0;
+}
+
+.message .error-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.message .error-list li {
+	margin: 0;
 }
 
 /** =========================================
@@ -3098,7 +3266,7 @@ section.section {
 	line-height: 2em;
 	text-align: center;
 	border-radius: 50%;
-	transition: .2s linear background-color, .1s linear color;
+	transition: 0.1s linear background-color, 0.1s linear color;
 }
 
 /** =========================================
@@ -3233,7 +3401,7 @@ img {
 	-webkit-overflow-scrolling: touch;
 	height: 100%;
 	width: 100%;
-	transition: .1s linear opacity;
+	transition: 0.1s linear opacity;
 }
 
 .content.typography {
@@ -3380,7 +3548,6 @@ img {
 	right: -100%;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
-	padding: 15px 0;
 	transition: .2s ease right;
 }
 
@@ -3388,39 +3555,84 @@ img {
 	position: relative;
 }
 
-.menu-wrap .toggle-menu {
+.menu-wrap .header {
+	margin: 15px 0;
+	padding: 15px 0;
+	margin-top: 0;
+	position: relative;
+	z-index: 2; /**
+     * Remove space between elements.
+     */
+	font-size: 0;
+}
+
+.menu-wrap .header .left .logo a {
+	display: block;
+}
+
+.menu-wrap .header .left .logo img {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.menu-wrap .header .left .heading {
+	font-size: 24px;
+	margin: 0;
+}
+
+.menu-wrap .header .left a {
+	display: block;
+}
+
+.menu-wrap .header .left,
+.menu-wrap .header .right { /**
+       * Set font size after removing space between inline-block elements.
+       */
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.menu-wrap .header ul {
+	margin: 0;
 	padding: 0;
-	border-width: 0;
-	border-radius: 3px;
-	position: absolute;
-	top: 0;
-	right: 15px;
-	font-size: 20px;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	line-height: 40px;
-	background: #212121;
-	color: #fff;
+	float: right;
+	list-style: none;
 }
 
-.menu-wrap .logo {
-	width: 50%;
-	margin-bottom: 55px;
-}
-
-.menu-wrap .logo:before,
-.menu-wrap .logo:after {
+.menu-wrap .header ul:before,
+.menu-wrap .header ul:after {
 	content: " ";
 	display: table;
 }
 
-.menu-wrap .logo:after {
+.menu-wrap .header ul:after {
 	clear: both;
 }
 
-.menu-wrap .logo a {
+.menu-wrap .header ul li {
+	border-width: 0;
+}
+
+.menu-wrap .header ul .menu-icon {
+	background: transparent none;
+	padding: 0;
+	border-width: 0;
+	text-align: center;
+}
+
+.menu-wrap .header ul .menu-icon .icon {
+	color: #555B66;
+	font-size: 36px;
 	display: block;
+}
+
+.menu-wrap .header ul .menu-icon .text {
+	color: #555B66;
+	text-transform: uppercase;
+	font-size: 10px;
+	display: inline-block;
 }
 
 .menu-wrap ul {
@@ -3988,27 +4200,19 @@ ul li {
 	margin-bottom: 7px;
 }
 
-.alert.alert-success,
-.alert.success,
-.alert.good {
+.alert.alert-success {
 	margin: 0 0 30px 0;
 }
 
-.alert.alert-info,
-.alert.notice {
+.alert.alert-info {
 	margin: 0 0 30px 0;
 }
 
-.alert.alert-warning,
-.alert.warning {
+.alert.alert-warning {
 	margin: 0 0 30px 0;
 }
 
-.alert.alert-danger,
-.alert.required,
-.alert.validation,
-.alert.bad,
-.alert.error {
+.alert.alert-danger {
 	margin: 0 0 30px 0;
 }
 
@@ -4061,10 +4265,6 @@ ul li {
 	margin: 30px 0;
 }
 
-.message {
-	margin: 0 0 30px 0;
-}
-
 .parsley-errors-list li {
 	margin: 0 0 30px 0;
 }
@@ -4078,24 +4278,42 @@ ul li {
 }
 
 #header {
-	margin-top: 0; /**
-       * Remove space between elements.
-       */
-	font-size: 0;
-}
-
-#header #logo,
-#header #navigation { /**
-       * Set font size after removing space between inline-block elements.
-       */
-	font-size: 14px;
-	display: inline-block;
-	vertical-align: middle;
-	float: none;
+	margin-top: 0;
 }
 
 .loop .item {
 	margin: 0 0 30px 0;
+}
+
+.message.success,
+.message.good {
+	margin: 0 0 30px 0;
+}
+
+.message.notice {
+	margin: 0 0 30px 0;
+}
+
+.message.warning {
+	margin: 0 0 30px 0;
+}
+
+.message.required,
+.message.validation,
+.message.bad,
+.message.error {
+	margin: 0 0 30px 0;
+}
+
+.message.success,
+.message.good,
+.message.notice,
+.message.warning,
+.message.required,
+.message.validation,
+.message.bad,
+.message.error {
+	margin: 0;
 }
 
 section.section {
@@ -4155,8 +4373,16 @@ section.section {
 	margin: 30px 0;
 }
 
-.menu-wrap {
+.menu-wrap .header {
+	margin: 30px 0;
+}
+
+.menu-wrap .header {
 	padding: 30px 0;
+}
+
+.menu-wrap .header {
+	margin-top: 0;
 }
 
 .portfolio.section {
@@ -4796,6 +5022,7 @@ td.visible-lg {
 	display: block;
 }
 
+#header .phone,
 #header .hamburger-menu {
 	display: none;
 }
@@ -4847,6 +5074,10 @@ td.visible-xs {
 
 .hidden-xs {
 	display: none !important;
+}
+
+#header .phone {
+	display: block;
 }
 
 }

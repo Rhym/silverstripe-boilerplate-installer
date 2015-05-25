@@ -16251,6 +16251,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
     if ($('.ajax-control').length) {
         var $content = $('.ajax-content'),
             $loadingClass = 'ajax-loading',
+            $window = $('.content-wrap'),
             replaceContent = function (url) {
                 var param = '&ajax=1',
                     ajaxUrl = (url.indexOf(param) === -1) ? url + param : url,
@@ -16263,6 +16264,10 @@ if ('undefined' !== typeof window.ParsleyValidator)
                 })
                     .done(function (response) {
                         $content.removeClass($loadingClass).html(response);
+                        /**
+                         * Animate a scroll to the top of the page.
+                         */
+                        $window.animate({ scrollTop: 0 }, 'fast');
                         window.history.pushState(
                             {url: cleanUrl},
                             document.title,
