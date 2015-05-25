@@ -6,7 +6,6 @@
 <body class="{$ClassName} {$SliderClass}" id="{$URLSegment}">
     {$TrackingCodeTop.RAW}
     <div id="wrapper">
-        <% include Navigation_Popout %>
         <div class="content-wrap">
             <% include Header %>
             <section id="mainContent">
@@ -14,6 +13,7 @@
             </section><!-- /#mainContent -->
             <% include Footer %>
         </div><!-- /.content-wrap -->
+        <% include Navigation_Popout %>
     </div><!-- /#wrapper -->
     {$TrackingCodeBottom.RAW}
 </body>
