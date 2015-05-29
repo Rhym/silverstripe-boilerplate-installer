@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{$ContentLocale}">
 <head>
-<% include HeaderMeta %>
+    <% include HeaderMeta %>
 </head>
 <body class="{$ClassName} {$SliderClass}" id="{$URLSegment}">
     {$TrackingCodeTop.RAW}
     <div id="wrapper">
         <div class="content-wrap">
             <% include Header %>
-            <section id="mainContent">
+            <section id="mainContent" class="page">
                 {$Layout}
-            </section><!-- /#mainContent -->
+            </section><!-- /#mainContent /.page -->
             <% include Footer %>
         </div><!-- /.content-wrap -->
         <% include Navigation_Popout %>
