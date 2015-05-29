@@ -10,7 +10,6 @@
     "owlcarousel": "./components/lib/owl.carousel/dist/owl.carousel.js",
     "bootstrap-modal": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
     "bootstrap-collapse": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
-    "module-popout": "./boilerplate/code/Modules/PopoutMenu/javascript/popout-menu.js",
     "parsley": "./components/lib/parsleyjs/dist/parsley.js"
   },
   "devDependencies": {

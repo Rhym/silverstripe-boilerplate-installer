@@ -1,30 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-;(function($) {
-    $(document).ready(function(){
-
-        /** =========================================
-         * Popout Menu
-         ==========================================*/
-
-        var body = $('body'),
-            button = $('.toggle-menu');
-
-        button.on('click', function(e){
-            body.toggleClass('show-menu');
-        });
-
-        $('.open-children').on('click', function(e){
-            e.preventDefault();
-            var target = $(this).data('target');
-            $(target).toggleClass('active');
-            $(this).toggleClass('active');
-            return false;
-        });
-
-    });
-
-})(jQuery);
-},{}],2:[function(require,module,exports){
 /* ========================================================================
  * Bootstrap: collapse.js v3.3.4
  * http://getbootstrap.com/javascript/#collapse
@@ -237,7 +211,7 @@
 
 }(jQuery);
 
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 /* ========================================================================
  * Bootstrap: modal.js v3.3.4
  * http://getbootstrap.com/javascript/#modals
@@ -578,7 +552,7 @@
 
 }(jQuery);
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v1.11.3
  * http://jquery.com/
@@ -10931,7 +10905,7 @@ return jQuery;
 
 }));
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
@@ -14158,7 +14132,7 @@ return jQuery;
 
 })(window.Zepto || window.jQuery, window, document);
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 /*!
 * Parsleyjs
 * Guillaume Potier - <guillaume@wisembly.com>
@@ -16243,7 +16217,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
     });
 }));
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 //;(function($) {
 //    /**
 //     * If .ajax-control exists on the page
@@ -16304,7 +16278,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
 //        }
 //    }
 //})(jQuery);
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 ;(function($) {
     /** =========================================
      * Carousel
@@ -16323,7 +16297,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
         });
     }
 })(jQuery);
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 (function (global){
 /** =========================================
  * Init
@@ -16341,7 +16315,6 @@ global.jQuery = require('jquery');
 require('owlcarousel');
 require('bootstrap-modal');
 require('bootstrap-collapse');
-require('module-popout');
 require('parsley');
 
 /** -----------------------------------------
@@ -16353,7 +16326,7 @@ require('./carousel.js');
 require('./waypoints.js');
 require('./ajax-content.js');
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ajax-content.js":7,"./carousel.js":8,"./popout-menu.js":10,"./waypoints.js":11,"bootstrap-collapse":2,"bootstrap-modal":3,"jquery":4,"module-popout":1,"owlcarousel":5,"parsley":6}],10:[function(require,module,exports){
+},{"./ajax-content.js":6,"./carousel.js":7,"./popout-menu.js":9,"./waypoints.js":10,"bootstrap-collapse":1,"bootstrap-modal":2,"jquery":3,"owlcarousel":4,"parsley":5}],9:[function(require,module,exports){
 ;(function($) {
     /** =========================================
      * Popout Menu
@@ -16372,7 +16345,7 @@ require('./ajax-content.js');
         return false;
     });
 })(jQuery);
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 //;(function($) {
 //    $(document).ready(function(){
 //
@@ -16390,4 +16363,4 @@ require('./ajax-content.js');
 //
 //    });
 //})(jQuery);
-},{}]},{},[9]);
+},{}]},{},[8]);

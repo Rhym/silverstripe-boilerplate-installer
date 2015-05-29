@@ -14,7 +14,6 @@ global.jQuery = require('jquery');
 require('owlcarousel');
 require('bootstrap-modal');
 require('bootstrap-collapse');
-require('module-popout');
 require('parsley');
 
 /** -----------------------------------------
