@@ -29,6 +29,14 @@ module.exports = function(grunt) {
         dest: '<%= directories.project %>/javascript/main.min.js'
     });
 
+    config.set('uglify.modernizr', {
+        options: {
+            preserveComments: 'some'
+        },
+        src: '<%= directories.project %>/javascript/lib/modernizr.js',
+        dest: '<%= directories.project %>/javascript/lib/modernizr.min.js'
+    });
+
     /** -----------------------------------------
      * JsHint
      -------------------------------------------*/
