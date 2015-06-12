@@ -52,12 +52,6 @@ if (!Director::isLive()) {
 
 $formats = array(
     array(
-        'title' => 'Heading - Page Heading',
-        'selector' => 'h1,h2,h3,h4,h5,h6',
-        'classes' => 'page-heading',
-        'wrapper' => false,
-    ),
-    array(
         'title' => 'Heading - h1',
         'selector' => 'h1,h2,h3,h4,h5,h6',
         'classes' => 'h1',
@@ -78,57 +72,57 @@ $formats = array(
     array(
         'title' => 'Text - Primary',
         'inline' => 'span',
-        'classes' => 'text-primary',
+        'classes' => 'text--primary',
         'wrapper' => true,
         'merge_siblings' => false
     ),
     array(
         'title' => 'Text - Secondary',
         'inline' => 'span',
-        'classes' => 'text-secondary',
+        'classes' => 'text--secondary',
         'wrapper' => true,
         'merge_siblings' => false
     ),
     array(
         'title' => 'Button - Default',
         'selector' => 'a, button',
-        'classes' => 'btn btn-default',
+        'classes' => 'btn--default',
         'wrapper' => false,
     ),
     array(
         'title' => 'Button - Primary',
         'selector' => 'a, button',
-        'classes' => 'btn btn-primary',
+        'classes' => 'btn--primary',
         'wrapper' => false,
     ),
     array(
         'title' => 'Button - Secondary',
         'selector' => 'a, button',
-        'classes' => 'btn btn-secondary',
+        'classes' => 'btn--secondary',
         'wrapper' => false,
     ),
     array(
         'title' => 'Button - Link',
         'selector' => 'a, button',
-        'classes' => 'btn-link',
+        'classes' => 'btn--link',
         'wrapper' => false,
     ),
     array(
         'title' => 'Button - Bordered',
         'selector' => 'a, button',
-        'classes' => 'btn-bordered',
+        'classes' => 'btn--bordered',
         'wrapper' => false,
     ),
     array(
         'title' => 'Button - Large',
         'selector' => 'a, button',
-        'classes' => 'btn-lg',
+        'classes' => 'btn--lg',
         'wrapper' => false,
     ),
     array(
         'title' => 'Button - Small',
         'selector' => 'a, button',
-        'classes' => 'btn-sm',
+        'classes' => 'btn--sm',
         'wrapper' => false,
     ),
     array(
@@ -140,31 +134,13 @@ $formats = array(
     array(
         'title' => 'List - Deletelist',
         'selector' => 'ul',
-        'classes' => 'deletelist',
+        'classes' => 'delete-list',
         'wrapper' => false
     ),
     array(
         'title' => 'Table',
         'selector' => 'table',
         'classes' => 'table',
-        'wrapper' => false
-    ),
-    array(
-        'title' => 'Table - Striped',
-        'selector' => 'table',
-        'classes' => 'table table-striped',
-        'wrapper' => false
-    ),
-    array(
-        'title' => 'Table - Bordered',
-        'selector' => 'table',
-        'classes' => 'table table-bordered',
-        'wrapper' => false
-    ),
-    array(
-        'title' => 'Table - Condensed',
-        'selector' => 'table',
-        'classes' => 'table table-condensed',
         'wrapper' => false
     ),
     array(
