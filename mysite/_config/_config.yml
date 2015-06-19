@@ -33,3 +33,6 @@ LeftAndMain:
 SiteConfig:
   extensions:
     - SiteConfigExtension
+
+SVGTemplate:
+  base_path: 'mysite/images/svg'
