@@ -2,6 +2,11 @@
 
 /**
  * Class SiteConfigExtension
+ *
+ * @property boolean ShowAssetAdmin
+ * @property boolean ShowSecurityAdmin
+ * @property boolean ShowReportAdmin
+ * @property boolean ShowHelpLink
  */
 class SiteConfigExtension extends DataExtension {
 
@@ -24,9 +29,9 @@ class SiteConfigExtension extends DataExtension {
      */
     public function updateCMSFields(FieldList $fields) {
 
-        /** =========================================
+        /** -----------------------------------------
          * Settings
-        ===========================================*/
+        -------------------------------------------*/
 
         if (!$fields->fieldByName('Root.Settings')){
             $fields->addFieldToTab('Root', TabSet::create('Settings'));

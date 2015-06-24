@@ -3,25 +3,17 @@
 global $project;
 $project = 'mysite';
 
-/**
- * Use the _ss_environment.php file for configuration
- */
+/** Use the _ss_environment.php file for configuration */
 require_once ('conf/ConfigureFromEnv.php');
 
-/**
- * Remove the auto generated SS_ prefix that gets added if database is auto detected
- */
+/** Remove the auto generated SS_ prefix that gets added if database is auto detected */
 global $databaseConfig;
 $databaseConfig['database'] = str_replace('SS_', '', $databaseConfig['database']);
 
-/**
- * Set default language
- */
+/** Set default language */
 i18n::set_locale('en_US');
 
-/**
- * Force redirect to www
- */
+/** Force redirect to www */
 //Director::forceWWW();
 
 define('PROJECT_THIRDPARTY_DIR', project() . '/thirdparty');
