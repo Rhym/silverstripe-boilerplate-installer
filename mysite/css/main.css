@@ -2143,7 +2143,7 @@ fieldset[disabled]
 	width: 25px;
 	height: 25px;
 	background: transparent none;
-	border: 4px solid #E0E0E0;
+	border: 2px solid #E0E0E0;
 	border-color: rgba(0, 0, 0, 0.12);
 	border-top-color: #2196F3 !important;
 	border-radius: 50%;
@@ -2155,7 +2155,7 @@ fieldset[disabled]
 }
 
 .recaptcha::after {
-	left: 152px;
+	left: 15px;
 	z-index: -1;
 }
 

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b911f15e92a91c89a1950ecf4ec1140",
+    "hash": "e3b1a201619cf77cc2b596e3c4c262bf",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
+                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
                 "shasum": ""
             },
             "replace": {
@@ -99,7 +99,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2015-06-13 15:30:38"
         },
         {
             "name": "drewm/mailchimp-api",
@@ -140,16 +140,16 @@
         },
         {
             "name": "google/recaptcha",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/recaptcha.git",
-                "reference": "090585935d95ebdf2d16dd071b10c9179a94da47"
+                "reference": "e90c632d22c1f349fa22d60f69e272fd4bd244ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/recaptcha/zipball/090585935d95ebdf2d16dd071b10c9179a94da47",
-                "reference": "090585935d95ebdf2d16dd071b10c9179a94da47",
+                "url": "https://api.github.com/repos/google/recaptcha/zipball/e90c632d22c1f349fa22d60f69e272fd4bd244ae",
+                "reference": "e90c632d22c1f349fa22d60f69e272fd4bd244ae",
                 "shasum": ""
             },
             "require": {
@@ -181,7 +181,7 @@
                 "recaptcha",
                 "spam"
             ],
-            "time": "2015-03-16 13:45:08"
+            "time": "2015-05-22 01:28:57"
         },
         {
             "name": "ryanpotter/silverstripe-boilerplate",
@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "3167118893bd782b099bf2b8d04c432ab845ae44"
+                "reference": "68fe872068712265ad95136cd0974a818d08aaa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/3167118893bd782b099bf2b8d04c432ab845ae44",
-                "reference": "3167118893bd782b099bf2b8d04c432ab845ae44",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/68fe872068712265ad95136cd0974a818d08aaa2",
+                "reference": "68fe872068712265ad95136cd0974a818d08aaa2",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-06-25 05:05:36"
+            "time": "2015-06-25 22:30:51"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -265,7 +265,7 @@
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
-            "version": "1.1.0",
+            "version": "1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
@@ -486,7 +486,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/cms": 0,
         "silverstripe/framework": 0,
@@ -496,7 +496,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.2"
+        "php": ">=5.3.3"
     },
     "platform-dev": []
 }
