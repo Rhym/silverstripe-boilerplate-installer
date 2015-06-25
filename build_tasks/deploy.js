@@ -14,15 +14,6 @@ module.exports = function(grunt) {
     config.set('copy.all', {
         files: [
             /**
-             * Fonts
-             */
-            {
-                cwd: '<%= directories.bower %>/components-font-awesome/fonts',
-                src: '*',
-                dest: '<%= directories.project %>/fonts',
-                expand: true
-            },
-            /**
              * SVGs
              */
             {
