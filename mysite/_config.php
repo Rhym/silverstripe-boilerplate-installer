@@ -118,18 +118,6 @@ $formats = array(
         'wrapper' => false,
     ),
     array(
-        'title' => 'List - Checklist',
-        'selector' => 'ul',
-        'classes' => 'checklist',
-        'wrapper' => false
-    ),
-    array(
-        'title' => 'List - Deletelist',
-        'selector' => 'ul',
-        'classes' => 'delete-list',
-        'wrapper' => false
-    ),
-    array(
         'title' => 'Table',
         'selector' => 'table',
         'classes' => 'table',

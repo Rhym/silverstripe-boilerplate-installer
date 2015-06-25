@@ -13,36 +13,27 @@ module.exports = function(grunt) {
 
     config.set('copy.all', {
         files: [
-        /**
-         * Fonts
-         */
+            /**
+             * Fonts
+             */
             {
                 cwd: '<%= directories.bower %>/components-font-awesome/fonts',
                 src: '*',
                 dest: '<%= directories.project %>/fonts',
                 expand: true
             },
-        /**
-         * SVGs
-         */
+            /**
+             * SVGs
+             */
             {
                 cwd: '<%= directories.boilerplate %>/images/svg',
                 src: '*',
                 dest: '<%= directories.project %>/images/svg/src',
                 expand: true
             },
-        /**
-         * CSS
-         */
-            {
-                cwd: '<%= directories.bower %>/components-font-awesome/css',
-                src: 'font-awesome.min.css',
-                dest: '<%= directories.project %>/css',
-                expand: true
-            },
-        /**
-         * Javascript
-         */
+            /**
+             * Javascript
+             */
             {
                 cwd: '<%= directories.bower %>/modernizr/',
                 src: 'modernizr.js',

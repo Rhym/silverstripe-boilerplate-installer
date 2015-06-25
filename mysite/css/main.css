@@ -911,6 +911,22 @@ button.close {
  ===========================================*/
 
 /** =========================================
+ * Loading Spinner
+ ===========================================*/
+
+/** -----------------------------------------
+ * Variables
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Mixins
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Animation
+ -------------------------------------------*/
+
+/** =========================================
  * Loops
  * TODO: Use @extends when sass supports extending 
  ===========================================*/
@@ -986,6 +1002,22 @@ button.close {
 /** =========================================
  * Border Radii
  ===========================================*/
+
+/** =========================================
+ * Loading Spinner
+ ===========================================*/
+
+/** -----------------------------------------
+ * Variables
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Mixins
+ -------------------------------------------*/
+
+/** -----------------------------------------
+ * Animation
+ -------------------------------------------*/
 
 /** =========================================
  * Loops
@@ -1375,51 +1407,6 @@ img.center {
 	margin: 7px 0;
 	font-style: italic;
 	font-size: 0.9em;
-}
-
-/** -----------------------------------------
- * Lists
- -------------------------------------------*/
-
-ul.checklist {
-	padding-left: 0;
-}
-
-ul.checklist li {
-	padding-left: 1.2em;
-	list-style: none;
-}
-
-ul.checklist li:before {
-	content: "";
-	font-family: FontAwesome;
-	color: #5cb85c;
-	display: inline-block;
-	margin-left: -1.2em;
-	width: 1.2em;
-}
-
-ul.delete-list {
-	padding-left: 0;
-}
-
-ul.delete-list li {
-	padding-left: 1.2em;
-	list-style: none;
-}
-
-ul.delete-list li:before {
-	content: "";
-	font-family: FontAwesome;
-	color: #5cb85c;
-	display: inline-block;
-	margin-left: -1.2em;
-	width: 1.2em;
-}
-
-ul.delete-list li:before {
-	content: "";
-	color: #d9534f;
 }
 
 /** =========================================
@@ -1860,8 +1847,12 @@ fieldset[disabled] .btn--inverse.active {
  * Carousel
  ===========================================*/
 
-.carousel {
-	margin: 0 0 15px 0; /**
+.carousel-container {
+	position: relative;
+	margin: 0 0 15px 0;
+}
+
+.carousel { /**
    * If the browser supports CSS transformations then use translate to center the caption.
    */
 }
@@ -1893,33 +1884,51 @@ fieldset[disabled] .btn--inverse.active {
 	color: #fff;
 }
 
-.carousel__navigation {
-	height: 50px;
+.carousel-navigation {
+	display: none;
+	height: 34px;
 	padding: 0;
 	position: relative;
 	background: #212121;
+	z-index: 1; /** Display navigation after load. */
 }
 
-.carousel__navigation__item {
-	color: #fff;
+.owl-loaded + .carousel-navigation {
+	display: block;
+}
+
+.carousel-navigation__item {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
 	left: 0;
 	background: transparent none;
-	font-size: 25px;
-	line-height: 25px;
-	padding: 0.5em;
+	padding: 7px;
 }
 
-.carousel__navigation__item:hover,
-.carousel__navigation__item:active {
+.carousel-navigation__item:hover,
+.carousel-navigation__item:active {
 	background: transparent none;
 }
 
-.carousel__navigation__item--next {
+.carousel-navigation__item--next {
 	right: 0;
 	left: auto;
+}
+
+.carousel-navigation__item__icon {
+	height: 20px;
+	width: 20px;
+	-webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.carousel-navigation__item__icon path {
+	fill: #fff;
 }
 
 /** =========================================
@@ -2122,7 +2131,32 @@ fieldset[disabled]
 }
 
 .recaptcha {
+	position: relative;
 	margin: 7px 0 7px 0;
+	min-height: 78px;
+}
+
+.recaptcha:after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: transparent none;
+	border: 4px solid #E0E0E0;
+	border-color: rgba(0, 0, 0, 0.12);
+	border-top-color: #2196F3 !important;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	margin: -12.5px 0 0 -12.5px;
+	-webkit-animation: infinite-spinning 0.8s linear infinite;
+	animation: infinite-spinning 0.8s linear infinite;
+}
+
+.recaptcha::after {
+	left: 152px;
+	z-index: -1;
 }
 
 /** =========================================
@@ -2770,6 +2804,7 @@ fieldset[disabled]
 }
 
 .page__content__map {
+	background: #e5e3df;
 	margin: 7px 0 7px 0;
 	width: 100%;
 	display: block;
@@ -3135,6 +3170,8 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 
 .previous-next__item {
 	position: relative;
+	float: left;
+	width: 50%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
@@ -3203,14 +3240,15 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 }
 
 .sharer__list {
-	text-align: center;
+	padding: 0;
 	margin: 7px 0 7px 0;
 }
 
 .sharer__list__item {
 	display: inline-block;
 	list-style: none;
-	padding-right: 30px;
+	margin: 0;
+	padding-right: 15px;
 }
 
 .sharer__list__item--last {
@@ -3218,7 +3256,19 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 }
 
 .sharer__list__item__link {
-	font-size: 30px;
+	display: block;
+	line-height: 1em;
+}
+
+.sharer__list__item__link__icon {
+	height: 36px;
+	width: 36px;
+}
+
+.sharer__list__item__link__icon path,
+.sharer__list__item__link__icon ellipse {
+	fill: #555B66;
+	transition: 0.1s linear fill;
 }
 
 /** =========================================
@@ -3228,6 +3278,12 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 .page__sidebar {
 	margin: 0 0 15px 0;
 	font-size: 14px;
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: relative;
 	min-height: 1px;
 	padding-left: 15px;
@@ -3639,10 +3695,6 @@ code {
 	margin: 3px 0 0 0;
 }
 
-ul li {
-	margin-bottom: 7px;
-}
-
 .alert,
 .alert--info,
 .alert--warning,
@@ -3741,12 +3793,11 @@ ul li {
 	margin: 7px 0 7px 0;
 }
 
-.carousel {
+.carousel-container {
 	margin: 0 0 30px 0;
 }
 
-.csstransforms3d .carousel .carousel__item__caption,
-.csstransforms3d .carousel .carousel__navigation {
+.csstransforms3d .carousel .carousel__item__caption {
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
@@ -3757,18 +3808,30 @@ ul li {
 	width: 720px;
 }
 
-.carousel__navigation {
+.carousel-navigation {
 	background: transparent none;
-	height: 100px;
+	height: 40px;
+	margin-top: -20px;
 	position: absolute;
 	top: 50%;
 	left: 0;
 	right: 0;
 }
 
-.carousel__navigation__item {
-	font-size: 50px;
-	line-height: 50px;
+.csstransforms3d .carousel-navigation {
+	margin-top: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.carousel-navigation__item {
+	padding: 0;
+}
+
+.carousel-navigation__item__icon {
+	height: 40px;
+	width: 40px;
 }
 
 .comments {
@@ -4015,11 +4078,6 @@ ul li {
 	margin: 15px 0 15px 0;
 }
 
-.previous-next__item {
-	float: left;
-	width: 50%;
-}
-
 .search__form {
 	float: left;
 	width: 33.33333%;
@@ -4042,8 +4100,14 @@ ul li {
 	margin: 15px 0 15px 0;
 }
 
-.sharer__list__item__link {
-	font-size: 36px;
+.sharer__list__item__link__icon {
+	height: 54px;
+	width: 54px;
+}
+
+.sharer__list__item__link__icon:hover path,
+.sharer__list__item__link__icon:hover ellipse {
+	fill: #2196F3;
 }
 
 .page__sidebar {
@@ -4807,6 +4871,48 @@ td.visible-print {
 
 .hidden-print {
 	display: none !important;
+}
+
+}
+
+@-webkit-keyframes infinite-spinning {
+
+from {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+to {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+}
+
+@keyframes infinite-spinning {
+
+from {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+to {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+}
+
+@keyframes infinite-spinning {
+
+from {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+to {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 }

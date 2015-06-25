@@ -2,7 +2,6 @@
   "name": "boilerplate-installer",
   "dependencies": {
     "bootstrap-sass": "~3.3.4",
-    "components-font-awesome": "~4.3.0",
     "modernizr": "~2.8.3",
     "html5shiv": "~3.7.2",
     "respond": "~1.4.2",
