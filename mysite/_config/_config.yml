@@ -29,6 +29,7 @@ Email:
 LeftAndMain:
   extensions:
     - CMSBrandingLeftAndMainExtension
+  cms_menu_background: '#1b354c'
 
 SiteConfig:
   extensions:
@@ -36,3 +37,7 @@ SiteConfig:
 
 SVGTemplate:
   base_path: 'mysite/images/svg'
+
+ColorField:
+  primary_color: '#3f51b5'
+  secondary_color: '#ff4081'
