@@ -1948,6 +1948,20 @@ fieldset[disabled] .btn--inverse.active {
 }
 
 /** =========================================
+ * Debug
+ ===========================================*/
+
+body > p.message.warning {
+	padding: 0;
+	margin: 0;
+	background: transparent none;
+	color: #555B66;
+	border: 0;
+	box-shadow: none;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+/** =========================================
  * Embedded Video
  ===========================================*/
 
