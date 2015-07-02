@@ -13,6 +13,10 @@ class HomePage extends Page {
      * @return FieldList
      */
     public function getCMSFields() {
+        /** =========================================
+         * @var FieldList $fields
+        ===========================================*/
+
         $fields = parent::getCMSFields();
         return $fields;
     }

@@ -13,6 +13,10 @@ class Page extends SiteTree {
 	 * @return FieldList
 	 */
 	public function getCMSFields() {
+        /** =========================================
+         * @var FieldList $fields
+        ===========================================*/
+
 		$fields = parent::getCMSFields();
 		return $fields;
 	}
@@ -21,6 +25,10 @@ class Page extends SiteTree {
 	 * @return FieldList
 	 */
 	public function getSettingsFields() {
+        /** =========================================
+         * @var FieldList $fields
+        ===========================================*/
+
 		$fields = parent::getSettingsFields();
 		$fields->removeByName('ShowInSearch');
 		return $fields;

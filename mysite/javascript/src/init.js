@@ -20,7 +20,7 @@ require('parsley');
  * Project Scripts
  -------------------------------------------*/
 
+require('./ajax-content.js');
 require('./popout-menu.js');
 require('./carousel.js');
 require('./waypoints.js');
-require('./ajax-content.js');
