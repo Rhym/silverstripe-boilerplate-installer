@@ -4,24 +4,33 @@
  * Class SiteConfigExtension
  *
  * @property boolean ShowAssetAdmin
- * @property boolean ShowSecurityAdmin
- * @property boolean ShowReportAdmin
+ * @property boolean ShowBlogAdmin
  * @property boolean ShowHelpLink
+ * @property boolean ShowMessagesAdmin
+ * @property boolean ShowPortfolioAdmin
+ * @property boolean ShowReportAdmin
+ * @property boolean ShowSecurityAdmin
  */
 class SiteConfigExtension extends DataExtension {
 
     private static $db = array(
-        'ShowAssetAdmin'    => 'Boolean',
-        'ShowSecurityAdmin' => 'Boolean',
-        'ShowReportAdmin'   => 'Boolean',
-        'ShowHelpLink'      => 'Boolean'
+        'ShowAssetAdmin'        => 'Boolean',
+        'ShowBlogAdmin'         => 'Boolean',
+        'ShowHelpLink'          => 'Boolean',
+        'ShowMessagesAdmin'     => 'Boolean',
+        'ShowPortfolioAdmin'    => 'Boolean',
+        'ShowReportAdmin'       => 'Boolean',
+        'ShowSecurityAdmin'     => 'Boolean'
     );
 
     private static $defaults = array(
-        'ShowAssetAdmin'    => true,
-        'ShowSecurityAdmin' => true,
-        'ShowReportAdmin'   => false,
-        'ShowHelpLink'      => false
+        'ShowAssetAdmin'        => true,
+        'ShowBlogAdmin'         => true,
+        'ShowHelpLink'          => false,
+        'ShowMessagesAdmin'     => true,
+        'ShowPortfolioAdmin'    => true,
+        'ShowReportAdmin'       => false,
+        'ShowSecurityAdmin'     => true
     );
 
     /**
@@ -46,9 +55,12 @@ class SiteConfigExtension extends DataExtension {
             array(
                 HeaderField::create('', 'CMS Menu'),
                 CheckboxField::create('ShowAssetAdmin'),
-                CheckboxField::create('ShowSecurityAdmin'),
+                CheckboxField::create('ShowBlogAdmin'),
+                CheckboxField::create('ShowHelpLink'),
+                CheckboxField::create('ShowMessagesAdmin'),
+                CheckboxField::create('ShowPortfolioAdmin'),
                 CheckboxField::create('ShowReportAdmin'),
-                CheckboxField::create('ShowHelpLink')
+                CheckboxField::create('ShowSecurityAdmin')
             )
         );
 
