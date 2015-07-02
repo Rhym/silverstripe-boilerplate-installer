@@ -271,12 +271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "d20f016eb2e2b76c641921664e13dca9df1f93a6"
+                "reference": "5f027b19b58b7e694f16a86ac34549057721f04c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/d20f016eb2e2b76c641921664e13dca9df1f93a6",
-                "reference": "d20f016eb2e2b76c641921664e13dca9df1f93a6",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/5f027b19b58b7e694f16a86ac34549057721f04c",
+                "reference": "5f027b19b58b7e694f16a86ac34549057721f04c",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-06-26 01:25:32"
+            "time": "2015-07-02 03:24:02"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
