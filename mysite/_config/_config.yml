@@ -26,18 +26,31 @@ SiteTree:
 Email:
   admin_email: 'email@mysite.com'
 
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
+
 LeftAndMain:
   extensions:
     - CMSBrandingLeftAndMainExtension
   cms_menu_background: '#1b354c'
 
-SiteConfig:
-  extensions:
-    - SiteConfigExtension
-
-SVGTemplate:
-  base_path: 'mysite/images/svg'
-
 ColorField:
   primary_color: '#3f51b5'
   secondary_color: '#ff4081'
+
+PortfolioPage:
+  extensions:
+    - CatalogPageExtension
+  parentClass:
+    - 'PortfolioHolder'
+  can_duplicate: false
+  sort_column: false
+
+BlogPage:
+  extensions:
+    - CatalogPageExtension
+  parentClass:
+    - 'BlogHolder'
+  can_duplicate: false
+  sort_column: false
