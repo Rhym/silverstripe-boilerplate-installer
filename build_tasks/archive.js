@@ -22,6 +22,8 @@ module.exports = function(grunt) {
             'googlesitemaps/**',
             'gridfieldextensions/**',
             'vendor/**',
+            'silverstripe-cacheinclude/**',
+            'silverstripe-catalogmanager/**',
             '<%= directories.project %>/**',
             '.htaccess',
             '_ss_environment.php'

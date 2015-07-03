@@ -23,7 +23,8 @@
     "google/recaptcha": "~1.1",
     "drewm/mailchimp-api": "~1.0",
     "silverstripe-australia/gridfieldextensions": "~1.1",
-    "littlegiant/silverstripe-catalogmanager": "^2.0"
+    "littlegiant/silverstripe-catalogmanager": "^2.0",
+    "heyday/silverstripe-cacheinclude": "~4.0"
   },
   "scripts": {
     "post-create-project-cmd": [
