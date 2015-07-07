@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/recaptcha.git",
-                "reference": "e90c632d22c1f349fa22d60f69e272fd4bd244ae"
+                "reference": "afdcb02448b3e7e9ca7c2162d7d049094051d3d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/recaptcha/zipball/e90c632d22c1f349fa22d60f69e272fd4bd244ae",
-                "reference": "e90c632d22c1f349fa22d60f69e272fd4bd244ae",
+                "url": "https://api.github.com/repos/google/recaptcha/zipball/afdcb02448b3e7e9ca7c2162d7d049094051d3d2",
+                "reference": "afdcb02448b3e7e9ca7c2162d7d049094051d3d2",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +250,7 @@
                 "recaptcha",
                 "spam"
             ],
-            "time": "2015-05-22 01:28:57"
+            "time": "2015-07-05 12:41:07"
         },
         {
             "name": "heyday/silverstripe-cacheinclude",
@@ -304,16 +304,16 @@
         },
         {
             "name": "littlegiant/silverstripe-catalogmanager",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Little-Giant/silverstripe-catalogmanager.git",
-                "reference": "816ce4247a3623c042d345a78882ddaf6f2a82ee"
+                "reference": "6a3924ba22cb14a75b0b635c182148ac3ca90d48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Little-Giant/silverstripe-catalogmanager/zipball/816ce4247a3623c042d345a78882ddaf6f2a82ee",
-                "reference": "816ce4247a3623c042d345a78882ddaf6f2a82ee",
+                "url": "https://api.github.com/repos/Little-Giant/silverstripe-catalogmanager/zipball/6a3924ba22cb14a75b0b635c182148ac3ca90d48",
+                "reference": "6a3924ba22cb14a75b0b635c182148ac3ca90d48",
                 "shasum": ""
             },
             "require": {
@@ -342,7 +342,7 @@
                 }
             ],
             "description": "Catalog Manager provides extension for ModelAdmin editing of SiteTree instances",
-            "time": "2015-04-20 20:02:54"
+            "time": "2015-07-06 22:51:50"
         },
         {
             "name": "psr/log",
@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "e1397a5c0dc98d19e3993176688e616ef57f35ba"
+                "reference": "8c01e3f60d51a6e20651f851aab31ae8726e4246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/e1397a5c0dc98d19e3993176688e616ef57f35ba",
-                "reference": "e1397a5c0dc98d19e3993176688e616ef57f35ba",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/8c01e3f60d51a6e20651f851aab31ae8726e4246",
+                "reference": "8c01e3f60d51a6e20651f851aab31ae8726e4246",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-03 03:39:56"
+            "time": "2015-07-07 04:46:47"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",

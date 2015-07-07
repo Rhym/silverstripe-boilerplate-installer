@@ -1856,9 +1856,14 @@ fieldset[disabled] .btn--inverse.active {
 	margin: 0 0 15px 0;
 }
 
-.carousel { /**
+.carousel {
+	overflow: hidden; /**
    * If the browser supports CSS transformations then use translate to center the caption.
    */
+}
+
+.carousel--single {
+	display: block;
 }
 
 .carousel__item {
@@ -1897,7 +1902,7 @@ fieldset[disabled] .btn--inverse.active {
 	z-index: 1; /** Display navigation after load. */
 }
 
-.owl-loaded + .carousel-navigation {
+.carousel--multiple.owl-loaded + .carousel-navigation {
 	display: block;
 }
 
@@ -1923,8 +1928,6 @@ fieldset[disabled] .btn--inverse.active {
 .carousel-navigation__item__icon {
 	height: 20px;
 	width: 20px;
-	-webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
-	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -4815,14 +4818,6 @@ td.visible-lg {
 
 }
 
-@media (max-width: 991px) {
-
-.carousel__item {
-	max-height: none !important;
-}
-
-}
-
 @media (max-width: 767px) {
 
 .visible-xs {
@@ -4856,6 +4851,10 @@ td.visible-xs {
 
 .hidden-xs {
 	display: none !important;
+}
+
+.carousel__item {
+	max-height: none !important;
 }
 
 .menu__item__icon--phone {
