@@ -16293,14 +16293,13 @@ if ('undefined' !== typeof window.ParsleyValidator)
             mouseDrag: false
         });
         /** Custom navigation */
-        var owl = $carousel.data('owlCarousel');
         $('.carousel-navigation__item--next').on('click', function(e){
             e.preventDefault();
-            owl.next();
+            $carousel.trigger('next.owl.carousel');
         });
         $('.carousel-navigation__item--prev').on('click', function(e){
             e.preventDefault();
-            owl.prev();
+            $carousel.trigger('prev.owl.carousel');
         });
     }
 })(jQuery);
