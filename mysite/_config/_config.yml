@@ -54,3 +54,6 @@ BlogPage:
     - 'BlogHolder'
   can_duplicate: false
   sort_column: false
+
+SVGTemplate:
+  base_path: mysite/images/svg
