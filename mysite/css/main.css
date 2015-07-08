@@ -1113,7 +1113,9 @@ body { /**
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: none;
 	-webkit-tap-highlight-color: transparent;
-	-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch; /** Render the fonts a little better. */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -1178,6 +1180,7 @@ h6,
 	color: #555B66;
 	font-family: sans-serif;
 	font-weight: bold;
+	line-height: 1;
 }
 
 h1 a,
@@ -1241,27 +1244,27 @@ h6 a:active,
 
 h1,
 .h1 {
-	font-size: 30px;
+	font-size: 23px;
 }
 
 h2,
 .h2 {
-	font-size: 25px;
+	font-size: 17px;
 }
 
 h3,
 .h3 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 h4,
 .h4 {
-	font-size: 15px;
+	font-size: 11px;
 }
 
 h5,
 .h5 {
-	font-size: 11px;
+	font-size: 10px;
 }
 
 /** -----------------------------------------
@@ -2055,7 +2058,7 @@ label {
 .form .field .dropdown {
 	display: block;
 	width: 100%;
-	height: 47px;
+	height: 48px;
 	padding: 11px 15px;
 	font-size: 14px;
 	line-height: 1.7;
@@ -2207,7 +2210,7 @@ fieldset[disabled]
 #ChangePasswordForm_ChangePasswordForm .field .text {
 	display: block;
 	width: 100%;
-	height: 47px;
+	height: 48px;
 	padding: 11px 15px;
 	font-size: 14px;
 	line-height: 1.7;
@@ -2496,7 +2499,7 @@ fieldset[disabled]
 }
 
 .header__item__heading {
-	font-size: 24px;
+	font-size: 19px;
 	margin: 0;
 }
 
@@ -2601,7 +2604,7 @@ fieldset[disabled]
 	height: 40px;
 	width: 40px;
 	color: #555B66;
-	font-size: 36px;
+	font-size: 28px;
 	display: inline-block;
 	fill: #555B66;
 }
@@ -2843,7 +2846,7 @@ fieldset[disabled]
 .pagination {
 	display: inline-block;
 	padding-left: 0;
-	margin: 23px 0;
+	margin: 24px 0;
 	border-radius: 0px;
 }
 
@@ -2994,7 +2997,7 @@ fieldset[disabled]
 .menu-wrap__search input[type="text"] {
 	display: block;
 	width: 100%;
-	height: 47px;
+	height: 48px;
 	padding: 11px 15px;
 	font-size: 14px;
 	line-height: 1.7;
@@ -3685,27 +3688,27 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 
 h1,
 .h1 {
-	font-size: 36px;
+	font-size: 28px;
 }
 
 h2,
 .h2 {
-	font-size: 30px;
+	font-size: 21px;
 }
 
 h3,
 .h3 {
-	font-size: 24px;
+	font-size: 19px;
 }
 
 h4,
 .h4 {
-	font-size: 18px;
+	font-size: 14px;
 }
 
 h5,
 .h5 {
-	font-size: 14px;
+	font-size: 12px;
 }
 
 p {
