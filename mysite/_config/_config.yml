@@ -2,7 +2,7 @@
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
 Name: mysite
-After: 'framework/*','cms/*'
+After: 'framework/*','cms/*','#boilerplate'
 ---
 SSViewer:
   # display template filenames as comments in the html output
