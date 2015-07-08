@@ -50,19 +50,21 @@ class SiteConfigExtension extends DataExtension {
          * CMS
         -------------------------------------------*/
 
-        $fields->findOrMakeTab('Root.Settings.CMS', 'CMS');
-        $fields->addFieldsToTab('Root.Settings.CMS',
-            array(
-                HeaderField::create('', 'CMS Menu'),
-                CheckboxField::create('ShowAssetAdmin'),
-                CheckboxField::create('ShowBlogAdmin'),
-                CheckboxField::create('ShowHelpLink'),
-                CheckboxField::create('ShowMessagesAdmin'),
-                CheckboxField::create('ShowPortfolioAdmin'),
-                CheckboxField::create('ShowReportAdmin'),
-                CheckboxField::create('ShowSecurityAdmin')
-            )
-        );
+        if (Permission::check('ADMIN')) {
+            $fields->findOrMakeTab('Root.Settings.CMS', 'CMS');
+            $fields->addFieldsToTab('Root.Settings.CMS',
+                array(
+                    HeaderField::create('', 'CMS Menu'),
+                    CheckboxField::create('ShowAssetAdmin'),
+                    CheckboxField::create('ShowBlogAdmin'),
+                    CheckboxField::create('ShowHelpLink'),
+                    CheckboxField::create('ShowMessagesAdmin'),
+                    CheckboxField::create('ShowPortfolioAdmin'),
+                    CheckboxField::create('ShowReportAdmin'),
+                    CheckboxField::create('ShowSecurityAdmin')
+                )
+            );
+        }
 
     }
 
