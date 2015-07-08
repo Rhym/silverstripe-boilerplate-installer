@@ -1557,7 +1557,7 @@ img.center {
 }
 
 .blog__item__heading {
-	margin: 7px 0 7px 0;
+	margin: 15px 0;
 }
 
 .blog__item__summary,
@@ -3071,7 +3071,7 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 }
 
 .portfolio__item__heading {
-	margin: 7px 0 7px 0;
+	margin: 15px 0;
 }
 
 .portfolio__item__summary,
@@ -3122,7 +3122,7 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
 }
 
 .portfolio-images__item__heading {
-	margin: 7px 0 7px 0;
+	margin: 15px 0;
 }
 
 .portfolio-images__item__summary,
@@ -3782,10 +3782,6 @@ code {
 	margin: 15px 0 15px 0;
 }
 
-.blog__item__heading {
-	margin: 15px 0 15px 0;
-}
-
 .blog__item__summary,
 .blog__item__content {
 	margin: 15px 0 15px 0;
@@ -3994,10 +3990,6 @@ code {
 	margin: 15px 0 15px 0;
 }
 
-.portfolio__item__heading {
-	margin: 15px 0 15px 0;
-}
-
 .portfolio__item__summary,
 .portfolio__item__content {
 	margin: 15px 0 15px 0;
@@ -4036,10 +4028,6 @@ code {
 }
 
 .portfolio-images__item__image__caption {
-	margin: 15px 0 15px 0;
-}
-
-.portfolio-images__item__heading {
 	margin: 15px 0 15px 0;
 }
 
