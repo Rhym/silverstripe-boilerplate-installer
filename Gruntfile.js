@@ -6,7 +6,6 @@ module.exports = function(grunt) {
         directories: {
             project: 'mysite',
             boilerplate: 'boilerplate',
-            cmsBranding: 'silverstripe-branding',
             bower: 'components/lib'
         },
         pkg: grunt.file.readJSON('package.json')
