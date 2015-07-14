@@ -1,11 +1,9 @@
 <?php
 
 /**
- * Class CMSBrandingLeftAndMainExtension
+ * Class ProjectLeftAndMainExtension
  */
-class CMSBrandingLeftAndMainExtension extends LeftAndMainExtension {
-
-    private static $cms_menu_background = '#1b354c';
+class ProjectLeftAndMainExtension extends LeftAndMainExtension {
 
     public function init(){
         /** =========================================
@@ -56,11 +54,6 @@ class CMSBrandingLeftAndMainExtension extends LeftAndMainExtension {
         if(!$config->ShowSecurityAdmin) {
             CMSMenu::remove_menu_item('SecurityAdmin');
         }
-
-        /** Set the background colour of the cms sidebar menu. */
-        Requirements::customCSS(
-            '.cms-menu {background: '.$this->owner->stat('cms_menu_background').';}'
-        );
     }
 
 }

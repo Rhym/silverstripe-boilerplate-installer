@@ -32,7 +32,7 @@ SiteConfig:
 
 LeftAndMain:
   extensions:
-    - CMSBrandingLeftAndMainExtension
+    - ProjectLeftAndMainExtension
   cms_menu_background: '#1b354c'
 
 ColorField:

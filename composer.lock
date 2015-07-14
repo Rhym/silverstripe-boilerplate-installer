@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "4f83582bae71379678ac286d7d678bea3a62df7c"
+                "reference": "2938bc0f8baf15234f1a11e2945b469ef0fad681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/4f83582bae71379678ac286d7d678bea3a62df7c",
-                "reference": "4f83582bae71379678ac286d7d678bea3a62df7c",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/2938bc0f8baf15234f1a11e2945b469ef0fad681",
+                "reference": "2938bc0f8baf15234f1a11e2945b469ef0fad681",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-08 05:13:01"
+            "time": "2015-07-14 05:06:42"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -436,12 +436,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "379abcf846392425d84d07fe6e3dcd1ea5d03648"
+                "reference": "25402e7f3b3d4d1b8171cdb49327ce57931dabb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/379abcf846392425d84d07fe6e3dcd1ea5d03648",
-                "reference": "379abcf846392425d84d07fe6e3dcd1ea5d03648",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/25402e7f3b3d4d1b8171cdb49327ce57931dabb4",
+                "reference": "25402e7f3b3d4d1b8171cdb49327ce57931dabb4",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +450,7 @@
             },
             "type": "silverstripe-module",
             "extra": {
-                "installer-name": "cms-branding"
+                "installer-name": "silverstripe-branding"
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -468,7 +468,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-08 00:13:24"
+            "time": "2015-07-14 05:28:23"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
