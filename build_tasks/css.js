@@ -17,12 +17,6 @@ module.exports = function(grunt) {
         }]
     });
 
-    config.set('sass.cms', {
-        files:[{
-            '<%= directories.cmsBranding %>/css/main.css': '<%= directories.cmsBranding %>/scss/main.scss'
-        }]
-    });
-
     config.set( 'sass.editor', {
         files:[{
             '<%= directories.project %>/css/editor.css': '<%= directories.project %>/scss/editor.scss'
@@ -39,15 +33,6 @@ module.exports = function(grunt) {
         },
         files:[{
             '<%= directories.project %>/css/main.css': '<%= directories.project %>/css/main.css'
-        }]
-    });
-
-    config.set( 'autoprefixer.cms', {
-        options: {
-            browsers: ['last 3 versions']
-        },
-        files:[{
-            '<%= directories.cmsBranding %>/css/main.css': '<%= directories.cmsBranding %>/css/main.css'
         }]
     });
 
@@ -73,15 +58,6 @@ module.exports = function(grunt) {
         }]
     });
 
-    config.set( 'cmq.cms', {
-        options: {
-            log: false
-        },
-        files:[{
-            '<%= directories.cmsBranding %>/css/': ['<%= directories.cmsBranding %>/css/main.css']
-        }]
-    });
-
     /** -----------------------------------------
      * CSSMin
      -------------------------------------------*/
@@ -94,17 +70,6 @@ module.exports = function(grunt) {
         cwd: '<%= directories.project %>/css/',
         src: ['main.css'],
         dest: '<%= directories.project %>/css/',
-        ext: '.min.css'
-    });
-
-    config.set( 'cssmin.cms', {
-        options: {
-            rebase: false
-        },
-        expand: true,
-        cwd: '<%= directories.cmsBranding %>/css/',
-        src: ['main.css'],
-        dest: '<%= directories.cmsBranding %>/css/',
         ext: '.min.css'
     });
 
@@ -149,14 +114,6 @@ module.exports = function(grunt) {
     config.set('watch.boilerplate', {
         files: ['<%= directories.boilerplate %>/scss/**/*.scss'],
         tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
-        options: {
-            spawn: false
-        }
-    });
-
-    config.set('watch.cms', {
-        files: ['<%= directories.cmsBranding %>/scss/**/*.scss'],
-        tasks: ['sass:cms', 'autoprefixer:cms', 'cmq:cms', 'cssmin:cms'],
         options: {
             spawn: false
         }
