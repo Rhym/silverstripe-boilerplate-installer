@@ -64,11 +64,11 @@
 
 /** -----------------------------------------
  * Project
- -------------------------------------------*/
+ * ----------------------------------------*/
 
 /** -----------------------------------------
  * Boilerplate
- -------------------------------------------*/
+ * ----------------------------------------*/
 
 /** =========================================
  * Variables
@@ -3354,7 +3354,7 @@ fieldset[disabled] .menu-wrap__search input[type="text"] {
  ===========================================*/
 
 /** =========================================
- * Navigation
+ * Menu
  ===========================================*/
 
 /*!
@@ -4400,13 +4400,33 @@ td.visible-sm {
 	margin-left: 100%;
 }
 
+.blog__item--page {
+	float: none;
+}
+
 .carousel__item__caption {
 	top: 30%;
 	width: 940px;
 }
 
+.header__item {
+	float: none;
+}
+
+.header__item--navigation {
+	float: none;
+}
+
 .modal__dialog {
 	width: 940px;
+}
+
+.portfolio__item--page {
+	float: none;
+}
+
+.portfolio-images__item--page {
+	float: none;
 }
 
 #Security .security {

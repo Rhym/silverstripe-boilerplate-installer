@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
 
     var config = grunt.config;
@@ -31,6 +31,6 @@ module.exports = function(grunt) {
         dest: '/'
     });
 
-    grunt.registerTask('archive',['compress']);
+    grunt.registerTask('archive', ['compress']);
 
 };

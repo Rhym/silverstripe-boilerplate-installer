@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
 
     var config = grunt.config;
@@ -9,60 +9,60 @@ module.exports = function(grunt) {
 
     /** -----------------------------------------
      * Sass
-     -------------------------------------------*/
+     * ----------------------------------------*/
 
     config.set('sass.dist', {
-        files:[{
+        files: [{
             '<%= directories.project %>/css/main.css': '<%= directories.project %>/scss/main.scss'
         }]
     });
 
-    config.set( 'sass.editor', {
-        files:[{
+    config.set('sass.editor', {
+        files: [{
             '<%= directories.project %>/css/editor.css': '<%= directories.project %>/scss/editor.scss'
         }]
     });
 
     /** -----------------------------------------
-     * Autoprefixer
-     -------------------------------------------*/
+     * Auto Pre-fixer
+     * ----------------------------------------*/
 
-    config.set( 'autoprefixer.dist', {
+    config.set('autoprefixer.dist', {
         options: {
             browsers: ['last 3 versions']
         },
-        files:[{
+        files: [{
             '<%= directories.project %>/css/main.css': '<%= directories.project %>/css/main.css'
         }]
     });
 
-    config.set( 'autoprefixer.editor', {
+    config.set('autoprefixer.editor', {
         options: {
             browsers: ['last 3 versions']
         },
-        files:[{
+        files: [{
             '<%= directories.project %>/css/editor.css': '<%= directories.project %>/css/editor.css'
         }]
     });
 
     /** -----------------------------------------
      * Combine Media Queries
-     -------------------------------------------*/
+     * ----------------------------------------*/
 
-    config.set( 'cmq.dist', {
+    config.set('cmq.dist', {
         options: {
             log: false
         },
-        files:[{
+        files: [{
             '<%= directories.project %>/css/': ['<%= directories.project %>/css/main.css']
         }]
     });
 
     /** -----------------------------------------
-     * CSSMin
-     -------------------------------------------*/
+     * CSS Minification
+     * ----------------------------------------*/
 
-    config.set( 'cssmin.dist', {
+    config.set('cssmin.dist', {
         options: {
             rebase: false
         },
@@ -74,17 +74,17 @@ module.exports = function(grunt) {
     });
 
     /** -----------------------------------------
-     * CSSLint
-     -------------------------------------------*/
+     * CSS Lint
+     * ----------------------------------------*/
 
-    config.set( 'csslint.strict', {
+    config.set('csslint.strict', {
         options: {
             import: 2
         },
         src: ['<%= directories.project %>/css/main.min.css']
     });
 
-    config.set( 'csslint.lax', {
+    config.set('csslint.lax', {
         options: {
             import: false
         },

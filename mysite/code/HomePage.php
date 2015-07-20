@@ -3,7 +3,8 @@
 /**
  * Class HomePage
  */
-class HomePage extends Page {
+class HomePage extends Page
+{
 
     private static $icon = 'mysite/images/icons/home.png';
 
@@ -12,7 +13,8 @@ class HomePage extends Page {
     /**
      * @return FieldList
      */
-    public function getCMSFields() {
+    public function getCMSFields()
+    {
         /** =========================================
          * @var FieldList $fields
         ===========================================*/
@@ -26,4 +28,6 @@ class HomePage extends Page {
 /**
  * Class HomePage_Controller
  */
-class HomePage_Controller extends Page_Controller {}
+class HomePage_Controller extends Page_Controller
+{
+}

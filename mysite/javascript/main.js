@@ -16218,7 +16218,8 @@ if ('undefined' !== typeof window.ParsleyValidator)
 }));
 
 },{}],6:[function(require,module,exports){
-//;(function($) {
+//;
+//(function ($) {
 //    /**
 //     * If .ajax-control exists on the page
 //     */
@@ -16229,7 +16230,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
 //            replaceContent = function (url) {
 //                var param = '&ajax=1',
 //                    ajaxUrl = (url.indexOf(param) === -1) ? url + param : url,
-//                    cleanUrl = url.replace(new RegExp(param+'$'),'');
+//                    cleanUrl = url.replace(new RegExp(param + '$'), '');
 //                $.ajax({
 //                    url: ajaxUrl,
 //                    beforeSend: function (xhr) {
@@ -16241,7 +16242,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
 //                        /**
 //                         * Animate a scroll to the top of the page.
 //                         */
-//                        $window.animate({ scrollTop: 0 }, 'fast');
+//                        $window.animate({scrollTop: 0}, 'fast');
 //                        window.history.pushState(
 //                            {url: cleanUrl},
 //                            document.title,
@@ -16279,7 +16280,8 @@ if ('undefined' !== typeof window.ParsleyValidator)
 //    }
 //})(jQuery);
 },{}],7:[function(require,module,exports){
-;(function($) {
+;
+(function ($) {
     /** =========================================
      * Carousel
      ==========================================*/
@@ -16293,11 +16295,11 @@ if ('undefined' !== typeof window.ParsleyValidator)
             mouseDrag: false
         });
         /** Custom navigation */
-        $('.carousel-navigation__item--next').on('click', function(e){
+        $('.carousel-navigation__item--next').on('click', function (e) {
             e.preventDefault();
             $carousel.trigger('next.owl.carousel');
         });
-        $('.carousel-navigation__item--prev').on('click', function(e){
+        $('.carousel-navigation__item--prev').on('click', function (e) {
             e.preventDefault();
             $carousel.trigger('prev.owl.carousel');
         });
@@ -16314,7 +16316,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
  *
  * Module names are set in the
  * package.json
- -------------------------------------------*/
+ * ----------------------------------------*/
 
 var $ = require('jquery');
 global.jQuery = require('jquery');
@@ -16325,7 +16327,7 @@ require('parsley');
 
 /** -----------------------------------------
  * Project Scripts
- -------------------------------------------*/
+ * ----------------------------------------*/
 
 require('./ajax-content.js');
 require('./popout-menu.js');
@@ -16333,17 +16335,18 @@ require('./carousel.js');
 require('./waypoints.js');
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./ajax-content.js":6,"./carousel.js":7,"./popout-menu.js":9,"./waypoints.js":10,"bootstrap-collapse":1,"bootstrap-modal":2,"jquery":3,"owlcarousel":4,"parsley":5}],9:[function(require,module,exports){
-;(function($) {
+;
+(function ($) {
     /** =========================================
      * Popout Menu
      ==========================================*/
 
     var body = $('body'),
         button = $('.toggle-menu');
-    button.on('click', function(e){
+    button.on('click', function (e) {
         body.toggleClass('show-menu');
     });
-    $('.open-children').on('click', function(e){
+    $('.open-children').on('click', function (e) {
         e.preventDefault();
         var target = $(this).data('target');
         $(target).toggleClass('menu-wrap__menu__item__list--active');
@@ -16352,19 +16355,20 @@ require('./waypoints.js');
     });
 })(jQuery);
 },{}],10:[function(require,module,exports){
-//;(function($) {
-//    $(document).ready(function(){
+//;
+//(function ($) {
+//    $(document).ready(function () {
 //
-//        /*---------------------------------------------*\
+//        /** -----------------------------------------
 //         * Animation - https://github.com/imakewebthings/waypoints
-//        \*---------------------------------------------*/
+//         * ----------------------------------------*/
 //
-//        $('.animated').waypoint(function(){
+//        $('.animated').waypoint(function () {
 //            var animation = $(this).data('animation');
 //            $(this).addClass(animation);
-//        },{
+//        }, {
 //            context: '.content-wrap',
-//            offset:'75%'
+//            offset: '75%'
 //        });
 //
 //    });

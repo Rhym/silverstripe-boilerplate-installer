@@ -1,4 +1,5 @@
-;(function($) {
+;
+(function ($) {
     /** =========================================
      * Carousel
      ==========================================*/
@@ -12,11 +13,11 @@
             mouseDrag: false
         });
         /** Custom navigation */
-        $('.carousel-navigation__item--next').on('click', function(e){
+        $('.carousel-navigation__item--next').on('click', function (e) {
             e.preventDefault();
             $carousel.trigger('next.owl.carousel');
         });
-        $('.carousel-navigation__item--prev').on('click', function(e){
+        $('.carousel-navigation__item--prev').on('click', function (e) {
             e.preventDefault();
             $carousel.trigger('prev.owl.carousel');
         });

@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
     require('time-grunt')(grunt);
 
@@ -13,5 +13,5 @@ module.exports = function(grunt) {
 
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
     grunt.loadTasks('build_tasks');
-    grunt.registerTask('default',['watch']);
+    grunt.registerTask('default', ['watch']);
 }

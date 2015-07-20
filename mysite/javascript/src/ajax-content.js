@@ -1,4 +1,5 @@
-//;(function($) {
+//;
+//(function ($) {
 //    /**
 //     * If .ajax-control exists on the page
 //     */
@@ -9,7 +10,7 @@
 //            replaceContent = function (url) {
 //                var param = '&ajax=1',
 //                    ajaxUrl = (url.indexOf(param) === -1) ? url + param : url,
-//                    cleanUrl = url.replace(new RegExp(param+'$'),'');
+//                    cleanUrl = url.replace(new RegExp(param + '$'), '');
 //                $.ajax({
 //                    url: ajaxUrl,
 //                    beforeSend: function (xhr) {
@@ -21,7 +22,7 @@
 //                        /**
 //                         * Animate a scroll to the top of the page.
 //                         */
-//                        $window.animate({ scrollTop: 0 }, 'fast');
+//                        $window.animate({scrollTop: 0}, 'fast');
 //                        window.history.pushState(
 //                            {url: cleanUrl},
 //                            document.title,

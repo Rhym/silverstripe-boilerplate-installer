@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
 
     var config = grunt.config;
@@ -8,23 +8,23 @@ module.exports = function(grunt) {
      ===========================================*/
 
     /** -----------------------------------------
-     * Move Shivs
-     -------------------------------------------*/
+     * Move Shit
+     * ----------------------------------------*/
 
     config.set('copy.all', {
         files: [
-            /**
-             * SVGs
-             */
+        /**
+         * SVGs
+         */
             {
                 cwd: '<%= directories.boilerplate %>/images/svg',
                 src: '*',
                 dest: '<%= directories.project %>/images/svg/src',
                 expand: true
             },
-            /**
-             * Javascript
-             */
+        /**
+         * Javascript
+         */
             {
                 cwd: '<%= directories.bower %>/modernizr/',
                 src: 'modernizr.js',
@@ -50,8 +50,8 @@ module.exports = function(grunt) {
      * Deploy
      *
      * Run all tasks
-     -------------------------------------------*/
+     * ----------------------------------------*/
 
-    grunt.registerTask('deploy',['copy', 'browserify', 'uglify', 'svgmin', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
+    grunt.registerTask('deploy', ['copy', 'browserify', 'uglify', 'svgmin', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
 
 };

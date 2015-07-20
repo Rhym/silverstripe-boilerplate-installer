@@ -3,9 +3,11 @@
 /**
  * Class ProjectLeftAndMainExtension
  */
-class ProjectLeftAndMainExtension extends LeftAndMainExtension {
+class ProjectLeftAndMainExtension extends LeftAndMainExtension
+{
 
-    public function init(){
+    public function init()
+    {
         /** =========================================
          * @var SiteConfig $config
         ===========================================*/
@@ -15,43 +17,43 @@ class ProjectLeftAndMainExtension extends LeftAndMainExtension {
         /**
          * Remove the Reports menu item in the CMS
          */
-        if(!$config->ShowAssetAdmin) {
+        if (!$config->ShowAssetAdmin) {
             CMSMenu::remove_menu_item('AssetAdmin');
         }
         /**
          * Remove the Blog menu item in the CMS
          */
-        if(!$config->ShowBlogAdmin) {
+        if (!$config->ShowBlogAdmin) {
             CMSMenu::remove_menu_item('BlogPageModelAdmin');
         }
         /**
          * Remove the Help Link in the CMS
          */
-        if(!$config->ShowHelpLink) {
+        if (!$config->ShowHelpLink) {
             CMSMenu::remove_menu_item('Help');
         }
         /**
          * Remove the Messages menu item in the CMS
          */
-        if(!$config->ShowMessagesAdmin) {
+        if (!$config->ShowMessagesAdmin) {
             CMSMenu::remove_menu_item('ContactMessageModelAdmin');
         }
         /**
          * Remove the Portfolio menu item in the CMS
          */
-        if(!$config->ShowPortfolioAdmin) {
+        if (!$config->ShowPortfolioAdmin) {
             CMSMenu::remove_menu_item('PortfolioPageModelAdmin');
         }
         /**
          * Remove the Reports menu item in the CMS
          */
-        if(!$config->ShowReportAdmin) {
+        if (!$config->ShowReportAdmin) {
             CMSMenu::remove_menu_item('ReportAdmin');
         }
         /**
          * Remove the Security menu item in the CMS
          */
-        if(!$config->ShowSecurityAdmin) {
+        if (!$config->ShowSecurityAdmin) {
             CMSMenu::remove_menu_item('SecurityAdmin');
         }
     }

@@ -4,7 +4,7 @@ global $project;
 $project = 'mysite';
 
 /** Use the _ss_environment.php file for configuration */
-require_once ('conf/ConfigureFromEnv.php');
+require_once('conf/ConfigureFromEnv.php');
 
 /** Remove the auto generated SS_ prefix that gets added if database is auto detected */
 global $databaseConfig;
@@ -40,7 +40,7 @@ if (!Director::isLive()) {
  *
  * Adding styles, and buttons
  * to the HTMLEditorField
--------------------------------------------*/
+ * -------------------------------------------*/
 
 $formats = array(
     array(
@@ -133,4 +133,4 @@ $formats = array(
 );
 
 HtmlEditorConfig::get('cms')->setOption('style_formats', $formats);
-HtmlEditorConfig::get('cms')->setOption('theme_advanced_blockformats','p,h2,h3,h4');
+HtmlEditorConfig::get('cms')->setOption('theme_advanced_blockformats', 'p,h2,h3,h4');

@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
 
     var config = grunt.config;
@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
     /** -----------------------------------------
      * SVG
-     -------------------------------------------*/
+     * ----------------------------------------*/
 
     config.set('svgmin.all', {
         options: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             ]
         },
         files: [{
-            expand:true,
+            expand: true,
             cwd: '<%= directories.project %>/images/svg/src/',
             src: ['**/*.svg'],
             dest: '<%= directories.project %>/images/svg/'

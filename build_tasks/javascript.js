@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     'use strict';
 
     var config = grunt.config;
@@ -9,9 +9,9 @@ module.exports = function(grunt) {
 
     /** -----------------------------------------
      * Browserify
-     -------------------------------------------*/
+     * ----------------------------------------*/
 
-    config.set( 'browserify.all', {
+    config.set('browserify.all', {
         files: {
             '<%= directories.project %>/javascript/main.js': ['<%= directories.project %>/javascript/src/init.js']
         }
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 
     /** -----------------------------------------
      * Uglify
-     -------------------------------------------*/
+     * ----------------------------------------*/
 
     config.set('uglify.all', {
         options: {
@@ -38,8 +38,8 @@ module.exports = function(grunt) {
     });
 
     /** -----------------------------------------
-     * JsHint
-     -------------------------------------------*/
+     * JS Hint
+     * ----------------------------------------*/
 
     config.set('jshint.all', {
         all: ['<%= directories.project %>/javascript/src/*.js', '<%= directories.project %>/javascript/src/**/*.js']

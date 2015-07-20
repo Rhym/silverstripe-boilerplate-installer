@@ -3,7 +3,10 @@
   "version": "1.0",
   "description": "Boilerplate Installer",
   "type": "silverstripe-module",
-  "keywords": ["silverstripe", "theme"],
+  "keywords": [
+    "silverstripe",
+    "theme"
+  ],
   "license": "BSD-3-Clause",
   "authors": [
     {
