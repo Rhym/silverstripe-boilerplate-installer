@@ -16220,91 +16220,93 @@ if ('undefined' !== typeof window.ParsleyValidator)
 },{}],6:[function(require,module,exports){
 //;
 //(function ($) {
+//  /**
+//   * If .ajax-control exists on the page
+//   */
+//  if ($('.ajax-control').length) {
+//    var $content = $('.ajax-content'),
+//      $loadingClass = 'ajax-loading',
+//      $window = $('.content-wrap'),
+//      replaceContent = function (url) {
+//        var param = '&ajax=1',
+//          ajaxUrl = (url.indexOf(param) === -1) ? url + param : url,
+//          cleanUrl = url.replace(new RegExp(param + '$'), '');
+//        $.ajax({
+//          url: ajaxUrl,
+//          beforeSend: function (xhr) {
+//            $content.addClass($loadingClass);
+//          }
+//        })
+//          .done(function (response) {
+//            $content.removeClass($loadingClass).html(response);
+//            /**
+//             * Animate a scroll to the top of the page.
+//             */
+//            $window.animate({scrollTop: 0}, 'fast');
+//            window.history.pushState(
+//              {url: cleanUrl},
+//              document.title,
+//              cleanUrl
+//            );
+//          })
+//          .fail(function (xhr) {
+//            console.log('Error: ' + xhr.responseText);
+//          });
+//      };
 //    /**
-//     * If .ajax-control exists on the page
+//     * On ajax control click
 //     */
-//    if ($('.ajax-control').length) {
-//        var $content = $('.ajax-content'),
-//            $loadingClass = 'ajax-loading',
-//            $window = $('.content-wrap'),
-//            replaceContent = function (url) {
-//                var param = '&ajax=1',
-//                    ajaxUrl = (url.indexOf(param) === -1) ? url + param : url,
-//                    cleanUrl = url.replace(new RegExp(param + '$'), '');
-//                $.ajax({
-//                    url: ajaxUrl,
-//                    beforeSend: function (xhr) {
-//                        $content.addClass($loadingClass);
-//                    }
-//                })
-//                    .done(function (response) {
-//                        $content.removeClass($loadingClass).html(response);
-//                        /**
-//                         * Animate a scroll to the top of the page.
-//                         */
-//                        $window.animate({scrollTop: 0}, 'fast');
-//                        window.history.pushState(
-//                            {url: cleanUrl},
-//                            document.title,
-//                            cleanUrl
-//                        );
-//                    })
-//                    .fail(function (xhr) {
-//                        console.log('Error: ' + xhr.responseText);
-//                    });
-//            };
-//        /**
-//         * On ajax control click
-//         */
-//        $content.on('click', '.ajax-control a', function (e) {
-//            e.preventDefault();
-//            var url = $(this).attr('href');
-//            replaceContent(url);
-//        });
+//    $content.on('click', '.ajax-control a', function (e) {
+//      e.preventDefault();
+//      var url = $(this).attr('href');
+//      replaceContent(url);
+//    });
 //
-//        /**
-//         * Hook into the users history changes
-//         * if there is a saved history state
-//         * run the replaceContent() function.
-//         *
-//         * @param e
-//         */
-//        window.onpopstate = function (e) {
-//            if (e.state.url) {
-//                replaceContent(e.state.url);
-//            }
-//            else {
-//                e.preventDefault();
-//            }
-//        }
+//    /**
+//     * Hook into the users history changes
+//     * if there is a saved history state
+//     * run the replaceContent() function.
+//     *
+//     * @param e
+//     */
+//    window.onpopstate = function (e) {
+//      if (e.state.url) {
+//        replaceContent(e.state.url);
+//      }
+//      else {
+//        e.preventDefault();
+//      }
 //    }
+//  }
 //})(jQuery);
+
 },{}],7:[function(require,module,exports){
 ;
 (function ($) {
-    /** =========================================
-     * Carousel
-     ==========================================*/
+  /** =========================================
+   * Carousel
+   ==========================================*/
 
-    var $carousel = $('.carousel--multiple');
-    if ($carousel.length) {
-        $carousel.owlCarousel({
-            items: 1,
-            dots: false,
-            nav: false,
-            mouseDrag: false
-        });
-        /** Custom navigation */
-        $('.carousel-navigation__item--next').on('click', function (e) {
-            e.preventDefault();
-            $carousel.trigger('next.owl.carousel');
-        });
-        $('.carousel-navigation__item--prev').on('click', function (e) {
-            e.preventDefault();
-            $carousel.trigger('prev.owl.carousel');
-        });
-    }
+  var $carousel = $('.carousel--multiple');
+  if ($carousel.length) {
+    $carousel.owlCarousel({
+      items: 1,
+      dots: false,
+      nav: false,
+      mouseDrag: false
+    });
+    /** Custom navigation */
+    $('.carousel-navigation__item--next').on('click', function (e) {
+      e.preventDefault();
+      $carousel.trigger('next.owl.carousel');
+    });
+    $('.carousel-navigation__item--prev').on('click', function (e) {
+      e.preventDefault();
+      $carousel.trigger('prev.owl.carousel');
+    });
+  }
 })(jQuery);
+
 },{}],8:[function(require,module,exports){
 (function (global){
 /** =========================================
@@ -16337,40 +16339,42 @@ require('./waypoints.js');
 },{"./ajax-content.js":6,"./carousel.js":7,"./popout-menu.js":9,"./waypoints.js":10,"bootstrap-collapse":1,"bootstrap-modal":2,"jquery":3,"owlcarousel":4,"parsley":5}],9:[function(require,module,exports){
 ;
 (function ($) {
-    /** =========================================
-     * Popout Menu
-     ==========================================*/
+  /** =========================================
+   * Popout Menu
+   ==========================================*/
 
-    var body = $('body'),
-        button = $('.toggle-menu');
-    button.on('click', function (e) {
-        body.toggleClass('show-menu');
-    });
-    $('.open-children').on('click', function (e) {
-        e.preventDefault();
-        var target = $(this).data('target');
-        $(target).toggleClass('menu-wrap__menu__item__list--active');
-        $(this).toggleClass('menu-wrap__menu__item__icon--active');
-        return false;
-    });
+  var body = $('body'),
+    button = $('.toggle-menu');
+  button.on('click', function (e) {
+    body.toggleClass('show-menu');
+  });
+  $('.open-children').on('click', function (e) {
+    e.preventDefault();
+    var target = $(this).data('target');
+    $(target).toggleClass('menu-wrap__menu__item__list--active');
+    $(this).toggleClass('menu-wrap__menu__item__icon--active');
+    return false;
+  });
 })(jQuery);
+
 },{}],10:[function(require,module,exports){
 //;
 //(function ($) {
-//    $(document).ready(function () {
+//  $(document).ready(function () {
 //
-//        /** -----------------------------------------
-//         * Animation - https://github.com/imakewebthings/waypoints
-//         * ----------------------------------------*/
+//    /** -----------------------------------------
+//     * Animation - https://github.com/imakewebthings/waypoints
+//     * ----------------------------------------*/
 //
-//        $('.animated').waypoint(function () {
-//            var animation = $(this).data('animation');
-//            $(this).addClass(animation);
-//        }, {
-//            context: '.content-wrap',
-//            offset: '75%'
-//        });
-//
+//    $('.animated').waypoint(function () {
+//      var animation = $(this).data('animation');
+//      $(this).addClass(animation);
+//    }, {
+//      context: '.content-wrap',
+//      offset: '75%'
 //    });
+//
+//  });
 //})(jQuery);
+
 },{}]},{},[8]);

@@ -1,36 +1,36 @@
 module.exports = function (grunt) {
-    'use strict';
+  'use strict';
 
-    var config = grunt.config;
+  var config = grunt.config;
 
-    /** =========================================
-     * Compress
-     ===========================================*/
+  /** =========================================
+   * Compress
+   ===========================================*/
 
-    config.set('compress.all', {
-        options: {
-            mode: 'tgz',
-            archive: '<%= directories.project %>.tar.gz'
-        },
-        src: [
-            'assets/**',
-            'betterbuttons/**',
-            '<%= directories.boilerplate %>/**',
-            'cms/**',
-            '<%= directories.cmsBranding %>/**',
-            'framework/**',
-            'googlesitemaps/**',
-            'gridfieldextensions/**',
-            'vendor/**',
-            'silverstripe-cacheinclude/**',
-            'silverstripe-catalogmanager/**',
-            '<%= directories.project %>/**',
-            '.htaccess',
-            '_ss_environment.php'
-        ],
-        dest: '/'
-    });
+  config.set('compress.all', {
+    options: {
+      mode: 'tgz',
+      archive: '<%= directories.project %>.tar.gz'
+    },
+    src: [
+      'assets/**',
+      'betterbuttons/**',
+      '<%= directories.boilerplate %>/**',
+      'cms/**',
+      '<%= directories.cmsBranding %>/**',
+      'framework/**',
+      'googlesitemaps/**',
+      'gridfieldextensions/**',
+      'vendor/**',
+      'silverstripe-cacheinclude/**',
+      'silverstripe-catalogmanager/**',
+      '<%= directories.project %>/**',
+      '.htaccess',
+      '_ss_environment.php'
+    ],
+    dest: '/'
+  });
 
-    grunt.registerTask('archive', ['compress']);
+  grunt.registerTask('archive', ['compress']);
 
 };
