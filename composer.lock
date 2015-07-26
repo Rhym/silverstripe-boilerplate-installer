@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "b7bb2946c7f70cf448e19ab780f1d5d30b83e3c3"
+                "reference": "941cf5da76fd67e96de12894239ce6aa565544e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/b7bb2946c7f70cf448e19ab780f1d5d30b83e3c3",
-                "reference": "b7bb2946c7f70cf448e19ab780f1d5d30b83e3c3",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/941cf5da76fd67e96de12894239ce6aa565544e5",
+                "reference": "941cf5da76fd67e96de12894239ce6aa565544e5",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-22 21:16:39"
+            "time": "2015-07-26 21:33:16"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -709,12 +709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "000e7fc2653335cd42c6d21405dac1c74224a387"
+                "reference": "b7bf092bc2b3af532ef916805e214febec89ae4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/000e7fc2653335cd42c6d21405dac1c74224a387",
-                "reference": "000e7fc2653335cd42c6d21405dac1c74224a387",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b7bf092bc2b3af532ef916805e214febec89ae4b",
+                "reference": "b7bf092bc2b3af532ef916805e214febec89ae4b",
                 "shasum": ""
             },
             "require": {
@@ -750,7 +750,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 14:16:54"
+            "time": "2015-07-26 09:09:29"
         },
         {
             "name": "unclecheese/betterbuttons",
