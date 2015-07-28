@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "941cf5da76fd67e96de12894239ce6aa565544e5"
+                "reference": "dbe26e3b9191b30a3c3b68c1adb9d6a39abf6925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/941cf5da76fd67e96de12894239ce6aa565544e5",
-                "reference": "941cf5da76fd67e96de12894239ce6aa565544e5",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/dbe26e3b9191b30a3c3b68c1adb9d6a39abf6925",
+                "reference": "dbe26e3b9191b30a3c3b68c1adb9d6a39abf6925",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-26 21:33:16"
+            "time": "2015-07-28 04:18:49"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
