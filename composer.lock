@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "dbe26e3b9191b30a3c3b68c1adb9d6a39abf6925"
+                "reference": "ec7787b565b5ff08dcbb9f5b846523a6e482ca91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/dbe26e3b9191b30a3c3b68c1adb9d6a39abf6925",
-                "reference": "dbe26e3b9191b30a3c3b68c1adb9d6a39abf6925",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/ec7787b565b5ff08dcbb9f5b846523a6e482ca91",
+                "reference": "ec7787b565b5ff08dcbb9f5b846523a6e482ca91",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-28 04:18:49"
+            "time": "2015-07-30 21:35:37"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -436,12 +436,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "3e3e63a5933a50a0bbe4047689addd64b0bf137f"
+                "reference": "2cfbdd495f245230a91644289ed35778ae69fcb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/3e3e63a5933a50a0bbe4047689addd64b0bf137f",
-                "reference": "3e3e63a5933a50a0bbe4047689addd64b0bf137f",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/2cfbdd495f245230a91644289ed35778ae69fcb0",
+                "reference": "2cfbdd495f245230a91644289ed35778ae69fcb0",
                 "shasum": ""
             },
             "require": {
@@ -468,7 +468,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-21 00:08:40"
+            "time": "2015-07-29 00:23:42"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -709,12 +709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "b7bf092bc2b3af532ef916805e214febec89ae4b"
+                "reference": "6eef1477f3c4451b6024fadb1254009be4602908"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b7bf092bc2b3af532ef916805e214febec89ae4b",
-                "reference": "b7bf092bc2b3af532ef916805e214febec89ae4b",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6eef1477f3c4451b6024fadb1254009be4602908",
+                "reference": "6eef1477f3c4451b6024fadb1254009be4602908",
                 "shasum": ""
             },
             "require": {
@@ -750,7 +750,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-26 09:09:29"
+            "time": "2015-07-29 07:12:56"
         },
         {
             "name": "unclecheese/betterbuttons",
