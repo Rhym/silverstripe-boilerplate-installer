@@ -45,4 +45,12 @@ if (defined('SS_ENVIRONMENT_TYPE') && SS_ENVIRONMENT_TYPE != 'live') {
 }
 ```
 
-You're good to go, son!
+## Contributing
+
+### Code guidelines
+
+This project follows the standards defined in:
+
+* [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md)
+* [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
+* [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
