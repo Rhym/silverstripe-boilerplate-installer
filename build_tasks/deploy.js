@@ -8,8 +8,8 @@ module.exports = function (grunt) {
    ===========================================*/
 
   /** -----------------------------------------
-   * Move Shit
-   * ----------------------------------------*/
+   * Move Shivs
+   -------------------------------------------*/
 
   config.set('copy.all', {
     files: [
@@ -50,8 +50,8 @@ module.exports = function (grunt) {
    * Deploy
    *
    * Run all tasks
-   * ----------------------------------------*/
+   -------------------------------------------*/
 
-  grunt.registerTask('deploy', ['copy', 'browserify', 'uglify', 'svgmin', 'sass', 'autoprefixer', 'cmq', 'cssmin']);
+  grunt.registerTask('deploy', ['copy', 'browserify', 'uglify', 'svgmin', 'sass', 'cmq', 'postcss']);
 
 };

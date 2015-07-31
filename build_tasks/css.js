@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
   /** -----------------------------------------
    * Sass
-   * ----------------------------------------*/
+   -------------------------------------------*/
 
   config.set('sass.dist', {
     files: [{
@@ -24,71 +24,56 @@ module.exports = function (grunt) {
   });
 
   /** -----------------------------------------
-   * Auto Pre-fixer
-   * ----------------------------------------*/
-
-  config.set('autoprefixer.dist', {
-    options: {
-      browsers: ['last 3 versions']
-    },
-    files: [{
-      '<%= directories.project %>/css/main.css': '<%= directories.project %>/css/main.css'
-    }]
-  });
-
-  config.set('autoprefixer.editor', {
-    options: {
-      browsers: ['last 3 versions']
-    },
-    files: [{
-      '<%= directories.project %>/css/editor.css': '<%= directories.project %>/css/editor.css'
-    }]
-  });
-
-  /** -----------------------------------------
    * Combine Media Queries
-   * ----------------------------------------*/
+   -------------------------------------------*/
 
-  config.set('cmq.dist', {
+  config.set('cmq', {
     options: {
       log: false
     },
-    files: [{
-      '<%= directories.project %>/css/': ['<%= directories.project %>/css/main.css']
-    }]
+    dist: {
+      files: {
+        '<%= directories.project %>/css': ['<%= directories.project %>/css/main.css']
+      }
+    }
   });
 
   /** -----------------------------------------
-   * CSS Minification
+   * PostCSS
    * ----------------------------------------*/
 
-  config.set('cssmin.dist', {
+  config.set('postcss', {
     options: {
-      rebase: false
+      map: true,
+      processors: [
+        require('pixrem')(),
+        require('autoprefixer-core')({
+          browsers: 'last 3 versions'
+        }),
+        require('cssnano')()
+      ]
     },
-    expand: true,
-    cwd: '<%= directories.project %>/css/',
-    src: ['main.css'],
-    dest: '<%= directories.project %>/css/',
-    ext: '.min.css'
+    dist: {
+      src: '<%= directories.project %>/css/*.css'
+    }
   });
 
   /** -----------------------------------------
-   * CSS Lint
-   * ----------------------------------------*/
+   * CSSLint
+   -------------------------------------------*/
 
   config.set('csslint.strict', {
     options: {
       import: 2
     },
-    src: ['<%= directories.project %>/css/main.min.css']
+    src: ['<%= directories.project %>/css/*.css']
   });
 
   config.set('csslint.lax', {
     options: {
       import: false
     },
-    src: ['<%= directories.project %>/css/main.min.css']
+    src: ['<%= directories.project %>/css/*.css']
   });
 
   /** =========================================
@@ -97,7 +82,7 @@ module.exports = function (grunt) {
 
   config.set('watch.sass', {
     files: ['<%= directories.project %>/scss/**/*.scss'],
-    tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
+    tasks: ['sass:dist', 'cmq', 'postcss'],
     options: {
       spawn: false
     }
@@ -105,7 +90,7 @@ module.exports = function (grunt) {
 
   config.set('watch.editor', {
     files: ['<%= directories.project %>/scss/editor.scss'],
-    tasks: ['sass:editor', 'autoprefixer:editor'],
+    tasks: ['sass:editor', 'postcss'],
     options: {
       spawn: false
     }
@@ -113,7 +98,7 @@ module.exports = function (grunt) {
 
   config.set('watch.boilerplate', {
     files: ['<%= directories.boilerplate %>/scss/**/*.scss'],
-    tasks: ['sass:dist', 'autoprefixer:dist', 'cmq:dist', 'cssmin:dist'],
+    tasks: ['sass:dist', 'cmq', 'postcss'],
     options: {
       spawn: false
     }
