@@ -16,7 +16,7 @@ Injector:
         ContentCache:
           context: page
           contains:
-            - Page
+            - SiteTree
         MenuCache:
           context: page
           contains:
@@ -31,7 +31,10 @@ Injector:
           context: full
           contains:
             - SiteTree
-            - PortfolioImage
+        PreviousNextPageCache:
+          context: full
+          contains:
+            - SiteTree
         SidebarMenuCache:
           context: page
           contains:
