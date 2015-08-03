@@ -27,7 +27,8 @@
     "drewm/mailchimp-api": "~1.0",
     "silverstripe-australia/gridfieldextensions": "~1.1",
     "littlegiant/silverstripe-catalogmanager": "^2.0",
-    "heyday/silverstripe-cacheinclude": "~4.0"
+    "heyday/silverstripe-cacheinclude": "~4.0",
+    "silverstripe-australia/grouped-cms-menu": "dev-master"
   },
   "scripts": {
     "post-create-project-cmd": [
