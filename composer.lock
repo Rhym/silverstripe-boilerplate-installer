@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "165f67987e952ab26f64e404dd942f0748e4e178"
+                "reference": "4edf54511318d8ff2ba36d6887455ab2fdce7174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/165f67987e952ab26f64e404dd942f0748e4e178",
-                "reference": "165f67987e952ab26f64e404dd942f0748e4e178",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/4edf54511318d8ff2ba36d6887455ab2fdce7174",
+                "reference": "4edf54511318d8ff2ba36d6887455ab2fdce7174",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-07-31 04:05:03"
+            "time": "2015-08-07 01:48:44"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -436,12 +436,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "de279771d94493564c633950276542c3ab9fba00"
+                "reference": "528a5cf4b1db6f1d876aa2ec6238f2c124d9837b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/de279771d94493564c633950276542c3ab9fba00",
-                "reference": "de279771d94493564c633950276542c3ab9fba00",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/528a5cf4b1db6f1d876aa2ec6238f2c124d9837b",
+                "reference": "528a5cf4b1db6f1d876aa2ec6238f2c124d9837b",
                 "shasum": ""
             },
             "require": {
@@ -468,7 +468,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-08-03 01:31:05"
+            "time": "2015-08-07 01:48:29"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -527,12 +527,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-grouped-cms-menu.git",
-                "reference": "3dc8695bdc2421ece36a384333c55e796be6e887"
+                "reference": "e09924742da7ced93e6cfcd0a503c63ce09b6703"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-grouped-cms-menu/zipball/3dc8695bdc2421ece36a384333c55e796be6e887",
-                "reference": "3dc8695bdc2421ece36a384333c55e796be6e887",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-grouped-cms-menu/zipball/e09924742da7ced93e6cfcd0a503c63ce09b6703",
+                "reference": "e09924742da7ced93e6cfcd0a503c63ce09b6703",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +541,10 @@
             },
             "type": "silverstripe-module",
             "extra": {
-                "installer-name": "grouped-cms-menu"
+                "installer-name": "grouped-cms-menu",
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -561,7 +564,7 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2014-12-04 02:31:51"
+            "time": "2015-08-06 00:17:40"
         },
         {
             "name": "silverstripe/cms",
@@ -833,21 +836,21 @@
         },
         {
             "name": "undefinedoffset/sortablegridfield",
-            "version": "0.4.3",
+            "version": "0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "81e8fae97a47c6338dd5ae946a5e086267e42a48"
+                "reference": "32cb8d67be7fc9821e31b152bc41545cf8faa3ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/81e8fae97a47c6338dd5ae946a5e086267e42a48",
-                "reference": "81e8fae97a47c6338dd5ae946a5e086267e42a48",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/32cb8d67be7fc9821e31b152bc41545cf8faa3ab",
+                "reference": "32cb8d67be7fc9821e31b152bc41545cf8faa3ab",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
-                "silverstripe/framework": ">=3.0.1,<3.2"
+                "silverstripe/framework": ">=3.0.1,<3.3"
             },
             "type": "silverstripe-module",
             "extra": {
@@ -869,7 +872,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-05-07 15:44:55"
+            "time": "2015-08-05 16:56:56"
         }
     ],
     "packages-dev": [],
