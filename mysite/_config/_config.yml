@@ -59,3 +59,6 @@ BlogPage:
 
 SVGTemplate:
   base_path: mysite/images/svg
+
+#Page:
+#  theme_color: '#1b354c'

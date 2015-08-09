@@ -17,6 +17,11 @@ Injector:
           context: page
           contains:
             - SiteTree
+        HeaderMetaCache:
+          context: full
+          contains:
+            - SiteConfig
+            - SiteTree
         MenuCache:
           context: page
           contains:
