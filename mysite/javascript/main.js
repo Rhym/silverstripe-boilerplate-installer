@@ -17151,6 +17151,23 @@ if ('undefined' !== typeof window.ParsleyValidator)
 })(jQuery);
 
 },{}],9:[function(require,module,exports){
+;
+(function ($) {
+  /** =========================================
+   * Contact
+   ==========================================*/
+
+  /** Polyfill for browsers that don't support flexbox */
+  var $map = $('.contact__details__item__map'),
+    $content = $('.contact__details__item--content');
+  if ($map.length && $content.length) {
+    /** If the browser doesn't support flexbox, and is not a mobile device. */
+    if (!Modernizr.flexbox && Modernizr.mq('(min-width: 768px)')) {
+      $map.css({'height': $content.outerHeight()});
+    }
+  }
+})(jQuery);
+},{}],10:[function(require,module,exports){
 (function (global){
 /** =========================================
  * Init
@@ -17177,12 +17194,13 @@ attachFastClick(document.body);
  * ----------------------------------------*/
 
 require('./ajax-content.js');
-require('./popout-menu.js');
 require('./carousel.js');
+require('./contact.js');
+require('./popout-menu.js');
 require('./waypoints.js');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ajax-content.js":7,"./carousel.js":8,"./popout-menu.js":10,"./waypoints.js":11,"bootstrap-collapse":1,"bootstrap-modal":2,"fast-click":3,"jquery":4,"owlcarousel":5,"parsley":6}],10:[function(require,module,exports){
+},{"./ajax-content.js":7,"./carousel.js":8,"./contact.js":9,"./popout-menu.js":11,"./waypoints.js":12,"bootstrap-collapse":1,"bootstrap-modal":2,"fast-click":3,"jquery":4,"owlcarousel":5,"parsley":6}],11:[function(require,module,exports){
 ;
 (function ($) {
   /** =========================================
@@ -17203,7 +17221,7 @@ require('./waypoints.js');
   });
 })(jQuery);
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 //;
 //(function ($) {
 //  $(document).ready(function () {
@@ -17223,4 +17241,4 @@ require('./waypoints.js');
 //  });
 //})(jQuery);
 
-},{}]},{},[9]);
+},{}]},{},[10]);

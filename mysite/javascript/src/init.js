@@ -23,6 +23,7 @@ attachFastClick(document.body);
  * ----------------------------------------*/
 
 require('./ajax-content.js');
-require('./popout-menu.js');
 require('./carousel.js');
+require('./contact.js');
+require('./popout-menu.js');
 require('./waypoints.js');
