@@ -17197,10 +17197,9 @@ require('./ajax-content.js');
 require('./carousel.js');
 require('./contact.js');
 require('./popout-menu.js');
-require('./waypoints.js');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ajax-content.js":7,"./carousel.js":8,"./contact.js":9,"./popout-menu.js":11,"./waypoints.js":12,"bootstrap-collapse":1,"bootstrap-modal":2,"fast-click":3,"jquery":4,"owlcarousel":5,"parsley":6}],11:[function(require,module,exports){
+},{"./ajax-content.js":7,"./carousel.js":8,"./contact.js":9,"./popout-menu.js":11,"bootstrap-collapse":1,"bootstrap-modal":2,"fast-click":3,"jquery":4,"owlcarousel":5,"parsley":6}],11:[function(require,module,exports){
 ;
 (function ($) {
   /** =========================================
@@ -17214,25 +17213,6 @@ require('./waypoints.js');
     $(target).toggleClass('js-is-active');
     $(this).toggleClass('js-is-active');
     return false;
-  });
-})(jQuery);
-
-},{}],12:[function(require,module,exports){
-;
-(function ($) {
-  $(document).ready(function () {
-    /** -----------------------------------------
-     * Animation - https://github.com/imakewebthings/waypoints
-     * ----------------------------------------*/
-
-    $('.animated').waypoint(function () {
-      var animation = $(this).data('animation');
-      $(this).addClass(animation);
-    }, {
-      context: '.content-wrap',
-      offset: '75%'
-    });
-
   });
 })(jQuery);
 

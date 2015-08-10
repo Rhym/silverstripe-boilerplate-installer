@@ -26,4 +26,3 @@ require('./ajax-content.js');
 require('./carousel.js');
 require('./contact.js');
 require('./popout-menu.js');
-require('./waypoints.js');
