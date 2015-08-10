@@ -17068,7 +17068,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
 //   */
 //  if ($('.ajax-control').length) {
 //    var $content = $('.ajax-content'),
-//      $loadingClass = 'ajax-loading',
+//      $loadingClass = 'js-is-loading',
 //      $window = $('.content-wrap'),
 //      replaceContent = function (url) {
 //        var param = '&ajax=1',
@@ -17211,8 +17211,8 @@ require('./waypoints.js');
   $('.open-children').on('click', function (e) {
     e.preventDefault();
     var target = $(this).data('target');
-    $(target).toggleClass('menu-wrap__menu__item__list--active');
-    $(this).toggleClass('menu-wrap__menu__item__icon--active');
+    $(target).toggleClass('js-is-active');
+    $(this).toggleClass('js-is-active');
     return false;
   });
 })(jQuery);
@@ -17222,9 +17222,9 @@ require('./waypoints.js');
 //(function ($) {
 //  $(document).ready(function () {
 //
-//    /** -----------------------------------------
+//    /*---------------------------------------------*\
 //     * Animation - https://github.com/imakewebthings/waypoints
-//     * ----------------------------------------*/
+//     \*---------------------------------------------*/
 //
 //    $('.animated').waypoint(function () {
 //      var animation = $(this).data('animation');

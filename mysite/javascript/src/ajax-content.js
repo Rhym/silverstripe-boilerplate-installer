@@ -5,7 +5,7 @@
 //   */
 //  if ($('.ajax-control').length) {
 //    var $content = $('.ajax-content'),
-//      $loadingClass = 'ajax-loading',
+//      $loadingClass = 'js-is-loading',
 //      $window = $('.content-wrap'),
 //      replaceContent = function (url) {
 //        var param = '&ajax=1',

@@ -2,9 +2,9 @@
 //(function ($) {
 //  $(document).ready(function () {
 //
-//    /** -----------------------------------------
+//    /*---------------------------------------------*\
 //     * Animation - https://github.com/imakewebthings/waypoints
-//     * ----------------------------------------*/
+//     \*---------------------------------------------*/
 //
 //    $('.animated').waypoint(function () {
 //      var animation = $(this).data('animation');
