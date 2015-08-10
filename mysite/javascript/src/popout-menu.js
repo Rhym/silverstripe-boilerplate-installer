@@ -4,11 +4,7 @@
    * Popout Menu
    ==========================================*/
 
-  var body = $('body'),
-    button = $('.toggle-menu');
-  button.on('click', function (e) {
-    body.toggleClass('show-menu');
-  });
+  var body = $('body');
   $('.open-children').on('click', function (e) {
     e.preventDefault();
     var target = $(this).data('target');
