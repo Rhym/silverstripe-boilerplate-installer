@@ -13,6 +13,11 @@ Injector:
           context: full
           contains:
             - SiteTree
+        ContactPageCache:
+          context: page
+          contains:
+            - SiteConfig
+            - SiteTree
         ContentCache:
           context: page
           contains:
