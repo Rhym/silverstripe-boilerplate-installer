@@ -5,6 +5,7 @@
 </head>
 <body class="{$ClassName} {$SliderClass}" id="{$URLSegment}">
     {$TrackingCodeTop.RAW}
+    <% include OutdatedBrowser %>
     <div id="wrapper">
         <div class="content-wrap">
             <% include Header %>
