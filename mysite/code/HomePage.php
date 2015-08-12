@@ -6,8 +6,14 @@
 class HomePage extends Page
 {
 
+    /**
+     * @var string
+     */
     private static $icon = 'mysite/images/icons/home.png';
 
+    /**
+     * @var array
+     */
     private static $db = array();
 
     /**

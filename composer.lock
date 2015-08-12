@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "30d3be8b3cb7c528e44e81c9903e567879f1ff3a"
+                "reference": "eca449ab1ac3ac22a40136608909c0589a4c5374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/30d3be8b3cb7c528e44e81c9903e567879f1ff3a",
-                "reference": "30d3be8b3cb7c528e44e81c9903e567879f1ff3a",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/eca449ab1ac3ac22a40136608909c0589a4c5374",
+                "reference": "eca449ab1ac3ac22a40136608909c0589a4c5374",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-08-11 21:51:52"
+            "time": "2015-08-12 05:51:04"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -436,12 +436,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "49c14a3a05ed9100b46e0995781cd830446d131f"
+                "reference": "3b2e03ee5953f5d3b391101bc5d23f484f3056f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/49c14a3a05ed9100b46e0995781cd830446d131f",
-                "reference": "49c14a3a05ed9100b46e0995781cd830446d131f",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/3b2e03ee5953f5d3b391101bc5d23f484f3056f7",
+                "reference": "3b2e03ee5953f5d3b391101bc5d23f484f3056f7",
                 "shasum": ""
             },
             "require": {
@@ -471,7 +471,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-08-11 00:32:07"
+            "time": "2015-08-12 05:30:43"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",

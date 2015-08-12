@@ -14,6 +14,9 @@
 class SiteConfigExtension extends DataExtension
 {
 
+    /**
+     * @var array
+     */
     private static $db = array(
         'ShowAssetAdmin' => 'Boolean',
         'ShowBlogAdmin' => 'Boolean',
@@ -24,6 +27,9 @@ class SiteConfigExtension extends DataExtension
         'ShowSecurityAdmin' => 'Boolean'
     );
 
+    /**
+     * @var array
+     */
     private static $defaults = array(
         'ShowAssetAdmin' => true,
         'ShowBlogAdmin' => true,

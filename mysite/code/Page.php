@@ -6,8 +6,14 @@
 class Page extends SiteTree
 {
 
+    /**
+     * @var array
+     */
     private static $db = array();
 
+    /**
+     * @var array
+     */
     private static $has_one = array();
 
     /**
