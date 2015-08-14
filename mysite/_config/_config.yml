@@ -38,8 +38,9 @@ LeftAndMain:
   cms_menu_active_background_color: '#0d1a25'
 
 ColorField:
-  primary_color: '#3f51b5'
-  secondary_color: '#ff4081'
+  colors:
+    - '#000'
+    - '#FFF'
 
 PortfolioPage:
   extensions:
