@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/recaptcha.git",
-                "reference": "50ad676d5fbd2b8bc6da71742bb808c9b198eaf8"
+                "reference": "25eeac56770a9ccb986889aee6a5d26b9e178b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/recaptcha/zipball/50ad676d5fbd2b8bc6da71742bb808c9b198eaf8",
-                "reference": "50ad676d5fbd2b8bc6da71742bb808c9b198eaf8",
+                "url": "https://api.github.com/repos/google/recaptcha/zipball/25eeac56770a9ccb986889aee6a5d26b9e178b26",
+                "reference": "25eeac56770a9ccb986889aee6a5d26b9e178b26",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +250,7 @@
                 "recaptcha",
                 "spam"
             ],
-            "time": "2015-07-07 22:29:03"
+            "time": "2015-08-20 12:15:10"
         },
         {
             "name": "heyday/silverstripe-cacheinclude",
@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "e7c48de4262e34fb6cbac1a669ff9b24419797c9"
+                "reference": "9dc8cbca99ce8c1b4c594c4ef40a0cd005275a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/e7c48de4262e34fb6cbac1a669ff9b24419797c9",
-                "reference": "e7c48de4262e34fb6cbac1a669ff9b24419797c9",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/9dc8cbca99ce8c1b4c594c4ef40a0cd005275a7d",
+                "reference": "9dc8cbca99ce8c1b4c594c4ef40a0cd005275a7d",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-08-14 02:01:06"
+            "time": "2015-08-20 21:35:52"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
