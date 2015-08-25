@@ -5,6 +5,7 @@
     "jquery": "./components/lib/jquery/dist/jquery.js",
     "owlcarousel": "./components/lib/owl.carousel/dist/owl.carousel.js",
     "bootstrap-modal": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
+    "bootstrap-transition": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
     "bootstrap-collapse": "./components/lib/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
     "parsley": "./components/lib/parsleyjs/dist/parsley.js",
     "fast-click": "./components/lib/fastclick/lib/fastclick.js"

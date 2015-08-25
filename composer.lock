@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "9dc8cbca99ce8c1b4c594c4ef40a0cd005275a7d"
+                "reference": "a4eeb5c584520f511b83aeb195153a613197b2ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/9dc8cbca99ce8c1b4c594c4ef40a0cd005275a7d",
-                "reference": "9dc8cbca99ce8c1b4c594c4ef40a0cd005275a7d",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/a4eeb5c584520f511b83aeb195153a613197b2ea",
+                "reference": "a4eeb5c584520f511b83aeb195153a613197b2ea",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-08-20 21:35:52"
+            "time": "2015-08-25 03:40:19"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -712,12 +712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "eccfd6f3d9444270b0a5561beefc8846b96ddc38"
+                "reference": "b4b129ac5811676c573b34b614051b99a9ed76c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/eccfd6f3d9444270b0a5561beefc8846b96ddc38",
-                "reference": "eccfd6f3d9444270b0a5561beefc8846b96ddc38",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/b4b129ac5811676c573b34b614051b99a9ed76c8",
+                "reference": "b4b129ac5811676c573b34b614051b99a9ed76c8",
                 "shasum": ""
             },
             "require": {
@@ -753,7 +753,7 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-12 15:16:46"
+            "time": "2015-08-24 07:18:02"
         },
         {
             "name": "symfony/yaml",
@@ -761,12 +761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "6eef1477f3c4451b6024fadb1254009be4602908"
+                "reference": "1a0bd40f71908db4c9d44d308e0008cc44fc5f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6eef1477f3c4451b6024fadb1254009be4602908",
-                "reference": "6eef1477f3c4451b6024fadb1254009be4602908",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1a0bd40f71908db4c9d44d308e0008cc44fc5f2f",
+                "reference": "1a0bd40f71908db4c9d44d308e0008cc44fc5f2f",
                 "shasum": ""
             },
             "require": {
@@ -802,7 +802,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-29 07:12:56"
+            "time": "2015-08-24 07:18:02"
         },
         {
             "name": "unclecheese/betterbuttons",

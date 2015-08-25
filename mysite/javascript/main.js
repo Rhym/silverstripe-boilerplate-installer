@@ -551,6 +551,67 @@
 }(jQuery);
 
 },{}],3:[function(require,module,exports){
+/* ========================================================================
+ * Bootstrap: transition.js v3.3.5
+ * http://getbootstrap.com/javascript/#transitions
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+  // ============================================================
+
+  function transitionEnd() {
+    var el = document.createElement('bootstrap')
+
+    var transEndEventNames = {
+      WebkitTransition : 'webkitTransitionEnd',
+      MozTransition    : 'transitionend',
+      OTransition      : 'oTransitionEnd otransitionend',
+      transition       : 'transitionend'
+    }
+
+    for (var name in transEndEventNames) {
+      if (el.style[name] !== undefined) {
+        return { end: transEndEventNames[name] }
+      }
+    }
+
+    return false // explicit for ie8 (  ._.)
+  }
+
+  // http://blog.alexmaccaw.com/css-transitions
+  $.fn.emulateTransitionEnd = function (duration) {
+    var called = false
+    var $el = this
+    $(this).one('bsTransitionEnd', function () { called = true })
+    var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
+    setTimeout(callback, duration)
+    return this
+  }
+
+  $(function () {
+    $.support.transition = transitionEnd()
+
+    if (!$.support.transition) return
+
+    $.event.special.bsTransitionEnd = {
+      bindType: $.support.transition.end,
+      delegateType: $.support.transition.end,
+      handle: function (e) {
+        if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
+      }
+    }
+  })
+
+}(jQuery);
+
+},{}],4:[function(require,module,exports){
 ;(function () {
 	'use strict';
 
@@ -1393,7 +1454,7 @@
 	}
 }());
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v1.11.3
  * http://jquery.com/
@@ -11746,7 +11807,7 @@ return jQuery;
 
 }));
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
@@ -14896,7 +14957,7 @@ return jQuery;
 
 })(window.Zepto || window.jQuery, window, document);
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 /*!
 * Parsleyjs
 * Guillaume Potier - <guillaume@wisembly.com>
@@ -16981,7 +17042,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
     });
 }));
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 //;
 //(function ($) {
 //  /**
@@ -17044,7 +17105,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
 //  }
 //})(jQuery);
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 ;
 (function ($) {
   /** =========================================
@@ -17071,7 +17132,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
   }
 })(jQuery);
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 ;
 (function ($) {
   /** =========================================
@@ -17088,7 +17149,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
     }
   }
 })(jQuery);
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 (function (global){
 /** =========================================
  * Init
@@ -17106,6 +17167,7 @@ global.jQuery = require('jquery');
 require('owlcarousel');
 require('bootstrap-modal');
 require('bootstrap-collapse');
+require('bootstrap-transition');
 require('parsley');
 var attachFastClick = require('fast-click');
 attachFastClick(document.body);
@@ -17120,7 +17182,7 @@ require('./contact.js');
 require('./popout-menu.js');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ajax-content.js":7,"./carousel.js":8,"./contact.js":9,"./popout-menu.js":11,"bootstrap-collapse":1,"bootstrap-modal":2,"fast-click":3,"jquery":4,"owlcarousel":5,"parsley":6}],11:[function(require,module,exports){
+},{"./ajax-content.js":8,"./carousel.js":9,"./contact.js":10,"./popout-menu.js":12,"bootstrap-collapse":1,"bootstrap-modal":2,"bootstrap-transition":3,"fast-click":4,"jquery":5,"owlcarousel":6,"parsley":7}],12:[function(require,module,exports){
 ;
 (function ($) {
   /** =========================================
@@ -17137,4 +17199,4 @@ require('./popout-menu.js');
   });
 })(jQuery);
 
-},{}]},{},[10]);
+},{}]},{},[11]);
