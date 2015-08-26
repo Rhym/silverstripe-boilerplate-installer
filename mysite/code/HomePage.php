@@ -5,7 +5,6 @@
  */
 class HomePage extends Page
 {
-
     /**
      * @var string
      */
@@ -21,10 +20,7 @@ class HomePage extends Page
      */
     public function getCMSFields()
     {
-        /** =========================================
-         * @var FieldList $fields
-        ===========================================*/
-
+        /** @var FieldList $fields */
         $fields = parent::getCMSFields();
         return $fields;
     }

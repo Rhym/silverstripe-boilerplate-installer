@@ -5,7 +5,6 @@
  */
 class Page extends SiteTree
 {
-
     /**
      * @var array
      */
@@ -21,11 +20,9 @@ class Page extends SiteTree
      */
     public function getCMSFields()
     {
-        /** =========================================
-         * @var FieldList $fields
-        ===========================================*/
-
+        /** @var FieldList $fields */
         $fields = parent::getCMSFields();
+
         return $fields;
     }
 
@@ -34,12 +31,11 @@ class Page extends SiteTree
      */
     public function getSettingsFields()
     {
-        /** =========================================
-         * @var FieldList $fields
-        ===========================================*/
-
+        /** @var FieldList $fields */
         $fields = parent::getSettingsFields();
+
         $fields->removeByName('ShowInSearch');
+
         return $fields;
     }
 
@@ -50,7 +46,9 @@ class Page extends SiteTree
  */
 class Page_Controller extends ContentController
 {
-
+    /**
+     * @var array
+     */
     private static $allowed_actions = array();
 
     public function init()

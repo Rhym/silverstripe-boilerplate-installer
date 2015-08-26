@@ -8,10 +8,7 @@ class ProjectLeftAndMainExtension extends LeftAndMainExtension
 
     public function init()
     {
-        /** =========================================
-         * @var SiteConfig $config
-        ===========================================*/
-
+        /** @var SiteConfig $config */
         $config = SiteConfig::current_site_config();
 
         /**
