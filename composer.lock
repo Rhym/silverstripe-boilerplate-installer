@@ -396,16 +396,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-boilerplate.git",
-                "reference": "d270e0d605239f3d7a1726a26b6bf0039afa2dde"
+                "reference": "98d6292a9bca9fcc28e55d24e3c5043f47a75127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/d270e0d605239f3d7a1726a26b6bf0039afa2dde",
-                "reference": "d270e0d605239f3d7a1726a26b6bf0039afa2dde",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-boilerplate/zipball/98d6292a9bca9fcc28e55d24e3c5043f47a75127",
+                "reference": "98d6292a9bca9fcc28e55d24e3c5043f47a75127",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
+                "ryanpotter/silverstripe-color-field": "~0.1",
                 "silverstripe/framework": ">=3.0.1,<3.2"
             },
             "type": "silverstripe-module",
@@ -428,7 +429,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-08-25 04:56:45"
+            "time": "2015-08-26 04:29:14"
         },
         {
             "name": "ryanpotter/silverstripe-cms-theme",
@@ -472,6 +473,44 @@
                 "theme"
             ],
             "time": "2015-08-12 05:30:43"
+        },
+        {
+            "name": "ryanpotter/silverstripe-color-field",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rhym/silverstripe-color-field.git",
+                "reference": "a7d6b436406fb353ee673f6a7b3dadda9f6a9986"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-color-field/zipball/a7d6b436406fb353ee673f6a7b3dadda9f6a9986",
+                "reference": "a7d6b436406fb353ee673f6a7b3dadda9f6a9986",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-color-field"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Potter",
+                    "homepage": "http://ryanpotter.co.nz/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Silverstripe Color Field",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2015-08-26 04:22:01"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -533,17 +572,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-grouped-cms-menu.git",
-                "reference": "e09924742da7ced93e6cfcd0a503c63ce09b6703"
+                "reference": "5de802c61ae0a5245ec72c759ba4e52a3a56382f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-grouped-cms-menu/zipball/e09924742da7ced93e6cfcd0a503c63ce09b6703",
-                "reference": "e09924742da7ced93e6cfcd0a503c63ce09b6703",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-grouped-cms-menu/zipball/5de802c61ae0a5245ec72c759ba4e52a3a56382f",
+                "reference": "5de802c61ae0a5245ec72c759ba4e52a3a56382f",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "3.1.*",
-                "silverstripe/framework": "3.1.*"
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
             },
             "type": "silverstripe-module",
             "extra": {
@@ -570,7 +609,7 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2015-08-06 00:17:40"
+            "time": "2015-08-25 21:27:55"
         },
         {
             "name": "silverstripe/cms",
