@@ -17189,7 +17189,6 @@ require('./popout-menu.js');
    * Popout Menu
    ==========================================*/
 
-  var body = $('body');
   $('.open-children').on('click', function (e) {
     e.preventDefault();
     var target = $(this).data('target');

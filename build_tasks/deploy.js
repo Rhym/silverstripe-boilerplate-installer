@@ -30,18 +30,6 @@ module.exports = function (grunt) {
         src: 'modernizr.js',
         dest: '<%= directories.project %>/javascript/lib',
         expand: true
-      },
-      {
-        cwd: '<%= directories.bower %>/html5shiv/dist/',
-        src: 'html5shiv.min.js',
-        dest: '<%= directories.project %>/javascript/lib',
-        expand: true
-      },
-      {
-        cwd: '<%= directories.bower %>/respond/dest/',
-        src: 'respond.min.js',
-        dest: '<%= directories.project %>/javascript/lib',
-        expand: true
       }
     ]
   });
