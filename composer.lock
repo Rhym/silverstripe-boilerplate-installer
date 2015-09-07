@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60ecc02f691a8dd63693e36e575d306a",
+    "hash": "57726c8f0172fde125aa31c1a4bd0006",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +103,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.3.1",
+            "version": "1.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7"
+                "reference": "2196b831e62b04986a5c4d208a1b48e0680da369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/cf483685798a72c93bf4206e3dd6358ea07d64e7",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/2196b831e62b04986a5c4d208a1b48e0680da369",
+                "reference": "2196b831e62b04986a5c4d208a1b48e0680da369",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +168,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-09-17 14:24:04"
+            "time": "2015-08-31 13:09:29"
         },
         {
             "name": "drewm/mailchimp-api",
@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/recaptcha.git",
-                "reference": "25eeac56770a9ccb986889aee6a5d26b9e178b26"
+                "reference": "2b7e00566afca82a38a1d3adb8e42c118006296e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/recaptcha/zipball/25eeac56770a9ccb986889aee6a5d26b9e178b26",
-                "reference": "25eeac56770a9ccb986889aee6a5d26b9e178b26",
+                "url": "https://api.github.com/repos/google/recaptcha/zipball/2b7e00566afca82a38a1d3adb8e42c118006296e",
+                "reference": "2b7e00566afca82a38a1d3adb8e42c118006296e",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +250,7 @@
                 "recaptcha",
                 "spam"
             ],
-            "time": "2015-08-20 12:15:10"
+            "time": "2015-09-02 17:23:59"
         },
         {
             "name": "heyday/silverstripe-cacheinclude",
@@ -513,17 +513,139 @@
             "time": "2015-08-26 04:22:01"
         },
         {
+            "name": "ryanpotter/silverstripe-design-field",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rhym/silverstripe-design-field.git",
+                "reference": "b528195b65ed96810f07c24fcf7a19dc9ebb4b43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-design-field/zipball/b528195b65ed96810f07c24fcf7a19dc9ebb4b43",
+                "reference": "b528195b65ed96810f07c24fcf7a19dc9ebb4b43",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-design-field"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Potter",
+                    "homepage": "http://ryanpotter.co.nz/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Silverstripe Design Field",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2015-08-26 04:56:00"
+        },
+        {
+            "name": "ryanpotter/silverstripe-site-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rhym/silverstripe-site-builder.git",
+                "reference": "b5fb7f95e9a889afda8e3834166d930667eb3b15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-site-builder/zipball/b5fb7f95e9a889afda8e3834166d930667eb3b15",
+                "reference": "b5fb7f95e9a889afda8e3834166d930667eb3b15",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "ryanpotter/silverstripe-cms-theme": "dev-master",
+                "ryanpotter/silverstripe-color-field": "~0.1",
+                "ryanpotter/silverstripe-design-field": "~0.1",
+                "silverstripe-australia/gridfieldextensions": "~1.1",
+                "silverstripe/framework": ">=3.0.1,<3.2"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-site-builder"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Potter",
+                    "homepage": "http://ryanpotter.co.nz/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Silverstripe Site Builder",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2015-08-27 23:19:49"
+        },
+        {
+            "name": "ryanpotter/silverstripe-site-designer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rhym/silverstripe-site-designer.git",
+                "reference": "9af882f52db0af910e8eef276eba3fcb161f6337"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-site-designer/zipball/9af882f52db0af910e8eef276eba3fcb161f6337",
+                "reference": "9af882f52db0af910e8eef276eba3fcb161f6337",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "ryanpotter/silverstripe-color-field": "~0.1",
+                "ryanpotter/silverstripe-design-field": "~0.1",
+                "silverstripe/framework": ">=3.0.1,<3.2"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-site-designer"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Potter",
+                    "homepage": "http://ryanpotter.co.nz/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Silverstripe Site Designer",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2015-08-27 23:06:56"
+        },
+        {
             "name": "silverstripe-australia/gridfieldextensions",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
-                "reference": "48b0a1f3fca0f548744e6cd12b7754de323054d3"
+                "reference": "b4a0c9618bafd0c90bf6a586cc856935880f6224"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/48b0a1f3fca0f548744e6cd12b7754de323054d3",
-                "reference": "48b0a1f3fca0f548744e6cd12b7754de323054d3",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/b4a0c9618bafd0c90bf6a586cc856935880f6224",
+                "reference": "b4a0c9618bafd0c90bf6a586cc856935880f6224",
                 "shasum": ""
             },
             "require": {
@@ -558,12 +680,12 @@
                 }
             ],
             "description": "A collection of useful grid field components",
-            "homepage": "http://github.com/ajshort/silverstripe-gridfieldextensions",
+            "homepage": "http://github.com/silverstripe-australia/silverstripe-gridfieldextensions",
             "keywords": [
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-08-11 05:01:37"
+            "time": "2015-09-06 22:44:41"
         },
         {
             "name": "silverstripe-australia/grouped-cms-menu",
@@ -881,16 +1003,16 @@
         },
         {
             "name": "undefinedoffset/sortablegridfield",
-            "version": "0.4.4",
+            "version": "0.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "32cb8d67be7fc9821e31b152bc41545cf8faa3ab"
+                "reference": "282ea74a764d247f70c1c73c1400bcc322aade08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/32cb8d67be7fc9821e31b152bc41545cf8faa3ab",
-                "reference": "32cb8d67be7fc9821e31b152bc41545cf8faa3ab",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/282ea74a764d247f70c1c73c1400bcc322aade08",
+                "reference": "282ea74a764d247f70c1c73c1400bcc322aade08",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +1039,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-08-05 16:56:56"
+            "time": "2015-08-29 17:54:46"
         }
     ],
     "packages-dev": [],
@@ -928,6 +1050,8 @@
         "silverstripe/framework": 0,
         "ryanpotter/silverstripe-boilerplate": 20,
         "ryanpotter/silverstripe-cms-theme": 20,
+        "ryanpotter/silverstripe-site-builder": 20,
+        "ryanpotter/silverstripe-site-designer": 20,
         "silverstripe-australia/grouped-cms-menu": 20
     },
     "prefer-stable": false,
