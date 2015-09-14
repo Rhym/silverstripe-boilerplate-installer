@@ -3,8 +3,7 @@
 /**
  * Class Page
  */
-class Page extends SiteTree
-{
+class Page extends SiteTree {
     /**
      * @var array
      */
@@ -18,8 +17,7 @@ class Page extends SiteTree
     /**
      * @return FieldList
      */
-    public function getCMSFields()
-    {
+    public function getCMSFields() {
         /** @var FieldList $fields */
         $fields = parent::getCMSFields();
 
@@ -29,12 +27,11 @@ class Page extends SiteTree
     /**
      * @return FieldList
      */
-    public function getSettingsFields()
-    {
+    public function getSettingsFields() {
         /** @var FieldList $fields */
         $fields = parent::getSettingsFields();
 
-        $fields->removeByName('ShowInSearch');
+        $fields->removeByName( 'ShowInSearch' );
 
         return $fields;
     }
@@ -44,39 +41,37 @@ class Page extends SiteTree
 /**
  * Class Page_Controller
  */
-class Page_Controller extends ContentController
-{
+class Page_Controller extends ContentController {
     /**
      * @var array
      */
     private static $allowed_actions = array();
 
-    public function init()
-    {
+    public function init() {
         $baseHref = Director::BaseURL();
 
         /** -----------------------------------------
          * Javascript
          * ----------------------------------------*/
 
-        Requirements::insertHeadTags('<script type="text/javascript" src="' . $baseHref . project() . '/javascript/lib/modernizr.min.js"></script>',
-            'Modernizr');
+//        Requirements::insertHeadTags( '<script type="text/javascript" src="' . $baseHref . project() . '/javascript/lib/modernizr.min.js"></script>',
+//            'Modernizr' );
 
         /**
          * Set All JS to be right before the closing </body> tag.
          */
-        Requirements::set_force_js_to_bottom(true);
-        if (Director::isDev()) {
-            Requirements::javascript(project() . '/javascript/main.js');
+        Requirements::set_force_js_to_bottom( true );
+        if ( Director::isDev() ) {
+            Requirements::javascript( project() . '/dist/js/output.js' );
         } else {
-            Requirements::javascript(project() . '/javascript/main.min.js');
+            Requirements::javascript( project() . '/dist/js/output.js' );
         }
 
         /** -----------------------------------------
          * CSS
          * ----------------------------------------*/
 
-        Requirements::css(project() . '/css/main.css', 'all');
+        Requirements::css( project() . '/dist/styles/style.min.css', 'all' );
 
         parent::init();
     }

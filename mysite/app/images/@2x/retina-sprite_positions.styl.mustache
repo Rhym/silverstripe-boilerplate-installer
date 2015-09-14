@@ -1,0 +1,17 @@
+{
+// Default options
+'functions': true
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+
+{{#items}}
+    .icon-{{name}}{
+    background-image: url(../images/sprites-retina.png);
+    background-size:({{total_width }} / 2 )+px ({{total_height }} / 2 )+px;
+    }
+{{/items}}
+
+}
