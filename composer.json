@@ -10,7 +10,7 @@
   "license": "BSD-3-Clause",
   "authors": [
     {
-      "name": "Ryan Potter",
+      "name": "Ryan Potter, Jaydn de Graaf",
       "homepage": "http://toast.co.nz/",
       "role": "Developer"
     }
@@ -35,10 +35,10 @@
   "scripts": {
     "post-create-project-cmd": [
       "npm install",
-      "npm install -g grunt-cli",
+      "npm install -g gulp-cli",
       "npm install -g bower",
       "bower install -allow-root",
-      "grunt deploy"
+      "gulp deploy --silent"
     ]
   },
   "minimum-stability": "dev"

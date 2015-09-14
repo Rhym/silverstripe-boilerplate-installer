@@ -18,7 +18,7 @@ attachFastClick(document.body);
 require('../plugins/ajax-content.js');
 require('../plugins/carousel.js');
 require('../plugins/contact.js');
-require('../plugins/popout-menu.js'); 
+require('../plugins/popout-menu.js');
 
 
 console.log('Houston we have lift off')
