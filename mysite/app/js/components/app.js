@@ -8,8 +8,6 @@ require('bootstrap-modal');
 require('bootstrap-collapse');
 require('bootstrap-transition');
 require('parsley');
-var attachFastClick = require('fast-click');
-attachFastClick(document.body);
 
 /** -----------------------------------------
  * Project Scripts
@@ -20,5 +18,6 @@ require('../plugins/carousel.js');
 require('../plugins/contact.js');
 require('../plugins/popout-menu.js');
 
-
-console.log('Houston we have lift off')
+/** -----------------------------------------
+ * Magic
+ * ----------------------------------------*/
