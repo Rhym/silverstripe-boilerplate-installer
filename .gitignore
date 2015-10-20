@@ -1,6 +1,6 @@
 ## ignorance is bliss
 
-/assets/*
+/assets/
 _ss_environment.php
 _resampled
 .DS_Store
@@ -13,6 +13,7 @@ _resampled
 /components/
 /googlesitemaps/
 /node_modules/
+/reports/
 /vendor/
 /.idea/
 /gridfieldextensions/
@@ -22,5 +23,7 @@ _resampled
 /silverstripe-cacheinclude/
 /silverstripe-catalogmanager/
 /silverstripe-color-field/
+/siteconfig/
 /sortablegridfield/
 /grouped-cms-menu/
+silverstripe.log
