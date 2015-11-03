@@ -13,13 +13,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41"
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
-                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
+                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -29,9 +32,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -100,7 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-06-13 15:30:38"
+            "time": "2015-10-29 23:28:48"
         },
         {
             "name": "doctrine/cache",
@@ -214,12 +217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/recaptcha.git",
-                "reference": "9c5cf33ab23d399a5158132b85e5c22f22f4b1d4"
+                "reference": "e4bfe88a2558fa2a812aec543086a117be340f81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/recaptcha/zipball/9c5cf33ab23d399a5158132b85e5c22f22f4b1d4",
-                "reference": "9c5cf33ab23d399a5158132b85e5c22f22f4b1d4",
+                "url": "https://api.github.com/repos/google/recaptcha/zipball/e4bfe88a2558fa2a812aec543086a117be340f81",
+                "reference": "e4bfe88a2558fa2a812aec543086a117be340f81",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +254,7 @@
                 "recaptcha",
                 "spam"
             ],
-            "time": "2015-10-20 12:21:54"
+            "time": "2015-10-25 22:02:40"
         },
         {
             "name": "heyday/silverstripe-cacheinclude",
@@ -305,16 +308,16 @@
         },
         {
             "name": "littlegiant/silverstripe-catalogmanager",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Little-Giant/silverstripe-catalogmanager.git",
-                "reference": "43fe8b10d7f6865f6315d0d172717e633574f3f8"
+                "reference": "261ed67d29bd1529f6c02af906aa66522b0c2166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Little-Giant/silverstripe-catalogmanager/zipball/43fe8b10d7f6865f6315d0d172717e633574f3f8",
-                "reference": "43fe8b10d7f6865f6315d0d172717e633574f3f8",
+                "url": "https://api.github.com/repos/Little-Giant/silverstripe-catalogmanager/zipball/261ed67d29bd1529f6c02af906aa66522b0c2166",
+                "reference": "261ed67d29bd1529f6c02af906aa66522b0c2166",
                 "shasum": ""
             },
             "require": {
@@ -343,7 +346,7 @@
                 }
             ],
             "description": "Catalog Manager provides extension for ModelAdmin editing of SiteTree instances",
-            "time": "2015-09-28 07:27:03"
+            "time": "2015-10-24 06:22:25"
         },
         {
             "name": "psr/log",
@@ -438,12 +441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rhym/silverstripe-cms-theme.git",
-                "reference": "880c598aa4a1ef579bc13c5943c6e0ca91ff9658"
+                "reference": "c4e1ec579d2e0f1c712a82f2d37dc86299270612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/880c598aa4a1ef579bc13c5943c6e0ca91ff9658",
-                "reference": "880c598aa4a1ef579bc13c5943c6e0ca91ff9658",
+                "url": "https://api.github.com/repos/Rhym/silverstripe-cms-theme/zipball/c4e1ec579d2e0f1c712a82f2d37dc86299270612",
+                "reference": "c4e1ec579d2e0f1c712a82f2d37dc86299270612",
                 "shasum": ""
             },
             "require": {
@@ -473,7 +476,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2015-10-13 19:42:46"
+            "time": "2015-10-20 15:01:31"
         },
         {
             "name": "ryanpotter/silverstripe-color-field",
@@ -754,16 +757,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-reports.git",
-                "reference": "46281d7d33920d7b8b237da0e7e150c3ec7e0b6c"
+                "reference": "1e665a59b1630133b891ac9695f0006cc004a71b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-reports/zipball/46281d7d33920d7b8b237da0e7e150c3ec7e0b6c",
-                "reference": "46281d7d33920d7b8b237da0e7e150c3ec7e0b6c",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-reports/zipball/1e665a59b1630133b891ac9695f0006cc004a71b",
+                "reference": "1e665a59b1630133b891ac9695f0006cc004a71b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
+                "php": ">=5.3.3",
                 "silverstripe/framework": ">=3.1.x-dev"
             },
             "type": "silverstripe-module",
@@ -792,7 +795,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2015-06-17 23:30:08"
+            "time": "2015-11-03 00:11:11"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -800,12 +803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "d90026292eb9bb0c947989460e694f44ccecd69c"
+                "reference": "82e046248f143029f498cc009486e4b5fe2fc356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/d90026292eb9bb0c947989460e694f44ccecd69c",
-                "reference": "d90026292eb9bb0c947989460e694f44ccecd69c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/82e046248f143029f498cc009486e4b5fe2fc356",
+                "reference": "82e046248f143029f498cc009486e4b5fe2fc356",
                 "shasum": ""
             },
             "require": {
@@ -834,7 +837,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2015-07-20 14:41:37"
+            "time": "2015-11-03 00:10:39"
         },
         {
             "name": "symfony/expression-language",
@@ -842,12 +845,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "015e01bb90d4d1f36626deebd0f93363930bd3a9"
+                "reference": "6b3dc2ac918bc5839b49024db0e0171cd0f94f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/015e01bb90d4d1f36626deebd0f93363930bd3a9",
-                "reference": "015e01bb90d4d1f36626deebd0f93363930bd3a9",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/6b3dc2ac918bc5839b49024db0e0171cd0f94f63",
+                "reference": "6b3dc2ac918bc5839b49024db0e0171cd0f94f63",
                 "shasum": ""
             },
             "require": {
@@ -862,7 +865,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\ExpressionLanguage\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -880,7 +886,7 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-12 11:23:20"
+            "time": "2015-10-30 20:15:42"
         },
         {
             "name": "symfony/yaml",
@@ -888,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "ff7f886a33f5b7a26a94d62f6e14bb9cf0e3bf5d"
+                "reference": "cb8f989f3580e9749244d86dfac156cd0ef6ca76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/ff7f886a33f5b7a26a94d62f6e14bb9cf0e3bf5d",
-                "reference": "ff7f886a33f5b7a26a94d62f6e14bb9cf0e3bf5d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/cb8f989f3580e9749244d86dfac156cd0ef6ca76",
+                "reference": "cb8f989f3580e9749244d86dfac156cd0ef6ca76",
                 "shasum": ""
             },
             "require": {
@@ -908,7 +914,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -926,7 +935,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-12 11:16:35"
+            "time": "2015-11-02 20:29:24"
         },
         {
             "name": "unclecheese/betterbuttons",
