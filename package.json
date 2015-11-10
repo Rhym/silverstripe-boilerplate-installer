@@ -11,8 +11,7 @@
     "fast-click": "./components/lib/fastclick/lib/fastclick.js"
   },
   "devDependencies": {
-    "autoprefixer": "~5.2.0",
-    "autoprefixer-core": "~5.2.1",
+    "autoprefixer": "^5.2.0",
     "bower": "~1.4.1",
     "browserify": "~10.1.3",
     "cssnano": "~2.1.1",

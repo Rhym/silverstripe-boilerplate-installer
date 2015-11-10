@@ -47,14 +47,16 @@ module.exports = function (grunt) {
       map: true,
       processors: [
         require('pixrem')(),
-        require('autoprefixer-core')({
+        require('autoprefixer')({
           browsers: 'last 3 versions'
         }),
         require('cssnano')()
       ]
     },
     dist: {
-      src: '<%= directories.project %>/css/*.css'
+      files: {
+        '<%= directories.project %>/css/main.css': ['<%= directories.project %>/css/main.css']
+      }
     }
   });
 
@@ -90,7 +92,7 @@ module.exports = function (grunt) {
 
   config.set('watch.editor', {
     files: ['<%= directories.project %>/scss/editor.scss'],
-    tasks: ['sass:editor', 'postcss'],
+    tasks: ['sass:editor'],
     options: {
       spawn: false
     }
@@ -98,7 +100,7 @@ module.exports = function (grunt) {
 
   config.set('watch.boilerplate', {
     files: ['<%= directories.boilerplate %>/scss/**/*.scss'],
-    tasks: ['sass:dist', 'cmq', 'postcss'],
+    tasks: ['sass:dist'],
     options: {
       spawn: false
     }
