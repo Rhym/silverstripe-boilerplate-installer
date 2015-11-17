@@ -11,15 +11,9 @@ module.exports = function (grunt) {
    * Sass
    -------------------------------------------*/
 
-  config.set('sass.dist', {
+  config.set('sass.all', {
     files: [{
       '<%= directories.project %>/css/main.css': '<%= directories.project %>/scss/main.scss'
-    }]
-  });
-
-  config.set('sass.editor', {
-    files: [{
-      '<%= directories.project %>/css/editor.css': '<%= directories.project %>/scss/editor.scss'
     }]
   });
 
@@ -53,12 +47,12 @@ module.exports = function (grunt) {
         require('cssnano')()
       ]
     },
-    dist: {
-      files: {
-        '<%= directories.project %>/css/main.css': ['<%= directories.project %>/css/main.css']
-      }
+    single_file: {
+      src: '<%= directories.project %>/css/main.css',
+      dest: '<%= directories.project %>/css/main.min.css'
     }
   });
+
 
   /** -----------------------------------------
    * CSSLint
@@ -82,28 +76,14 @@ module.exports = function (grunt) {
    * Watch
    ===========================================*/
 
-  config.set('watch.sass', {
+  config.set('watch', {
     files: ['<%= directories.project %>/scss/**/*.scss'],
-    tasks: ['sass:dist', 'cmq', 'postcss'],
+    tasks: ['sass', 'cmq', 'postcss'],
     options: {
       spawn: false
     }
   });
 
-  config.set('watch.editor', {
-    files: ['<%= directories.project %>/scss/editor.scss'],
-    tasks: ['sass:editor'],
-    options: {
-      spawn: false
-    }
-  });
-
-  config.set('watch.boilerplate', {
-    files: ['<%= directories.boilerplate %>/scss/**/*.scss'],
-    tasks: ['sass:dist'],
-    options: {
-      spawn: false
-    }
-  });
+  grunt.registerTask('css', ['sass', 'cmq', 'postcss']);
 
 };

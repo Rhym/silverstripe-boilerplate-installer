@@ -58,4 +58,6 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.registerTask('javascript', ['browserify', 'uglify']);
+
 };

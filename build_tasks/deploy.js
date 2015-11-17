@@ -40,6 +40,6 @@ module.exports = function (grunt) {
    * Run all tasks
    -------------------------------------------*/
 
-  grunt.registerTask('deploy', ['copy', 'browserify', 'uglify', 'svgmin', 'sass', 'cmq', 'postcss']);
+  grunt.registerTask('deploy', ['copy', 'javascript', 'images', 'css']);
 
 };

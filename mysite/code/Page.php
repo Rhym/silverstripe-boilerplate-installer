@@ -76,7 +76,7 @@ class Page_Controller extends ContentController
          * CSS
          * ----------------------------------------*/
 
-        Requirements::css(project() . '/css/main.css', 'all');
+        Requirements::css(project() . '/css/main.min.css', 'all');
 
         parent::init();
     }
